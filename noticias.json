@@ -1,8 +1,55 @@
 {
- "actualizado": "2026-10-05T21:04:33Z",
+ "actualizado": "2026-10-23T23:45:54Z",
  "fuente": "news.json oficial del juego (CDN de Starform)",
- "total": 9,
+ "total": 13,
  "noticias": [
+  {
+   "id": "2026-10-20-mcs-lcq",
+   "titulo": "Mcs Lcq",
+   "fecha": "2026-10-20",
+   "imagenes": [
+    "assets/news/2026_10_20_mcs_lcq-0-mcs-header.jpg",
+    "assets/news/2026_10_20_mcs_lcq-1-mcs-body.jpg"
+   ],
+   "boton": {
+    "texto": "Abrir enlace",
+    "url": "https://linktr.ee/playmetalstorm"
+   }
+  },
+  {
+   "id": "flight-pass-61",
+   "titulo": "Flight Pass 61",
+   "fecha": null,
+   "imagenes": [
+    "assets/news/flight_pass_61-0-fp-header.jpg",
+    "assets/news/flight_pass_61-1-fp-cosmetics.jpg"
+   ],
+   "boton": null
+  },
+  {
+   "id": "2026_10_13_f15_rework",
+   "titulo": "F15 Rework",
+   "fecha": "2026-10-13",
+   "imagenes": [
+    "assets/news/2026_10_13_f15_rework-0-header-image.jpg",
+    "assets/news/2026_10_13_f15_rework-1-death-sparrow.jpg",
+    "assets/news/2026_10_13_f15_rework-2-f15-paints.jpg"
+   ],
+   "boton": null
+  },
+  {
+   "id": "2026_10_8_matcherino",
+   "titulo": "Matcherino (torneo comunitario)",
+   "fecha": "2026-10-08",
+   "imagenes": [
+    "assets/news/2026_10_8_matcherino-0-header-image.jpg",
+    "assets/news/2026_10_8_matcherino-1-body-image.jpg"
+   ],
+   "boton": {
+    "texto": "Abrir enlace",
+    "url": "https://www.matcherino.com/metalstorm"
+   }
+  },
   {
    "id": "2026_9_29_desktop_ui",
    "titulo": "Actualización del juego",
@@ -23,7 +70,7 @@
    ],
    "boton": {
     "texto": "Ver en la tienda",
-    "url": "https://www.playmetalstorm.com/shop#flightpass"
+    "url": "https://www.playmetalstorm.com/shop?lang=EN_US#flightpass"
    }
   },
   {
@@ -87,7 +134,7 @@
    ],
    "boton": {
     "texto": "Ver en la tienda",
-    "url": "https://www.playmetalstorm.com/shop#flightpass"
+    "url": "https://www.playmetalstorm.com/shop?lang=EN_US#flightpass"
    }
   },
   {

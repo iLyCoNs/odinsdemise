@@ -1318,6 +1318,211 @@
     box-shadow: 0 0 12px rgba(99, 102, 241, 0.4);
   }
 
+
+  /* ================= NOTICIAS & ANUNCIOS ================= */
+  .section-header-block {
+    text-align: center;
+    margin-bottom: 26px;
+  }
+  .sh-badge {
+    display: inline-block;
+    background: rgba(0, 229, 255, 0.12);
+    border: 1px solid var(--ms-cyan);
+    color: var(--ms-cyan);
+    font-family: var(--font-heading);
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.16em;
+    padding: 4px 14px;
+    border-radius: 99px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 12px rgba(0, 229, 255, 0.3);
+  }
+  .sh-title {
+    font-family: var(--font-heading);
+    font-size: clamp(22px, 3.8vw, 32px);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    margin-bottom: 8px;
+    text-shadow: 0 0 16px rgba(0, 229, 255, 0.35);
+  }
+  .sh-sub {
+    font-size: 14px;
+    color: var(--text-secondary);
+    max-width: 680px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  .news-filter-bar {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+  }
+  .news-filter-btn {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border-line);
+    color: var(--text-secondary);
+    font-family: var(--font-heading);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 7px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .news-filter-btn:hover {
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  .news-filter-btn.active {
+    background: #1967d2;
+    border-color: var(--ms-cyan);
+    color: #ffffff;
+    box-shadow: 0 0 14px rgba(25, 103, 210, 0.5);
+  }
+
+  .news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 22px;
+  }
+  .news-card {
+    background: linear-gradient(145deg, rgba(13, 25, 45, 0.95), rgba(7, 14, 25, 0.98));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .news-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--ms-cyan);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8), 0 0 24px rgba(0, 229, 255, 0.3);
+  }
+  .nc-img-wrap {
+    height: 190px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: #040810;
+  }
+  .nc-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease;
+  }
+  .news-card:hover .nc-img {
+    transform: scale(1.05);
+  }
+  .nc-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-family: var(--font-heading);
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  }
+  .nc-badge.badge-update {
+    background: rgba(0, 229, 255, 0.92);
+    color: #040812;
+  }
+  .nc-badge.badge-pass {
+    background: rgba(251, 191, 36, 0.95);
+    color: #040812;
+  }
+  .nc-badge.badge-event {
+    background: rgba(192, 132, 252, 0.95);
+    color: #040812;
+  }
+  .nc-badge.badge-special {
+    background: rgba(74, 222, 128, 0.95);
+    color: #040812;
+  }
+  .nc-body {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .nc-date {
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    color: var(--text-muted);
+    letter-spacing: 0.08em;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .nc-title {
+    font-family: var(--font-heading);
+    font-size: 18px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.35;
+    margin-bottom: 14px;
+    letter-spacing: 0.03em;
+  }
+  .nc-thumbs-strip {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .nc-thumb-item {
+    width: 60px;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    object-fit: cover;
+  }
+  .nc-action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #1d6fe5, #1251b5);
+    color: #ffffff;
+    text-decoration: none;
+    font-family: var(--font-heading);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 14px rgba(25, 103, 210, 0.4);
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  .nc-action-btn:hover {
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.6);
+    border-color: var(--ms-cyan);
+    transform: translateY(-2px);
+  }
+
+  .pilot-role-mobile {
+    display: none;
+  }
+
   @media (max-width: 860px) {
     .site-nav {
       position: sticky;
@@ -1396,23 +1601,194 @@
       height: 18px;
       margin: 0 2px;
     }
+
+    /* Ribbon Top 7 */
+    .world-rank-inner {
+      padding: 20px 16px;
+      gap: 14px;
+    }
+    .wr-rank-circle {
+      width: 52px;
+      height: 52px;
+      font-size: 24px;
+    }
+    .wr-title-box h2 {
+      font-size: clamp(16px, 4.2vw, 22px);
+    }
+    .wr-stats-pill {
+      flex-wrap: wrap;
+      gap: 12px 18px;
+      padding: 10px 16px;
+      border-radius: 14px;
+    }
+
+    /* Banner Oficial de Escuadrón */
+    .ingame-squad-banner {
+      padding: 20px 16px;
+    }
+    .banner-top-row {
+      justify-content: center;
+      text-align: center;
+      gap: 14px;
+    }
+    .banner-crest {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto;
+    }
+    .banner-titles {
+      text-align: center;
+      min-width: 100%;
+    }
+    .banner-header-badges {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .banner-tag-box {
+      font-size: 16px;
+      padding: 2px 10px;
+    }
+    .banner-name-box {
+      font-size: clamp(17px, 4.8vw, 24px);
+      padding: 2px 12px;
+    }
+    .banner-trophies-row {
+      justify-content: center;
+      font-size: 20px;
+    }
+    .banner-desc-text {
+      text-align: center;
+      font-size: 13.5px;
+      padding: 14px 16px;
+    }
+    .banner-stats-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    .banner-stat-box {
+      padding: 10px 12px;
+      text-align: center;
+    }
+    .bs-val {
+      justify-content: center;
+      font-size: 16px;
+    }
+
+    /* Rotation Section */
+    .rotation-showcase {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    .rot-main-card {
+      padding: 20px 16px;
+      min-height: auto;
+    }
+    .cinematic-wallpaper-card {
+      min-height: 250px;
+    }
+    .cwc-content {
+      padding: 16px 18px;
+    }
+    .battleground-gallery {
+      grid-template-columns: 1fr;
+    }
+
+    /* Leaderboard */
+    .leaderboard-modal-preview {
+      padding: 18px 14px;
+    }
+    .lb-header {
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .lb-row {
+      grid-template-columns: 32px 1fr auto;
+      gap: 8px;
+      padding: 10px 12px;
+      font-size: 13.5px;
+    }
+    .lb-members {
+      display: none;
+    }
+    .lb-trophies {
+      font-size: 14.5px;
+    }
+
+    /* Roster de Pilotos */
+    .roster-card {
+      padding: 20px 14px;
+    }
+    .roster-toolbar {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 12px;
+    }
+    .filter-pills {
+      justify-content: center;
+    }
     .roster-headers-row {
-      grid-template-columns: 36px 1fr auto;
+      grid-template-columns: 32px 1fr auto;
+      padding: 10px 12px;
+      font-size: 10.5px;
     }
     .roster-headers-row div:nth-child(3) {
       display: none;
     }
     .pilot-row {
-      grid-template-columns: 36px 1fr auto;
-      gap: 10px;
-      padding: 14px 16px;
+      grid-template-columns: 32px 1fr auto;
+      gap: 8px;
+      padding: 12px 12px;
     }
-    .pilot-row > div:nth-child(3) {
-      display: none;
+    .desktop-only-role {
+      display: none !important;
     }
-    .pilot-name-text { font-size: 15px; }
-    .lb-row { grid-template-columns: 36px 1fr auto; }
-    .lb-members { display: none; }
+    .pilot-role-mobile {
+      display: inline-block !important;
+      font-size: 10.5px;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 4px;
+      margin-top: 3px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      width: fit-content;
+    }
+    .pilot-name-text {
+      font-size: 14.5px;
+      white-space: normal;
+      word-break: break-word;
+    }
+    .pilot-division-badge {
+      font-size: 10px;
+      padding: 4px 7px;
+      letter-spacing: 0.04em;
+    }
+
+    /* Noticias */
+    .news-grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    .news-filter-bar {
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .banner-stats-grid {
+      grid-template-columns: 1fr;
+    }
+    .filter-pills {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .filter-pill {
+      text-align: center;
+    }
   }
 
   /* Footer */
@@ -1507,6 +1883,7 @@
         <a href="#rotacion" data-i18n="nav_rotation">Rotación & Mapas</a>
         <a href="#ranking" data-i18n="nav_ranking">Top 10 Mundial</a>
         <a href="#miembros" data-i18n="nav_members">Pilotos (30)</a>
+        <a href="#noticias" data-i18n="nav_news">Noticias</a>
         <!-- Botón de código para mobile dentro del dock -->
         <button class="nav-btn-action mobile-dock-code" id="copyCodeMobile">
           <span data-i18n="nav_code">Código: #JHP3JF</span>
@@ -1822,6 +2199,26 @@
     </div>
   </section>
 
+  <!-- ================= NOTICIAS & ANUNCIOS OFICIALES ================= -->
+  <section class="wrap" id="noticias" style="margin-top: 50px; margin-bottom: 50px;">
+    <div class="section-header-block">
+      <div class="sh-badge" data-i18n="news_badge">COMUNICADOS OFICIALES · METALSTORM</div>
+      <h2 class="sh-title" data-i18n="news_section_title">NOTICIAS, PARCHES & ANUNCIOS</h2>
+      <p class="sh-sub" data-i18n="news_section_sub">Información oficial en tiempo real: Actualizaciones del juego, parches, notas de versión, pases de vuelo y torneos mundiales.</p>
+    </div>
+
+    <div class="news-filter-bar">
+      <button class="news-filter-btn active" data-cat="all" data-i18n="news_filter_all">Todas</button>
+      <button class="news-filter-btn" data-cat="update" data-i18n="news_filter_updates">Actualizaciones & Parches</button>
+      <button class="news-filter-btn" data-cat="pass" data-i18n="news_filter_passes">Flight Passes</button>
+      <button class="news-filter-btn" data-cat="event" data-i18n="news_filter_events">Torneos & MCS</button>
+    </div>
+
+    <div class="news-grid" id="newsGrid">
+      <!-- Carga dinámica de noticias desde noticias.json -->
+    </div>
+  </section>
+
 </main>
 
 <!-- ================= FOOTER ================= -->
@@ -1863,7 +2260,15 @@ const I18N = {
     nav_rotation: "Rotación & Mapas",
     nav_ranking: "Top 10 Mundial",
     nav_members: "Pilotos (30)",
+    nav_news: "Noticias & Parches",
     nav_code: "Código: #JHP3JF",
+    news_badge: "COMUNICADOS OFICIALES · METALSTORM",
+    news_section_title: "NOTICIAS, PARCHES & ANUNCIOS",
+    news_section_sub: "Información oficial en tiempo real: Actualizaciones del juego, parches, notas de versión, pases de vuelo y torneos mundiales.",
+    news_filter_all: "Todas",
+    news_filter_updates: "Actualizaciones & Parches",
+    news_filter_passes: "Flight Passes",
+    news_filter_events: "Torneos & MCS",
     ribbon_title: '¡#7 DE LOS <span class="gold">200 MEJORES ESCUADRONES</span> DEL MUNDO!',
     ribbon_sub: "Tabla Oficial de Escuadrones Globales · Metalstorm World Leaderboards",
     trophies_lbl: "Trofeos Globales",
@@ -1909,7 +2314,15 @@ const I18N = {
     nav_rotation: "Rotation & Maps",
     nav_ranking: "Global Top 10",
     nav_members: "Pilots (30)",
+    nav_news: "News & Patches",
     nav_code: "Code: #JHP3JF",
+    news_badge: "OFFICIAL ANNOUNCEMENTS · METALSTORM",
+    news_section_title: "NEWS, PATCHES & ANNOUNCEMENTS",
+    news_section_sub: "Real-time official intelligence: Game updates, balance patch notes, flight passes and global tournaments.",
+    news_filter_all: "All",
+    news_filter_updates: "Updates & Patches",
+    news_filter_passes: "Flight Passes",
+    news_filter_events: "Tournaments & MCS",
     ribbon_title: '¡#7 OF THE <span class="gold">TOP 200 SQUADRONS</span> IN THE WORLD!',
     ribbon_sub: "Official Global Squadron Leaderboards · Metalstorm World Leaderboards",
     trophies_lbl: "Global Trophies",
@@ -1978,6 +2391,7 @@ function setLanguage(lang) {
   lastRenderedSlot = -1;
   renderPilots();
   renderRotation();
+  if (typeof renderNoticias === 'function') renderNoticias();
 }
 
 document.getElementById('langToggle').addEventListener('click', () => {
@@ -2096,12 +2510,17 @@ function renderPilots() {
       <div class="pilot-row">
         <div class="pilot-rank-num ${isTop3 ? 'top3' : ''}">${p.posicion}</div>
 
-        <div class="pilot-name-text">
-          <span>${p.callsign}</span>
-          ${p.insignia ? `<span class="pilot-top50-tag">${p.insignia}</span>` : ''}
+        <div class="pilot-name-col">
+          <div class="pilot-name-text">
+            <span>${p.callsign}</span>
+            ${p.insignia ? `<span class="pilot-top50-tag">${p.insignia}</span>` : ''}
+          </div>
+          <div class="pilot-role-mobile ${rankClass}">
+            ${getRoleLabel(p.rango)}
+          </div>
         </div>
 
-        <div class="pilot-rank-badge ${rankClass}">
+        <div class="pilot-rank-badge ${rankClass} desktop-only-role">
           ${getRoleLabel(p.rango)}
         </div>
 
@@ -2153,7 +2572,8 @@ function updateBrowserTabTitle(modeNow, remMs, mapKey, mapObj) {
   const mapNameEn = (mapObj && mapObj.en) ? mapObj.en : mapKey;
   const mapText = (mapNameEs === mapNameEn) ? mapNameEs : `${mapNameEs} (${mapNameEn})`;
 
-  const tickerBase = `${mapText} · [RØ] Øɖɨn'ѕ ƉєɱɨѕɆ · `;
+  // Únicamente el mapa en movimiento, cronómetro y siglas (sin nombre de escuadrón)
+  const tickerBase = `${mapText} ··· `;
 
   if (lastTickerKey !== mapKey) {
     lastTickerKey = mapKey;
@@ -2382,9 +2802,113 @@ if (copyCodeMobileBtn) {
   });
 }
 
+let NOTICIAS_DATA = [];
+let currentNewsFilter = 'all';
+
+async function loadNoticias() {
+  try {
+    const res = await fetch('noticias.json?t=' + Date.now());
+    if (res.ok) {
+      const data = await res.json();
+      if (data && Array.isArray(data.noticias)) {
+        NOTICIAS_DATA = data.noticias;
+        renderNoticias();
+      }
+    }
+  } catch (err) {
+    console.warn('Error cargando noticias:', err);
+  }
+}
+
+function getNewsCategory(item) {
+  const id = (item.id || '').toLowerCase();
+  const tit = (item.titulo || '').toLowerCase();
+  if (id.includes('flight') || tit.includes('flight pass')) return 'pass';
+  if (id.includes('matcherino') || id.includes('mcs') || tit.includes('torneo') || tit.includes('mcs')) return 'event';
+  if (id.includes('desktop_ui') || id.includes('rework') || tit.includes('actualización') || tit.includes('update')) return 'update';
+  return 'special';
+}
+
+function renderNoticias() {
+  const grid = document.getElementById('newsGrid');
+  if (!grid || !NOTICIAS_DATA.length) return;
+
+  const filtered = NOTICIAS_DATA.filter(item => {
+    if (currentNewsFilter === 'all') return true;
+    return getNewsCategory(item) === currentNewsFilter;
+  });
+
+  grid.innerHTML = filtered.map(item => {
+    const cat = getNewsCategory(item);
+    let badgeText = (currentLang === 'en') ? 'ANNOUNCEMENT' : 'COMUNICADO';
+    let badgeClass = 'badge-special';
+
+    if (cat === 'pass') {
+      badgeText = (currentLang === 'en') ? 'FLIGHT PASS' : 'PASE DE VUELO';
+      badgeClass = 'badge-pass';
+    } else if (cat === 'update') {
+      badgeText = (currentLang === 'en') ? 'PATCH & UPDATE' : 'ACTUALIZACIÓN & PARCHE';
+      badgeClass = 'badge-update';
+    } else if (cat === 'event') {
+      badgeText = (currentLang === 'en') ? 'TOURNAMENT / MCS' : 'TORNEO OFICIAL / MCS';
+      badgeClass = 'badge-event';
+    }
+
+    const mainImg = (item.imagenes && item.imagenes[0]) ? item.imagenes[0] : 'assets/wall-canyon.jpg';
+    const otherImgs = (item.imagenes && item.imagenes.length > 1) ? item.imagenes.slice(1, 3) : [];
+    
+    const dateStr = item.fecha ? `📅 ${item.fecha}` : ((currentLang === 'en') ? '📅 OFFICIAL' : '📅 OFICIAL');
+
+    let btnHtml = '';
+    if (item.boton && item.boton.url) {
+      let btnLabel = item.boton.texto || ((currentLang === 'en') ? 'Open Link' : 'Abrir enlace');
+      if (currentLang === 'en') {
+        if (btnLabel.includes('tienda')) btnLabel = 'View in Shop';
+        else if (btnLabel.includes('video')) btnLabel = 'Watch Video';
+        else if (btnLabel.includes('Discord')) btnLabel = 'Join Discord';
+        else if (btnLabel.includes('enlace')) btnLabel = 'Open Link';
+      }
+      btnHtml = `<a href="${item.boton.url}" target="_blank" rel="noopener" class="nc-action-btn">${btnLabel} ↗</a>`;
+    }
+
+    return `
+      <article class="news-card">
+        <div class="nc-img-wrap">
+          <img src="${mainImg}" alt="${item.titulo}" class="nc-img" loading="lazy">
+          <span class="nc-badge ${badgeClass}">${badgeText}</span>
+        </div>
+        <div class="nc-body">
+          <div>
+            <div class="nc-date">${dateStr}</div>
+            <h3 class="nc-title">${item.titulo}</h3>
+            ${otherImgs.length ? `
+              <div class="nc-thumbs-strip">
+                ${otherImgs.map(img => `<img src="${img}" class="nc-thumb-item" alt="Vista previa">`).join('')}
+              </div>
+            ` : ''}
+          </div>
+          <div>
+            ${btnHtml}
+          </div>
+        </div>
+      </article>
+    `;
+  }).join('');
+}
+
+document.querySelectorAll('.news-filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.news-filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentNewsFilter = btn.dataset.cat;
+    renderNoticias();
+  });
+});
+
 (async function init() {
   await loadPilots();
   await loadRotation();
+  await loadNoticias();
   setLanguage(currentLang);
   setInterval(renderRotation, 1000);
 })();
