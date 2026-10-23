@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>[RØ] Øɖɨn'ѕ ƉєɱɨѕɆ — Escuadrón Competitivo · Metalstorm</title>
-<meta name="description" content="[RØ] Øɖɨn'ѕ ƉєɱɨѕɆ (Odin's Demise): Escuadrón competitivo de élite en Metalstorm. Más de 1.029.000 trofeos, 30 pilotos activos, rotación de modos en vivo y reclutamiento.">
-<meta name="theme-color" content="#0a1424">
+<title>[RØ] Øɖɨn'ѕ ƉєɱɨѕɆ — Top #7 Mundial · Escuadrón Metalstorm</title>
+<meta name="description" content="[RØ] Øɖɨn'ѕ ƉєɱɨѕɆ (Odin's Demise): Escuadrón en el Puesto #7 del Mundo en Metalstorm. Más de 1.029.000 trofeos, 30 pilotos oficiales, rotación en vivo y wallpapers oficiales.">
+<meta name="theme-color" content="#07101e">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -14,15 +14,15 @@
 <link rel="apple-touch-icon" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700;800&family=JetBrains+Mono:wght@400;600;700;800&family=Outfit:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700;800&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="assets/wall-canyon.jpg">
 
 <style>
   :root {
-    --ms-bg: #060c16;
-    --ms-surface: #0a1322;
-    --ms-card: #0d1a2d;
-    --ms-card-hover: #12233c;
+    --ms-bg: #060b14;
+    --ms-surface: #0a1324;
+    --ms-card: #0d1b30;
+    --ms-card-hover: #122440;
     --ms-blue-primary: #1967d2;
     --ms-blue-glow: #287bf0;
     --ms-blue-dark: #0d3a82;
@@ -30,11 +30,10 @@
     --ms-cyan-dim: rgba(0, 229, 255, 0.15);
     --ms-gold: #f59e0b;
     --ms-gold-bright: #fbbf24;
-    --ms-gold-glow: rgba(245, 158, 11, 0.4);
+    --ms-gold-glow: rgba(251, 191, 36, 0.45);
     --ms-red: #ef4444;
     --ms-green: #22c55e;
-    --ms-green-glow: rgba(34, 197, 94, 0.45);
-    --ms-purple: #a855f7;
+    --ms-green-glow: rgba(34, 197, 94, 0.5);
 
     --border-line: rgba(255, 255, 255, 0.08);
     --border-card: rgba(40, 123, 240, 0.28);
@@ -61,21 +60,21 @@
     overflow-x: hidden;
     line-height: 1.5;
     background-image: 
-      radial-gradient(circle at 50% -10%, rgba(25, 103, 210, 0.25), transparent 60%),
-      radial-gradient(circle at 85% 60%, rgba(245, 158, 11, 0.08), transparent 50%),
-      linear-gradient(180deg, var(--ms-bg) 0%, #050a12 100%);
+      radial-gradient(circle at 50% -10%, rgba(25, 103, 210, 0.3), transparent 60%),
+      radial-gradient(circle at 85% 60%, rgba(245, 158, 11, 0.1), transparent 50%),
+      linear-gradient(180deg, var(--ms-bg) 0%, #050912 100%);
   }
 
   .wrap {
     width: 100%;
-    max-width: 1240px;
+    max-width: 1260px;
     margin: 0 auto;
     padding: 0 max(16px, env(safe-area-inset-right)) 0 max(16px, env(safe-area-inset-left));
     position: relative;
     z-index: 1;
   }
 
-  /* HUD Scanlines & Polygon styling */
+  /* Grid overlay */
   .grid-pattern {
     position: fixed;
     inset: 0;
@@ -93,7 +92,7 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(6, 12, 22, 0.92);
+    background: rgba(6, 11, 20, 0.94);
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
     border-bottom: 1px solid var(--border-line);
@@ -138,8 +137,8 @@
     gap: 8px;
   }
   .squad-tag-badge {
-    background: rgba(25, 103, 210, 0.3);
-    border: 1px solid rgba(25, 103, 210, 0.7);
+    background: rgba(25, 103, 210, 0.35);
+    border: 1px solid rgba(25, 103, 210, 0.8);
     color: var(--ms-cyan);
     font-family: var(--font-mono);
     font-size: 13px;
@@ -151,8 +150,8 @@
     font-size: 11px;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: var(--text-secondary);
-    font-weight: 600;
+    color: var(--ms-gold-bright);
+    font-weight: 700;
   }
 
   nav.nav-menu {
@@ -199,7 +198,6 @@
   .nav-btn-action:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 24px rgba(25, 103, 210, 0.6);
-    background: linear-gradient(135deg, #2580f5, #1967d2);
   }
 
   .nav-burger-btn {
@@ -213,7 +211,96 @@
     cursor: pointer;
   }
 
-  /* In-Game Metalstorm Banner Pop-up Style */
+  /* ================= PUESTO #7 DEL MUNDO (TOP 7 GLOBAL STRIP) ================= */
+  .world-rank-ribbon {
+    margin-top: 22px;
+    background: linear-gradient(90deg, #b45309 0%, #f59e0b 25%, #fbbf24 50%, #f59e0b 75%, #b45309 100%);
+    border-radius: 12px;
+    padding: 3px;
+    box-shadow: 0 8px 30px rgba(245, 158, 11, 0.35);
+    animation: gold-pulse 3s infinite alternate;
+  }
+  @keyframes gold-pulse {
+    0% { filter: drop-shadow(0 0 10px rgba(245, 158, 11, 0.4)); }
+    100% { filter: drop-shadow(0 0 24px rgba(251, 191, 36, 0.8)); }
+  }
+  .world-rank-inner {
+    background: linear-gradient(135deg, #0f1c30, #091322);
+    border-radius: 10px;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .wr-badge-group {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .wr-rank-circle {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #f59e0b, #fbbf24);
+    color: #060e18;
+    display: grid;
+    place-items: center;
+    font-family: var(--font-heading);
+    font-size: 26px;
+    font-weight: 900;
+    box-shadow: 0 0 20px rgba(251, 191, 36, 0.6);
+    border: 3px solid #ffffff;
+    flex: 0 0 auto;
+  }
+  .wr-title-box h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(18px, 3.4vw, 26px);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    line-height: 1.1;
+  }
+  .wr-title-box h2 span.gold {
+    color: var(--ms-gold-bright);
+    text-shadow: 0 0 12px var(--ms-gold-glow);
+  }
+  .wr-title-box p {
+    font-size: 12.5px;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-top: 3px;
+  }
+  .wr-stats-pill {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 10px 18px;
+    border-radius: 10px;
+  }
+  .wr-stat-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .wr-stat-item .lbl {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--text-muted);
+  }
+  .wr-stat-item .val {
+    font-family: var(--font-mono);
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--ms-gold-bright);
+  }
+
+  /* In-Game Metalstorm Banner */
   .ingame-squad-banner {
     position: relative;
     background: linear-gradient(135deg, #1b63d1 0%, #114ca6 55%, #0c3677 100%);
@@ -221,8 +308,8 @@
     border: 1px solid rgba(255, 255, 255, 0.25);
     box-shadow: 0 16px 45px rgba(0, 0, 0, 0.6), 0 0 35px rgba(25, 103, 210, 0.35);
     padding: 24px 28px;
-    margin-top: 26px;
-    margin-bottom: 34px;
+    margin-top: 20px;
+    margin-bottom: 30px;
     overflow: hidden;
   }
   .ingame-squad-banner::before {
@@ -243,10 +330,10 @@
     margin-bottom: 20px;
   }
   .banner-crest {
-    width: 74px;
-    height: 74px;
+    width: 76px;
+    height: 76px;
     background: linear-gradient(145deg, #2172ed, #0e4499);
-    border: 2px solid #ffffff;
+    border: 2.5px solid #ffffff;
     border-radius: 14px;
     display: grid;
     place-items: center;
@@ -276,10 +363,6 @@
     align-items: center;
     gap: 8px;
   }
-  .banner-tag-box .edit-ico {
-    font-size: 13px;
-    opacity: 0.7;
-  }
   .banner-name-box {
     background: rgba(0, 0, 0, 0.28);
     border: 1px solid rgba(255, 255, 255, 0.25);
@@ -300,10 +383,10 @@
     gap: 8px;
     margin-top: 6px;
     font-family: var(--font-mono);
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 800;
     color: var(--ms-gold-bright);
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
   }
   .banner-trophies-row svg {
     width: 24px;
@@ -320,7 +403,7 @@
     font-size: 14.5px;
     line-height: 1.65;
     color: #e2e8f0;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
     backdrop-filter: blur(8px);
   }
   .banner-desc-text b.skal {
@@ -328,12 +411,10 @@
     letter-spacing: 0.08em;
   }
 
-  /* 4 Data Cards like in-game modal */
   .banner-stats-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 12px;
-    margin-bottom: 20px;
   }
   .banner-stat-box {
     background: rgba(4, 18, 38, 0.7);
@@ -364,7 +445,100 @@
     font-family: var(--font-mono);
   }
 
-  /* Squad Event Box (left sidebar in-game) */
+  /* Global Leaderboard Table Component */
+  .leaderboard-modal-preview {
+    background: rgba(10, 19, 34, 0.9);
+    border: 1px solid var(--border-card);
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 34px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+  }
+  .lb-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .lb-title-group h3 {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .lb-season-badge {
+    background: rgba(245, 158, 11, 0.15);
+    border: 1px solid var(--ms-gold);
+    color: var(--ms-gold-bright);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 99px;
+  }
+  .lb-table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .lb-row {
+    display: grid;
+    grid-template-columns: 46px 1fr 100px 160px;
+    align-items: center;
+    padding: 10px 16px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 8px;
+    font-family: var(--font-heading);
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .lb-row.active-squad {
+    background: linear-gradient(90deg, rgba(245, 158, 11, 0.22), rgba(25, 103, 210, 0.2));
+    border: 1.5px solid var(--ms-gold-bright);
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.25);
+  }
+  .lb-pos {
+    font-family: var(--font-mono);
+    font-size: 18px;
+    font-weight: 900;
+    color: var(--text-muted);
+  }
+  .lb-row.active-squad .lb-pos {
+    color: var(--ms-gold-bright);
+  }
+  .lb-name {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .lb-members {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--text-muted);
+    text-align: center;
+  }
+  .lb-trophies {
+    font-family: var(--font-mono);
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--ms-gold-bright);
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+  }
+
+  /* Squad Event Status Strip */
   .squad-event-bar {
     background: linear-gradient(135deg, rgba(13, 26, 45, 0.95), rgba(7, 15, 26, 0.95));
     border: 1px solid var(--border-card);
@@ -375,7 +549,7 @@
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
-    margin-bottom: 40px;
+    margin-bottom: 34px;
   }
   .event-badge {
     background: #1967d2;
@@ -387,9 +561,6 @@
     text-transform: uppercase;
     padding: 4px 10px;
     border-radius: 6px;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
   }
   .event-time-pill {
     background: rgba(0, 0, 0, 0.5);
@@ -455,10 +626,6 @@
     cursor: pointer;
     position: relative;
     white-space: nowrap;
-    transition: color 0.2s ease;
-  }
-  .ingame-tab:hover {
-    color: var(--text-pure);
   }
   .ingame-tab.active {
     color: var(--text-pure);
@@ -485,7 +652,7 @@
     margin-left: 6px;
   }
 
-  /* Roster Table Layout (Matching In-Game Screenshots) */
+  /* Members Roster List */
   .members-panel {
     background: rgba(10, 19, 34, 0.85);
     border: 1px solid var(--border-card);
@@ -555,10 +722,6 @@
     cursor: pointer;
     transition: all 0.2s ease;
   }
-  .filter-pill:hover {
-    color: var(--text-pure);
-    border-color: rgba(255, 255, 255, 0.25);
-  }
   .filter-pill.active {
     background: #1967d2;
     border-color: var(--ms-cyan);
@@ -566,7 +729,7 @@
     box-shadow: 0 0 14px rgba(25, 103, 210, 0.5);
   }
 
-  /* Pilot List Items */
+  /* Pilot Row Item */
   .pilot-list {
     display: flex;
     flex-direction: column;
@@ -604,7 +767,6 @@
     text-shadow: 0 0 10px var(--ms-gold-glow);
   }
 
-  /* Pilot Avatar Badge */
   .pilot-avatar-frame {
     width: 48px;
     height: 48px;
@@ -616,10 +778,6 @@
     position: relative;
     overflow: hidden;
     flex: 0 0 auto;
-  }
-  .pilot-avatar-frame svg {
-    width: 32px;
-    height: 32px;
   }
   .avatar-top-tag {
     position: absolute;
@@ -713,18 +871,14 @@
       gap: 10px;
       padding: 12px 14px;
     }
-    .pilot-status-col {
-      display: none;
-    }
-    .pilot-name-text {
-      font-size: 15px;
-    }
-    .pilot-trophies-col {
-      font-size: 15px;
-    }
+    .pilot-status-col { display: none; }
+    .pilot-name-text { font-size: 15px; }
+    .pilot-trophies-col { font-size: 15px; }
+    .lb-row { grid-template-columns: 36px 1fr auto; }
+    .lb-members { display: none; }
   }
 
-  /* Live Rotation HUD Section */
+  /* ================= REAL MAP WALLPAPERS & ROTATION ================= */
   section.hud-section {
     padding: 60px 0;
     border-top: 1px solid var(--border-line);
@@ -742,15 +896,16 @@
     font-size: 14.5px;
     color: var(--text-secondary);
     max-width: 600px;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
 
   .rotation-showcase {
     display: grid;
-    grid-template-columns: 1.25fr 0.75fr;
-    gap: 20px;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 22px;
+    margin-bottom: 34px;
   }
-  @media (max-width: 860px) {
+  @media (max-width: 900px) {
     .rotation-showcase { grid-template-columns: 1fr; }
   }
 
@@ -816,41 +971,13 @@
     color: #060e18;
   }
 
-  .rot-meta-strip {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    margin: 22px 0;
-  }
-  .rot-map-img {
-    width: 82px;
-    height: 50px;
-    border-radius: 8px;
-    background-size: cover;
-    background-position: center;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    flex: 0 0 auto;
-  }
-  .rot-map-info .map-title {
-    font-family: var(--font-heading);
-    font-size: 17px;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: var(--text-pure);
-  }
-  .rot-map-info .map-sub {
-    font-size: 11.5px;
-    color: var(--text-muted);
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-  }
-
   .rot-footer-telemetry {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     gap: 14px;
     flex-wrap: wrap;
+    margin-top: 20px;
     margin-bottom: 12px;
   }
   .rot-timer-num {
@@ -892,63 +1019,121 @@
     transition: width 0.3s linear;
   }
 
-  .rot-tactics-card {
-    background: rgba(13, 26, 45, 0.85);
-    border: 1px solid var(--border-card);
+  /* Cinematic Wallpaper Showcase Card */
+  .cinematic-wallpaper-card {
+    position: relative;
     border-radius: 14px;
-    padding: 24px;
+    overflow: hidden;
+    background: #040912;
+    border: 1px solid var(--border-card);
+    aspect-ratio: 16 / 10;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 18px;
+    justify-content: flex-end;
+    padding: 22px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
   }
-  .rot-tactics-card h4 {
-    font-family: var(--font-heading);
-    font-size: 18px;
+  .cwc-bg-img {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.8s ease;
+    filter: saturate(1.15) contrast(1.08);
+  }
+  .cwc-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(4,9,18,0.2) 0%, rgba(4,9,18,0.85) 100%);
+  }
+  .cwc-badge-top {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-family: var(--font-mono);
+    font-size: 11px;
     font-weight: 800;
-    text-transform: uppercase;
     color: var(--ms-cyan);
-    margin-bottom: 8px;
+    backdrop-filter: blur(8px);
+    z-index: 2;
   }
-  .rot-tactics-card p {
-    font-size: 14px;
+  .cwc-content {
+    position: relative;
+    z-index: 2;
+  }
+  .cwc-map-title {
+    font-family: var(--font-heading);
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.8);
+  }
+  .cwc-map-sub {
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
     color: var(--text-secondary);
-    line-height: 1.65;
   }
 
-  /* Recruitment Box */
-  .join-protocol-grid {
+  /* Gallery of All Battlegrounds */
+  .battleground-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 16px;
-    margin-top: 26px;
-    margin-bottom: 30px;
+    margin-top: 24px;
   }
-  .join-card {
-    background: rgba(13, 26, 45, 0.7);
+  .bg-thumb-card {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 16 / 9;
+    background: #091322;
     border: 1px solid var(--border-line);
-    border-radius: 12px;
-    padding: 22px;
+    cursor: pointer;
+    transition: all 0.24s ease;
   }
-  .join-num {
-    font-family: var(--font-mono);
-    font-size: 20px;
-    font-weight: 800;
-    color: var(--ms-cyan);
-    margin-bottom: 8px;
+  .bg-thumb-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--ms-cyan);
+    box-shadow: 0 8px 24px rgba(0, 229, 255, 0.25);
   }
-  .join-card h4 {
+  .bg-thumb-card.active-now {
+    border: 2px solid var(--ms-cyan);
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.4);
+  }
+  .bg-thumb-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  .bg-thumb-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, transparent, rgba(5, 10, 18, 0.95));
+    padding: 10px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .bg-thumb-title {
     font-family: var(--font-heading);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 800;
     text-transform: uppercase;
-    color: var(--text-pure);
-    margin-bottom: 6px;
+    color: #ffffff;
   }
-  .join-card p {
-    font-size: 13px;
-    color: var(--text-secondary);
-    line-height: 1.55;
+  .bg-thumb-tag {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--ms-cyan);
   }
 
   /* Footer */
@@ -1017,7 +1202,7 @@
     <div class="nav-flex">
       <a href="#inicio" class="brand-group">
         <div class="squad-emblem-badge">
-          <!-- Official Twin Eagle Wing Shield Crest -->
+          <!-- Official Twin Eagle Shield Crest -->
           <svg viewBox="0 0 100 100" width="28" height="28" fill="#ffffff">
             <path d="M50 5 L88 22 L88 56 C88 78 50 95 50 95 C50 95 12 78 12 56 L12 22 Z" fill="#1b63d1" stroke="#ffffff" stroke-width="4"/>
             <path d="M50 18 L68 34 L62 46 L50 38 L38 46 L32 34 Z" fill="#ffffff"/>
@@ -1029,7 +1214,7 @@
             <span class="squad-tag-badge">RØ</span>
             <span>Øɖɨn'ѕ ƉєɱɨѕɆ</span>
           </div>
-          <span class="brand-sub">Odin's Demise · Escuadrón Competitivo</span>
+          <span class="brand-sub">★ TOP #7 GLOBAL · METALSTORM</span>
         </div>
       </a>
 
@@ -1037,9 +1222,9 @@
 
       <nav class="nav-menu" id="navMenu">
         <a href="#inicio">Escuadrón</a>
-        <a href="#miembros">Miembros (30)</a>
-        <a href="#rotacion">Rotación</a>
-        <a href="#requisitos">Reclutamiento</a>
+        <a href="#ranking">Top 7 Mundial</a>
+        <a href="#miembros">Pilotos (30)</a>
+        <a href="#rotacion">Rotación & Mapas</a>
       </nav>
 
       <button class="nav-btn-action" id="copyCodeNav">
@@ -1051,11 +1236,38 @@
 
 <main class="wrap" id="inicio">
 
+  <!-- ================= PUESTO #7 DEL MUNDO (STRIP DESTACADO) ================= -->
+  <div class="world-rank-ribbon" id="ranking">
+    <div class="world-rank-inner">
+      <div class="wr-badge-group">
+        <div class="wr-rank-circle">#7</div>
+        <div class="wr-title-box">
+          <h2>¡PUESTO <span class="gold">#7 DEL MUNDO</span> EN METALSTORM!</h2>
+          <p>Tabla Oficial de Escuadrones Globales · Temporada Competitiva Activa</p>
+        </div>
+      </div>
+
+      <div class="wr-stats-pill">
+        <div class="wr-stat-item">
+          <span class="lbl">Trofeos Globales</span>
+          <span class="val">1.029.336 🏆</span>
+        </div>
+        <div class="wr-stat-item">
+          <span class="lbl">Plantilla</span>
+          <span class="val" style="color:var(--ms-cyan)">30 / 30 Pilotos</span>
+        </div>
+        <div class="wr-stat-item">
+          <span class="lbl">Cierre Temporada</span>
+          <span class="val" style="color:#ffffff;">12d 0h</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- ================= IN-GAME STYLE SQUAD BANNER ================= -->
   <section class="ingame-squad-banner">
     <div class="banner-top-row">
       <div class="banner-crest">
-        <!-- Exact In-Game Crest: Twin Eagles & Diamond Shield -->
         <svg viewBox="0 0 100 100" width="54" height="54">
           <path d="M50 4 L90 22 L90 58 C90 80 50 96 50 96 C50 96 10 80 10 58 L10 22 Z" fill="#185ec9" stroke="#ffffff" stroke-width="5"/>
           <path d="M50 18 L70 34 L63 46 L50 38 L37 46 L30 34 Z" fill="#ffffff"/>
@@ -1069,7 +1281,7 @@
         <div class="banner-header-badges">
           <div class="banner-tag-box">
             <span>RØ</span>
-            <span class="edit-ico">✎</span>
+            <span style="font-size:13px;opacity:0.7;">✎</span>
           </div>
           <div class="banner-name-box">
             <span>Øɖɨn'ѕ ƉєɱɨѕɆ</span>
@@ -1079,12 +1291,11 @@
 
         <div class="banner-trophies-row">
           <svg viewBox="0 0 24 24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>
-          <span id="bannerTrophyCount">1.029.314</span>
+          <span id="bannerTrophyCount">1.029.336</span>
         </div>
       </div>
     </div>
 
-    <!-- Official Squad Description -->
     <div class="banner-desc-text">
       [Ragnarök] Odin's Demise: Escuadron competitivo<br>
       Contamos con Discord / English & Spanish speakers!<br>
@@ -1093,7 +1304,6 @@
       <b class="skal">¡SKAL por nuestros pilotos!</b>
     </div>
 
-    <!-- 4 In-Game Stat Cards -->
     <div class="banner-stats-grid">
       <div class="banner-stat-box">
         <div class="bs-label">Trofeos Requeridos</div>
@@ -1126,6 +1336,68 @@
     </div>
   </section>
 
+  <!-- ================= MARCADORES: TOP 7 GLOBAL WIDGET ================= -->
+  <section class="leaderboard-modal-preview">
+    <div class="lb-header">
+      <div class="lb-title-group">
+        <h3>
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>
+          Marcadores Mundiales de Escuadrones
+        </h3>
+      </div>
+      <div class="lb-season-badge">La temporada finaliza en 12d 0h</div>
+    </div>
+
+    <div class="lb-table">
+      <div class="lb-row">
+        <div class="lb-pos">1</div>
+        <div class="lb-name">N Σ M Ξ S I S</div>
+        <div class="lb-members">29/30</div>
+        <div class="lb-trophies"><svg viewBox="0 0 24 24" width="16" height="16" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>1.229.263</div>
+      </div>
+      <div class="lb-row">
+        <div class="lb-pos">2</div>
+        <div class="lb-name">Korea Top Gun</div>
+        <div class="lb-members">30/30</div>
+        <div class="lb-trophies"><svg viewBox="0 0 24 24" width="16" height="16" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>1.161.783</div>
+      </div>
+      <div class="lb-row">
+        <div class="lb-pos">3</div>
+        <div class="lb-name">VШM★Ξ M P I R Σ</div>
+        <div class="lb-members">30/30</div>
+        <div class="lb-trophies"><svg viewBox="0 0 24 24" width="16" height="16" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>1.160.370</div>
+      </div>
+      <div class="lb-row">
+        <div class="lb-pos">4</div>
+        <div class="lb-name">丂ENTINELS apac</div>
+        <div class="lb-members">29/30</div>
+        <div class="lb-trophies"><svg viewBox="0 0 24 24" width="16" height="16" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>1.146.849</div>
+      </div>
+      <div class="lb-row">
+        <div class="lb-pos">5</div>
+        <div class="lb-name">ΧΗΙΜΣΓΔ</div>
+        <div class="lb-members">30/30</div>
+        <div class="lb-trophies"><svg viewBox="0 0 24 24" width="16" height="16" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>1.108.753</div>
+      </div>
+      <div class="lb-row">
+        <div class="lb-pos">6</div>
+        <div class="lb-name">N Ξ M Σ S I S™</div>
+        <div class="lb-members">29/30</div>
+        <div class="lb-trophies"><svg viewBox="0 0 24 24" width="16" height="16" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>1.098.550</div>
+      </div>
+      <!-- ACTIVE SQUAD #7 -->
+      <div class="lb-row active-squad">
+        <div class="lb-pos">7</div>
+        <div class="lb-name">
+          <span class="squad-tag-badge" style="font-size:11px;">RØ</span>
+          <span>Øɖɨn'ѕ ƉєɱɨѕɆ</span>
+        </div>
+        <div class="lb-members" style="color:var(--ms-cyan);font-weight:800;">30/30</div>
+        <div class="lb-trophies"><svg viewBox="0 0 24 24" width="16" height="16" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>1.029.336</div>
+      </div>
+    </div>
+  </section>
+
   <!-- ================= SQUAD EVENT STATUS STRIP ================= -->
   <div class="squad-event-bar">
     <div style="display:flex;align-items:center;gap:14px;">
@@ -1151,11 +1423,11 @@
   <!-- ================= IN-GAME TABS ================= -->
   <div class="ingame-tabs-row" id="miembros">
     <button class="ingame-tab" onclick="location.href='#inicio'">Chat</button>
-    <button class="ingame-tab" onclick="location.href='#inicio'">Evento</button>
+    <button class="ingame-tab" onclick="location.href='#ranking'">Marcadores</button>
     <button class="ingame-tab active">
       Miembros <span class="tab-badge-num">30</span>
     </button>
-    <button class="ingame-tab" onclick="location.href='#requisitos'">Invitaciones</button>
+    <button class="ingame-tab" onclick="location.href='#rotacion'">Rotación</button>
   </div>
 
   <!-- ================= MEMBERS LIST (ROSTER OF ALL 30 PILOTS) ================= -->
@@ -1176,18 +1448,19 @@
     </div>
 
     <div class="pilot-list" id="pilotListRows">
-      <!-- Generated via JS -->
+      <!-- Generated via JS with all 30 real pilots -->
     </div>
   </section>
 
-  <!-- ================= LIVE ROTATION SECTION ================= -->
+  <!-- ================= REAL MAP WALLPAPERS & ROTATION ================= -->
   <section class="hud-section" id="rotacion">
-    <div class="hud-sec-title">Rotación de Modos en Vivo</div>
+    <div class="hud-sec-title">Rotación de Modos & Wallpapers Oficiales</div>
     <div class="hud-sec-sub">
-      Sincronización exacta con los ciclos de 30 minutos de Metalstorm. Conoce el mapa activo y prepárate con tu escuadrilla.
+      Escenarios de combate aeroespacial en alta definición y ciclo de rotación 24/7 sincronizado con los servidores de Metalstorm.
     </div>
 
     <div class="rotation-showcase">
+      <!-- Rotation Counter Card -->
       <div class="rot-main-card" id="rotCard">
         <div class="rot-header">
           <div class="rot-icon-square"><i id="rotModeIcon"></i></div>
@@ -1196,14 +1469,6 @@
             <p id="rotModeEn">—</p>
           </div>
           <div class="rot-mode-pill" id="rotBadge">ACTIVO</div>
-        </div>
-
-        <div class="rot-meta-strip">
-          <div class="rot-map-img" id="rotMapThumb"></div>
-          <div class="rot-map-info">
-            <div class="map-sub">Zona de Combate / Mapa</div>
-            <div class="map-title" id="rotMapName">—</div>
-          </div>
         </div>
 
         <div>
@@ -1224,58 +1489,64 @@
         </div>
       </div>
 
-      <div class="rot-tactics-card">
-        <div>
-          <h4>Estrategia de Vuelo RØ</h4>
-          <p>
-            En <b>Øɖɨn'ѕ ƉєɱɨѕɆ</b> nos organizamos antes de cada rotación para maximizar copas y fichas de escuadrón.
-            Aprovechamos cada modo para practicar tácticas de combate BVR y dogfighting coordinado.
-          </p>
+      <!-- Cinematic Active Map Wallpaper Card -->
+      <div class="cinematic-wallpaper-card" id="cinematicCard">
+        <div class="cwc-bg-img" id="cwcBgImg" style="background-image: url('assets/wall-canyon.jpg');"></div>
+        <div class="cwc-overlay"></div>
+        <div class="cwc-badge-top">MAPA ACTIVO · HD 1920×1080</div>
+        <div class="cwc-content">
+          <div class="cwc-map-title" id="cwcMapTitle">Cañón Carmesí</div>
+          <div class="cwc-map-sub" id="cwcMapSub">Despliegue de Combate Cercano</div>
         </div>
-
-        <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;color:var(--text-secondary);">
-          <div>🏆 <b>Meta Semanal:</b> 150 fichas mínimas de contribución.</div>
-          <div>🎙️ <b>Comunicaciones:</b> Discord activo en combates competitivos.</div>
-          <div>⚡ <b>Comunidad:</b> Hablamos español e inglés.</div>
-        </div>
-
-        <a href="https://ilycons.github.io/metalstorm/" target="_blank" rel="noopener" class="nav-btn-action" style="align-self:flex-start;">
-          Ver Temporizador Completo
-        </a>
       </div>
     </div>
-  </section>
 
-  <!-- ================= RECRUITMENT REQUIREMENTS ================= -->
-  <section class="hud-section" id="requisitos">
-    <div class="hud-sec-title">Reclutamiento & Normas</div>
-    <div class="hud-sec-sub">
-      Buscamos pilotos con mentalidad competitiva y respeto ante todo.
-    </div>
-
-    <div class="join-protocol-grid">
-      <div class="join-card">
-        <div class="join-num">01</div>
-        <h4>4.000+ Trofeos</h4>
-        <p>Requisito mínimo de copas del juego para ingresar a la escuadra competitiva.</p>
+    <!-- Gallery of all official battlegrounds -->
+    <h4 style="font-family:var(--font-heading);font-size:16px;text-transform:uppercase;color:var(--text-secondary);letter-spacing:0.12em;margin-bottom:14px;">
+      Mapas y Escenarios del Juego
+    </h4>
+    <div class="battleground-gallery">
+      <div class="bg-thumb-card" data-map="Canyon" onclick="selectMapPreview('Canyon')">
+        <div class="bg-thumb-img" style="background-image:url('assets/wall-canyon.jpg')"></div>
+        <div class="bg-thumb-info">
+          <span class="bg-thumb-title">Cañón Carmesí</span>
+          <span class="bg-thumb-tag">Canyon</span>
+        </div>
       </div>
-
-      <div class="join-card">
-        <div class="join-num">02</div>
-        <h4>150 Fichas Semanales</h4>
-        <p>Contribución obligatoria en el evento semanal de escuadrón para abrir cajas de grado máximo.</p>
+      <div class="bg-thumb-card" data-map="Arctic" onclick="selectMapPreview('Arctic')">
+        <div class="bg-thumb-img" style="background-image:url('assets/wall-arctic.jpg')"></div>
+        <div class="bg-thumb-info">
+          <span class="bg-thumb-title">Rumbo al Hielo</span>
+          <span class="bg-thumb-tag">Arctic</span>
+        </div>
       </div>
-
-      <div class="join-card">
-        <div class="join-num">03</div>
-        <h4>Discord & Trabajo en Equipo</h4>
-        <p>Canal de voz y texto para organizar escuadrillas de 5v5. Respeto absoluto entre compañeros.</p>
+      <div class="bg-thumb-card" data-map="Countdown" onclick="selectMapPreview('Countdown')">
+        <div class="bg-thumb-img" style="background-image:url('assets/wall-countdown.jpg')"></div>
+        <div class="bg-thumb-info">
+          <span class="bg-thumb-title">Cuenta Atrás</span>
+          <span class="bg-thumb-tag">Countdown</span>
+        </div>
       </div>
-
-      <div class="join-card">
-        <div class="join-num">04</div>
-        <h4>¡SKAL!</h4>
-        <p>Comunidad unida, activa y con ganas de dominar el cielo en cada rotación.</p>
+      <div class="bg-thumb-card" data-map="Seastacks" onclick="selectMapPreview('Seastacks')">
+        <div class="bg-thumb-img" style="background-image:url('assets/wall-seastacks.jpg')"></div>
+        <div class="bg-thumb-info">
+          <span class="bg-thumb-title">Tormenta Marina</span>
+          <span class="bg-thumb-tag">Seastacks</span>
+        </div>
+      </div>
+      <div class="bg-thumb-card" data-map="Stoneforest" onclick="selectMapPreview('Stoneforest')">
+        <div class="bg-thumb-img" style="background-image:url('assets/wall-stoneforest.jpg')"></div>
+        <div class="bg-thumb-info">
+          <span class="bg-thumb-title">Bosque de Piedra</span>
+          <span class="bg-thumb-tag">Stoneforest</span>
+        </div>
+      </div>
+      <div class="bg-thumb-card" data-map="Volcano" onclick="selectMapPreview('Volcano')">
+        <div class="bg-thumb-img" style="background-image:url('assets/wall-volcano.jpg')"></div>
+        <div class="bg-thumb-info">
+          <span class="bg-thumb-title">Crisol Volcánico</span>
+          <span class="bg-thumb-tag">Volcano</span>
+        </div>
       </div>
     </div>
   </section>
@@ -1288,7 +1559,7 @@
     <div class="footer-row">
       <img src="assets/logo-metalstorm.png" alt="Metalstorm" style="height:26px;width:auto;">
       <span style="font-family:var(--font-heading);font-weight:700;color:var(--text-primary);letter-spacing:0.08em;">
-        [RØ] Øɖɨn'ѕ ƉєɱɨѕɆ · ESCUADRÓN COMPETITIVO
+        [RØ] Øɖɨn'ѕ ƉєɱɨѕɆ · ESCUADRÓN TOP #7 MUNDIAL
       </span>
       <span style="opacity:0.4;">|</span>
       <img src="assets/logo-starform.png" alt="Starform" style="height:15px;opacity:0.75;">
@@ -1342,6 +1613,10 @@ function getAvatarSvg(tipo, color) {
     case 'wolf':
     case 'doberman':
       return `<svg viewBox="0 0 100 100"><polygon points="32,20 42,46 24,46" fill="${c}"/><polygon points="68,20 76,46 58,46" fill="${c}"/><polygon points="50,35 68,60 50,82 32,60" fill="${c}"/></svg>`;
+    case 'owl':
+      return `<svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="38" fill="none" stroke="${c}" stroke-width="3"/><circle cx="40" cy="45" r="10" fill="${c}"/><circle cx="60" cy="45" r="10" fill="${c}"/><circle cx="40" cy="45" r="4" fill="#ffffff"/><circle cx="60" cy="45" r="4" fill="#ffffff"/><polygon points="50,52 55,62 45,62" fill="#ffffff"/></svg>`;
+    case 'dragon':
+      return `<svg viewBox="0 0 100 100"><path d="M20 70 C30 35 60 25 80 40 C75 55 60 65 50 65 C40 65 30 75 20 70 Z" fill="${c}"/><circle cx="65" cy="42" r="4" fill="#ffffff"/></svg>`;
     default:
       return `<svg viewBox="0 0 100 100"><polygon points="50,15 56,42 82,65 56,62 50,85 44,62 18,65 44,42" fill="${c}"/></svg>`;
   }
@@ -1376,7 +1651,7 @@ document.getElementById('copyCodeNav').addEventListener('click', copyCode);
 document.getElementById('copyCodeBanner').addEventListener('click', copyCode);
 
 /* ============================================================================
-   PILOTS DATA & RENDERING (30 PILOTOS REALES DE LAS CAPTURAS)
+   PILOTS DATA & RENDERING (30 PILOTOS EXACTOS DEL JUEGO)
    ========================================================================== */
 let PILOTS_DATA = [];
 let currentFilter = 'todos';
@@ -1458,7 +1733,7 @@ function renderPilots() {
   }).join('');
 }
 
-// Search and Filter Events
+// Search & Filter Events
 document.getElementById('memberSearch').addEventListener('input', e => {
   searchQuery = e.target.value.trim().toLowerCase();
   renderPilots();
@@ -1474,7 +1749,7 @@ document.querySelectorAll('.filter-pill').forEach(btn => {
 });
 
 /* ============================================================================
-   ROTACIÓN EN VIVO (24/7 METALSTORM TIMETABLE)
+   ROTACIÓN EN VIVO & WALLPAPERS OFICIALES
    ========================================================================== */
 const MODES = {
   tdm:  { es: 'Combate por Equipos',  en: 'Team Deathmatch',  tag: 'TDM',  color: '#38bdf8', icon: 'assets/icon-tdm.png' },
@@ -1486,12 +1761,12 @@ const MODES = {
 };
 
 const MAPAS = {
-  Arctic:      { day: 'Rumbo al Hielo',    night: 'Noche en el Hielo',     snow: 'Tormenta de Nieve', wall: 'assets/wall-arctic.jpg' },
-  Canyon:      { day: 'Cañón Carmesí',     night: 'Noche en el Cañón',     sunrise: 'Amanecer Cañón',  wall: 'assets/wall-canyon.jpg' },
-  Seastacks:   { day: 'Tormenta Marina',   night: 'Noche sobre el Mar',                               wall: 'assets/wall-seastacks.jpg' },
-  Stoneforest: { day: 'Bosque de Piedra',  night: 'Noche en Piedra',                                  wall: 'assets/wall-stoneforest.jpg' },
-  Volcano:     { day: 'Crisol Volcánico',  night: 'Noche de Magma',                                   wall: 'assets/wall-volcano.jpg' },
-  Countdown:   { day: 'Base Cuenta Atrás', night: 'Noche Cuenta Atrás',                               wall: 'assets/wall-countdown.jpg' }
+  Arctic:      { day: 'Rumbo al Hielo',    sub: 'Tundra Ártica & Glaciares',     wall: 'assets/wall-arctic.jpg' },
+  Canyon:      { day: 'Cañón Carmesí',     sub: 'Desfiladeros Rojos & Formaciones', wall: 'assets/wall-canyon.jpg' },
+  Seastacks:   { day: 'Tormenta Marina',   sub: 'Columnas de Piedra sobre el Mar', wall: 'assets/wall-seastacks.jpg' },
+  Stoneforest: { day: 'Bosque de Piedra',  sub: 'Pilares Rocosos & Valles Estrechos', wall: 'assets/wall-stoneforest.jpg' },
+  Volcano:     { day: 'Crisol Volcánico',  sub: 'Ríos de Lava & Actividad Térmica', wall: 'assets/wall-volcano.jpg' },
+  Countdown:   { day: 'Base Cuenta Atrás', sub: 'Instalación de Lanzamiento Militar', wall: 'assets/wall-countdown.jpg' }
 };
 
 const MODO_MAP = {
@@ -1528,11 +1803,9 @@ function getSlotAt(date) {
   if (idx < 0) idx += total;
   const parts = String(ROTACION.slots[idx]).split(':');
   const mapa = parts[0];
-  const variante = parts[1] || 'day';
   const modoStr = parts[2] || 'deathmatch';
-  const mObj = MAPAS[mapa];
-  const nombreMapa = mObj ? (mObj[variante] || mObj.day || mapa) : mapa;
-  return { mapa, variante, modoId: MODO_MAP[modoStr] || 'tdm', nombreMapa };
+  const mObj = MAPAS[mapa] || { day: mapa, sub: 'Zona de Combate', wall: 'assets/wall-canyon.jpg' };
+  return { mapa, modoId: MODO_MAP[modoStr] || 'tdm', nombreMapa: mObj.day, sub: mObj.sub, wall: mObj.wall };
 }
 
 function renderRotation() {
@@ -1553,7 +1826,6 @@ function renderRotation() {
 
   document.getElementById('rotModeName').textContent = modeNow.es;
   document.getElementById('rotModeEn').textContent = modeNow.en;
-  document.getElementById('rotMapName').textContent = slotNow.nombreMapa;
   document.getElementById('rotBadge').textContent = modeNow.tag;
   document.getElementById('rotBadge').style.background = modeNow.color;
 
@@ -1574,14 +1846,35 @@ function renderRotation() {
   iconEl.style.webkitMaskImage = 'url("' + modeNow.icon + '")';
   iconEl.style.maskImage = 'url("' + modeNow.icon + '")';
 
-  const wall = (MAPAS[slotNow.mapa] && MAPAS[slotNow.mapa].wall) || '';
-  const thumb = document.getElementById('rotMapThumb');
-  if (thumb) {
-    thumb.style.backgroundImage = wall ? 'url("' + wall + '")' : 'none';
+  // Update cinematic wallpaper if not manually overridden
+  if (!manualPreview) {
+    setCinematicMap(slotNow.mapa, slotNow.nombreMapa, slotNow.sub, slotNow.wall);
   }
 }
 
-// Burger menu
+let manualPreview = false;
+function setCinematicMap(mapKey, title, sub, wallUrl) {
+  const bgImg = document.getElementById('cwcBgImg');
+  const tEl = document.getElementById('cwcMapTitle');
+  const sEl = document.getElementById('cwcMapSub');
+  if (bgImg && wallUrl) bgImg.style.backgroundImage = `url('${wallUrl}')`;
+  if (tEl) tEl.textContent = title;
+  if (sEl) sEl.textContent = sub;
+
+  document.querySelectorAll('.bg-thumb-card').forEach(c => {
+    c.classList.toggle('active-now', c.dataset.map === mapKey);
+  });
+}
+
+function selectMapPreview(mapKey) {
+  manualPreview = true;
+  const m = MAPAS[mapKey];
+  if (m) {
+    setCinematicMap(mapKey, m.day, m.sub, m.wall);
+  }
+}
+
+// Mobile menu toggle
 const burger = document.getElementById('burgerToggle');
 const navMenu = document.getElementById('navMenu');
 if (burger && navMenu) {

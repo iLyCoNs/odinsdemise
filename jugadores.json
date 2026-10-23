@@ -4,7 +4,9 @@
   "nombreCorto": "Odin's Demise",
   "tag": "[RØ]",
   "codigo": "#JHP3JF",
-  "trofeos": "1.029.314",
+  "trofeos": "1.029.336",
+  "puestoMundial": 7,
+  "rankingTexto": "PUESTO #7 DEL MUNDO (TOP 7 GLOBAL)",
   "trofeosRequeridos": "4.000",
   "miembros": "30/30",
   "ubicacion": "Internacional",
@@ -13,6 +15,18 @@
     "progreso": "305 / 320",
     "recompensa": "Caja x11",
     "tiempo": "2d 16h"
+  },
+  "temporada": {
+    "tiempoRestante": "12d 0h",
+    "tablaTop": [
+      { "pos": 1, "nombre": "N Σ M Ξ S I S", "miembros": "29/30", "trofeos": "1.229.263" },
+      { "pos": 2, "nombre": "Korea Top Gun", "miembros": "30/30", "trofeos": "1.161.783" },
+      { "pos": 3, "nombre": "VШM★Ξ M P I R Σ", "miembros": "30/30", "trofeos": "1.160.370" },
+      { "pos": 4, "nombre": "丂ENTINELS apac", "miembros": "29/30", "trofeos": "1.146.849" },
+      { "pos": 5, "nombre": "ΧΗΙΜΣΓΔ", "miembros": "30/30", "trofeos": "1.108.753" },
+      { "pos": 6, "nombre": "N Ξ M Σ S I S™", "miembros": "29/30", "trofeos": "1.098.550" },
+      { "pos": 7, "nombre": "Øɖɨn'ѕ ƉєɱɨѕɆ", "miembros": "30/30", "trofeos": "1.029.336", "destacado": true }
+    ]
   },
   "descripcion": "[Ragnarök] Odin's Demise: Escuadrón competitivo. Contamos con Discord / English & Spanish speakers! Respeto ante todo, juego en equipo. 150 fichas mínimo de contribución semanal. ¡SKAL por nuestros pilotos!",
   "jugadores": [
@@ -356,27 +370,27 @@
     },
     {
       "posicion": 29,
-      "callsign": "GUNGNIR",
+      "callsign": "ORCO",
       "tag": "[RØ]",
-      "rango": "Miembro",
-      "rangoTipo": "miembro",
-      "trofeos": 21850,
-      "estado": "5h 12m atrás",
+      "rango": "Veterano",
+      "rangoTipo": "veterano",
+      "trofeos": 21578,
+      "estado": "19h 8m atrás",
       "enLinea": false,
-      "avatarTipo": "spear",
-      "avatarColor": "#38bdf8"
+      "avatarTipo": "dragon",
+      "avatarColor": "#ef4444"
     },
     {
       "posicion": 30,
-      "callsign": "VALKYRIE",
+      "callsign": "₲ⱧØŞ₮୨୧",
       "tag": "[RØ]",
-      "rango": "Miembro",
-      "rangoTipo": "miembro",
-      "trofeos": 20450,
-      "estado": "8h 40m atrás",
+      "rango": "Veterano",
+      "rangoTipo": "veterano",
+      "trofeos": 20904,
+      "estado": "33m 34s atrás",
       "enLinea": false,
-      "avatarTipo": "valkyrie",
-      "avatarColor": "#a855f7"
+      "avatarTipo": "owl",
+      "avatarColor": "#eab308"
     }
   ]
 }
