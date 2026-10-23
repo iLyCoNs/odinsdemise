@@ -123,40 +123,29 @@
   }
   .brand-v-divider {
     width: 1px;
-    height: 28px;
-    background: rgba(255, 255, 255, 0.2);
-    margin: 0 2px;
-  }
-  .brand-titles {
-    display: flex;
-    flex-direction: column;
-  }
-  .brand-main {
-    font-family: var(--font-heading);
-    font-size: 19px;
-    font-weight: 800;
-    letter-spacing: 0.05em;
-    color: var(--text-pure);
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    height: 24px;
+    background: rgba(255, 255, 255, 0.22);
+    margin: 0 4px;
   }
   .squad-tag-badge {
     background: rgba(25, 103, 210, 0.35);
-    border: 1px solid rgba(25, 103, 210, 0.8);
+    border: 1px solid rgba(25, 103, 210, 0.85);
     color: var(--ms-cyan);
     font-family: var(--font-mono);
     font-size: 13px;
     font-weight: 800;
-    padding: 2px 7px;
+    padding: 3px 8px;
     border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
   }
-  .brand-sub {
-    font-size: 11px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--ms-gold-bright);
-    font-weight: 700;
+  .squad-title-brand {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    white-space: nowrap;
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
   }
 
   nav.nav-menu {
@@ -181,6 +170,47 @@
     background: rgba(255, 255, 255, 0.07);
   }
 
+  .nav-right-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  /* Botón EN / ES con traducción automática */
+  .lang-switch-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: rgba(8, 18, 36, 0.85);
+    border: 1.5px solid var(--ms-cyan);
+    box-shadow: 0 0 14px rgba(0, 229, 255, 0.35);
+    border-radius: 20px;
+    padding: 5px 13px;
+    font-family: var(--font-heading);
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .lang-switch-btn:hover {
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.65);
+    border-color: #ffffff;
+    transform: translateY(-1px);
+  }
+  .lang-opt {
+    color: #64748b;
+    transition: all 0.2s;
+  }
+  .lang-opt.active {
+    color: #ffffff;
+    text-shadow: 0 0 8px var(--ms-cyan);
+  }
+  .lang-slash {
+    color: rgba(255, 255, 255, 0.25);
+    font-size: 11px;
+  }
+
   .nav-btn-action {
     display: inline-flex;
     align-items: center;
@@ -190,7 +220,7 @@
     font-weight: 800;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    padding: 10px 18px;
+    padding: 9px 16px;
     border-radius: 8px;
     background: linear-gradient(135deg, #1d6fe5, #1557bf);
     color: #ffffff;
@@ -727,49 +757,61 @@
     background-size: cover;
     background-position: center;
     transition: all 0.8s ease;
-    filter: saturate(1.15) contrast(1.08);
+    filter: saturate(1.2) contrast(1.12);
   }
   .cwc-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(4,9,18,0.15) 0%, rgba(4,9,18,0.88) 100%);
+    background: linear-gradient(180deg, rgba(4,9,18,0.25) 0%, rgba(4,9,18,0.1) 35%, rgba(4,9,18,0.92) 100%);
     z-index: 1;
   }
   .cwc-badge-top {
     position: absolute;
     top: 14px;
     left: 14px;
-    background: rgba(0, 0, 0, 0.75);
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    padding: 5px 12px;
-    border-radius: 6px;
+    background: rgba(4, 9, 18, 0.88);
+    border: 1.5px solid var(--ms-cyan);
+    padding: 6px 14px;
+    border-radius: 8px;
     font-family: var(--font-heading);
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 0.12em;
+    font-size: 11.5px;
+    font-weight: 900;
+    letter-spacing: 0.14em;
     color: #ffffff;
-    text-shadow: 0 0 10px #ffffff;
-    backdrop-filter: blur(8px);
+    text-shadow: 0 0 10px var(--ms-cyan);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.8), 0 0 16px rgba(0, 229, 255, 0.4);
+    backdrop-filter: blur(10px);
     z-index: 5;
   }
   .cwc-content {
     position: relative;
     z-index: 5;
+    background: linear-gradient(90deg, rgba(4, 9, 18, 0.85) 0%, rgba(4, 9, 18, 0.65) 75%, transparent 100%);
+    padding: 14px 20px;
+    border-radius: 10px;
+    border-left: 3.5px solid var(--ms-cyan);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(8px);
+    width: fit-content;
+    max-width: 92%;
   }
   .cwc-map-title {
     font-family: var(--font-heading);
-    font-size: 26px;
+    font-size: clamp(24px, 3.2vw, 32px);
     font-weight: 900;
     text-transform: uppercase;
     color: #ffffff;
-    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.9), 0 0 15px rgba(255,255,255,0.4);
+    letter-spacing: 0.05em;
+    text-shadow: 0 3px 14px rgba(0, 0, 0, 0.95), 0 0 20px rgba(0, 0, 0, 0.9), 0 0 12px rgba(255, 255, 255, 0.5);
+    margin-bottom: 4px;
   }
   .cwc-map-sub {
-    font-size: 12.5px;
-    letter-spacing: 0.12em;
+    font-size: 13px;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--ms-cyan);
-    font-weight: 700;
+    font-weight: 800;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.95), 0 0 16px rgba(0, 229, 255, 0.85);
   }
 
   /* ================= MAPAS ORDENADOS POR ORDEN DE LLEGADA ================= */
@@ -1257,13 +1299,29 @@
     border-top: 1px solid var(--border-line);
     color: var(--text-muted);
     font-size: 12.5px;
+    text-align: center;
+  }
+  footer.page-footer .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
   .footer-row {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 16px;
     flex-wrap: wrap;
     margin-bottom: 16px;
+    text-align: center;
+  }
+  footer.page-footer p {
+    text-align: center;
+    margin: 0 auto 18px;
+    line-height: 1.7;
+    max-width: 850px;
   }
   .footer-sig {
     margin-top: 22px;
@@ -1275,7 +1333,7 @@
     font-weight: 800;
     letter-spacing: 0.16em;
     text-transform: uppercase;
-    color: var(--text-primary);
+    color: var(--ms-cyan);
   }
 
   /* Toast Notification */
@@ -1317,27 +1375,31 @@
       <a href="#inicio" class="brand-group">
         <img src="assets/logo-metalstorm.png" alt="Metalstorm" class="brand-ms-logo">
         <div class="brand-v-divider"></div>
-        <div class="brand-titles">
-          <div class="brand-main">
-            <span class="squad-tag-badge">RØ</span>
-            <span>Øɖɨn'ѕ ƉєɱɨѕɆ</span>
-          </div>
-          <span class="brand-sub">★ #7 DE LOS 200 MEJORES ESCUADRONES DEL MUNDO</span>
-        </div>
+        <span class="squad-tag-badge">RØ</span>
+        <span class="squad-title-brand">Øɖɨn'ѕ ƉєɱɨѕɆ</span>
       </a>
 
       <button class="nav-burger-btn" id="burgerToggle" aria-label="Menú">☰</button>
 
       <nav class="nav-menu" id="navMenu">
-        <a href="#inicio">Escuadrón</a>
-        <a href="#rotacion">Rotación & Mapas</a>
-        <a href="#ranking">Top 10 Mundial</a>
-        <a href="#miembros">Pilotos (30)</a>
+        <a href="#inicio" data-i18n="nav_squad">Escuadrón</a>
+        <a href="#rotacion" data-i18n="nav_rotation">Rotación & Mapas</a>
+        <a href="#ranking" data-i18n="nav_ranking">Top 10 Mundial</a>
+        <a href="#miembros" data-i18n="nav_members">Pilotos (30)</a>
       </nav>
 
-      <button class="nav-btn-action" id="copyCodeNav">
-        <span>Código: #JHP3JF</span>
-      </button>
+      <div class="nav-right-actions">
+        <!-- Switch de idioma EN / ES -->
+        <button class="lang-switch-btn" id="langToggle" aria-label="Cambiar idioma / Switch language" title="Switch Language (ES / EN)">
+          <span class="lang-opt active" id="langES">ES</span>
+          <span class="lang-slash">/</span>
+          <span class="lang-opt" id="langEN">EN</span>
+        </button>
+
+        <button class="nav-btn-action" id="copyCodeNav">
+          <span data-i18n="nav_code">Código: #JHP3JF</span>
+        </button>
+      </div>
     </div>
   </div>
 </header>
@@ -1350,19 +1412,19 @@
       <div class="wr-badge-group">
         <div class="wr-rank-circle">#7</div>
         <div class="wr-title-box">
-          <h2>¡#7 DE LOS <span class="gold">200 MEJORES ESCUADRONES</span> DEL MUNDO!</h2>
-          <p>Tabla Oficial de Escuadrones Globales · Metalstorm World Leaderboards</p>
+          <h2 data-i18n="ribbon_title">¡#7 DE LOS <span class="gold">200 MEJORES ESCUADRONES</span> DEL MUNDO!</h2>
+          <p data-i18n="ribbon_sub">Tabla Oficial de Escuadrones Globales · Metalstorm World Leaderboards</p>
         </div>
       </div>
 
       <div class="wr-stats-pill">
         <div class="wr-stat-item">
-          <span class="lbl">Trofeos Globales</span>
+          <span class="lbl" data-i18n="trophies_lbl">Trofeos Globales</span>
           <span class="val">1.029.339 🏆</span>
         </div>
         <div class="wr-stat-item">
-          <span class="lbl">Plantilla</span>
-          <span class="val" style="color:var(--ms-cyan)">30 / 30 Pilotos</span>
+          <span class="lbl" data-i18n="roster_lbl">Plantilla</span>
+          <span class="val" style="color:var(--ms-cyan)" data-i18n="pilots_count">30 / 30 Pilotos</span>
         </div>
       </div>
     </div>
@@ -1399,7 +1461,7 @@
       </div>
     </div>
 
-    <div class="banner-desc-text">
+    <div class="banner-desc-text" data-i18n="banner_desc">
       [Ragnarök] Odin's Demise: Escuadron competitivo<br>
       Contamos con Discord / English & Spanish speakers!<br>
       Respeto ante todo / Juego en equipo / contamos con nuestro sitioweb!<br>
@@ -1409,7 +1471,7 @@
 
     <div class="banner-stats-grid">
       <div class="banner-stat-box">
-        <div class="bs-label">Trofeos Requeridos</div>
+        <div class="bs-label" data-i18n="req_trophies_lbl">Trofeos Requeridos</div>
         <div class="bs-val gold">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>
           <span>4.000</span>
@@ -1417,23 +1479,23 @@
       </div>
 
       <div class="banner-stat-box">
-        <div class="bs-label">Miembros</div>
+        <div class="bs-label" data-i18n="members_lbl">Miembros</div>
         <div class="bs-val">
           <span style="color:var(--ms-cyan)">30 / 30</span>
-          <span style="font-size:11.5px;color:#94a3b8;font-weight:500;margin-left:4px;">(Permitidas)</span>
+          <span style="font-size:11.5px;color:#94a3b8;font-weight:500;margin-left:4px;" data-i18n="allowed_lbl">(Permitidas)</span>
         </div>
       </div>
 
       <div class="banner-stat-box">
-        <div class="bs-label">Ubicación</div>
-        <div class="bs-val">Internacional</div>
+        <div class="bs-label" data-i18n="location_lbl">Ubicación</div>
+        <div class="bs-val" data-i18n="location_val">Internacional</div>
       </div>
 
       <div class="banner-stat-box" id="copyCodeBanner" style="cursor:pointer;" title="Click para copiar">
-        <div class="bs-label">Código de Escuadrón (Copiar)</div>
+        <div class="bs-label" data-i18n="squad_code_lbl">Código de Escuadrón (Copiar)</div>
         <div class="bs-val" style="color:var(--ms-cyan);font-family:var(--font-mono);">
           <span>#JHP3JF</span>
-          <span style="font-size:11px;background:rgba(255,255,255,0.1);padding:2px 6px;border-radius:4px;color:#ffffff;">COPIAR</span>
+          <span style="font-size:11px;background:rgba(255,255,255,0.1);padding:2px 6px;border-radius:4px;color:#ffffff;" data-i18n="copy_badge">COPIAR</span>
         </div>
       </div>
     </div>
@@ -1444,9 +1506,9 @@
   <section class="rotation-section-placed" id="rotacion">
     <div class="hud-sec-title">
       <svg viewBox="0 0 24 24" width="26" height="26" fill="var(--ms-cyan)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/></svg>
-      Rotación de Modos & Wallpapers en Vivo
+      <span data-i18n="rot_title">Rotación de Modos & Wallpapers en Vivo</span>
     </div>
-    <div class="hud-sec-sub">
+    <div class="hud-sec-sub" data-i18n="rot_sub">
       Horario dinámico de modos en combate aeroespacial y visualización cinemática con luz neón blanca sobre el mapa activo.
     </div>
 
@@ -1465,11 +1527,11 @@
         <div>
           <div class="rot-footer-telemetry">
             <div>
-              <div style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);">Próximo cambio en</div>
+              <div style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);" data-i18n="next_change_lbl">Próximo cambio en</div>
               <div class="rot-timer-num" id="rotTimerCountdown">--:--</div>
             </div>
             <div class="rot-next-box">
-              <div style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);">Siguiente Modo</div>
+              <div style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-muted);" data-i18n="next_mode_lbl">Siguiente Modo</div>
               <div class="next-title" id="rotNextTitle">—</div>
               <div class="next-time" id="rotNextTime">—</div>
             </div>
@@ -1480,13 +1542,12 @@
         </div>
       </div>
 
-      <!-- Cinematic Active Map Wallpaper Card con LUZ NEÓN EN BLANCO EN MOVIMIENTO -->
+      <!-- Cinematic Active Map Wallpaper Card -->
       <div class="cinematic-wallpaper-card" id="cinematicCard">
         <div class="cwc-neon-border"></div>
         <div class="cwc-bg-img" id="cwcBgImg" style="background-image: url('assets/wall-canyon.jpg');"></div>
         <div class="cwc-overlay"></div>
-        <!-- SIN PÍXELES DE FOTO -->
-        <div class="cwc-badge-top">MAPA EN ROTACIÓN ACTIVA</div>
+        <div class="cwc-badge-top" data-i18n="active_badge">MAPA EN ROTACIÓN ACTIVA</div>
         <div class="cwc-content">
           <div class="cwc-map-title" id="cwcMapTitle">Cañón Carmesí</div>
           <div class="cwc-map-sub" id="cwcMapSub">Despliegue de Combate Cercano</div>
@@ -1496,10 +1557,10 @@
 
     <!-- ================= MAPAS ORDENADOS POR ORDEN DE LLEGADA ================= -->
     <div class="map-gallery-header">
-      <h4 style="font-family:var(--font-heading);font-size:15px;text-transform:uppercase;color:var(--text-secondary);letter-spacing:0.12em;">
+      <h4 style="font-family:var(--font-heading);font-size:15px;text-transform:uppercase;color:var(--text-secondary);letter-spacing:0.12em;" data-i18n="next_maps_title">
         Próximos Mapas en Rotación (Orden Cronológico)
       </h4>
-      <span style="font-size:12px;color:var(--ms-cyan);font-weight:700;">★ El próximo mapa luce resaltado con luz neón</span>
+      <span style="font-size:12px;color:var(--ms-cyan);font-weight:700;" data-i18n="next_maps_sub">★ El próximo mapa luce resaltado con luz neón</span>
     </div>
 
     <div class="battleground-gallery" id="orderedMapGallery">
@@ -1513,7 +1574,7 @@
       <div class="lb-title-group" style="text-align:center;">
         <h3 style="justify-content:center;">
           <svg viewBox="0 0 24 24" width="22" height="22" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>
-          Marcadores Mundiales · #7 de los 200 Mejores Escuadrones del Mundo
+          <span data-i18n="lb_title">Marcadores Mundiales · #7 de los 200 Mejores Escuadrones del Mundo</span>
         </h3>
       </div>
     </div>
@@ -1562,7 +1623,7 @@
         <div class="lb-name">
           <span class="squad-tag-badge" style="font-size:11px;">RØ</span>
           <span>Øɖɨn'ѕ ƉєɱɨѕɆ</span>
-          <span style="font-size:11px;color:var(--ms-gold-bright);font-weight:800;margin-left:8px;background:rgba(245,158,11,0.15);padding:2px 7px;border-radius:4px;border:1px solid rgba(245,158,11,0.3);">7 de 200 Mejores del Mundo</span>
+          <span style="font-size:11px;color:var(--ms-gold-bright);font-weight:800;margin-left:8px;background:rgba(245,158,11,0.15);padding:2px 7px;border-radius:4px;border:1px solid rgba(245,158,11,0.3);" data-i18n="top_badge_row">7 de 200 Mejores del Mundo</span>
         </div>
         <div class="lb-members" style="color:var(--ms-cyan);font-weight:800;">30/30</div>
         <div class="lb-trophies"><svg viewBox="0 0 24 24" width="16" height="16" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>1.029.339</div>
@@ -1588,30 +1649,13 @@
     </div>
   </section>
 
-  <!-- ================= GUÍA DE RANGOS MATCHMAKING ================= -->
-  <div class="ranks-guide-strip">
-    <div class="rg-title">
-      Rangos Oficiales por Copas:
-    </div>
-    <div class="rg-chips">
-      <span class="rg-chip">Iron (0 🏆)</span>
-      <span class="rg-chip">Bronze (75 🏆)</span>
-      <span class="rg-chip">Silver (300 🏆)</span>
-      <span class="rg-chip">Gold (600 🏆)</span>
-      <span class="rg-chip">Platinum (900 🏆)</span>
-      <span class="rg-chip">Diamond (1,200 🏆)</span>
-      <span class="rg-chip">Master (1,500 🏆)</span>
-      <span class="rg-chip grandmaster">★ Grandmaster (2,000+ 🏆)</span>
-    </div>
-  </div>
-
   <!-- ================= MEMBERS LIST (AL PIE DE LA PÁGINA) ================= -->
   <div class="hud-sec-title" id="miembros" style="margin-top:20px;">
     <svg viewBox="0 0 24 24" width="26" height="26" fill="var(--ms-gold-bright)"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
-    Pilotos del Escuadrón (30 / 30)
+    <span data-i18n="members_sec_title">Pilotos del Escuadrón (30 / 30)</span>
   </div>
-  <div class="hud-sec-sub">
-    Plantilla oficial completa. Todos los miembros ostentan el rango de <b>Grandmaster ★</b> en base a sus copas personales.
+  <div class="hud-sec-sub" data-i18n="members_sec_sub">
+    Plantilla oficial completa. Rangos oficiales asignados según copas personales en Metalstorm.
   </div>
 
   <section class="members-panel">
@@ -1623,20 +1667,20 @@
 
       <!-- Filtros SIN pestaña "En Línea" -->
       <div class="filter-pills" id="rankFilters">
-        <button class="filter-pill active" data-filter="todos">Todos (30)</button>
-        <button class="filter-pill" data-filter="dueno">Dueño</button>
-        <button class="filter-pill" data-filter="admin">Admin</button>
-        <button class="filter-pill" data-filter="veterano">Veteranos</button>
-        <button class="filter-pill" data-filter="miembro">Miembros</button>
+        <button class="filter-pill active" data-filter="todos" data-i18n="filter_all">Todos (30)</button>
+        <button class="filter-pill" data-filter="dueno" data-i18n="filter_owner">Dueño</button>
+        <button class="filter-pill" data-filter="admin" data-i18n="filter_admin">Admin</button>
+        <button class="filter-pill" data-filter="veterano" data-i18n="filter_veteran">Veteranos</button>
+        <button class="filter-pill" data-filter="miembro" data-i18n="filter_member">Miembros</button>
       </div>
     </div>
 
     <!-- Roster Headers: SIN ÚLTIMA CONEXIÓN Y SIN TROFEOS INDIVIDUALES -->
     <div class="roster-headers-row">
-      <div style="text-align:center;">#</div>
-      <div>Piloto</div>
-      <div>Cargo Escuadrón</div>
-      <div style="text-align:right;">Rango por Copas</div>
+      <div style="text-align:center;" data-i18n="col_pos">#</div>
+      <div data-i18n="col_pilot">Piloto</div>
+      <div data-i18n="col_role">Cargo Escuadrón</div>
+      <div style="text-align:right;" data-i18n="col_rank">Rango por Copas</div>
     </div>
 
     <!-- SIN AVATARES Y SIN ÚLTIMA CONEXIÓN -->
@@ -1652,19 +1696,19 @@
   <div class="wrap">
     <div class="footer-row">
       <img src="assets/logo-metalstorm.png" alt="Metalstorm" style="height:26px;width:auto;">
-      <span style="font-family:var(--font-heading);font-weight:700;color:var(--text-primary);letter-spacing:0.08em;">
+      <span style="font-family:var(--font-heading);font-weight:700;color:var(--text-primary);letter-spacing:0.08em;" data-i18n="footer_brand">
         [RØ] Øɖɨn'ѕ ƉєɱɨѕɆ · ESCUADRÓN TOP #7 MUNDIAL
       </span>
       <span style="opacity:0.4;">|</span>
       <img src="assets/logo-starform.png" alt="Starform" style="height:15px;opacity:0.75;">
     </div>
 
-    <p style="line-height:1.7;max-width:850px;">
+    <p style="line-height:1.7;max-width:850px;" data-i18n="footer_p">
       Sitio web oficial del escuadrón [RØ] Øɖɨn'ѕ ƉєɱɨѕɆ. Todas las marcas registradas, nombres y artes del juego pertenecen a Starform Inc.<br>
       Horario y datos sincronizados con la rotación de servidores oficiales de Metalstorm.
     </p>
 
-    <div class="footer-sig">
+    <div class="footer-sig" data-i18n="footer_sig">
       BY DEUS VULT "LYCONS" — [RØ] Øɖɨn'ѕ ƉєɱɨѕɆ · METALSTORM
     </div>
   </div>
@@ -1677,6 +1721,135 @@
 <script>
 const SQUAD_CODE = "#JHP3JF";
 
+/* ============================================================================
+   SISTEMA DE TRADUCCIÓN BILINGÜE AUTOMÁTICO (ES / EN)
+   ========================================================================== */
+const I18N = {
+  es: {
+    nav_squad: "Escuadrón",
+    nav_rotation: "Rotación & Mapas",
+    nav_ranking: "Top 10 Mundial",
+    nav_members: "Pilotos (30)",
+    nav_code: "Código: #JHP3JF",
+    ribbon_title: '¡#7 DE LOS <span class="gold">200 MEJORES ESCUADRONES</span> DEL MUNDO!',
+    ribbon_sub: "Tabla Oficial de Escuadrones Globales · Metalstorm World Leaderboards",
+    trophies_lbl: "Trofeos Globales",
+    roster_lbl: "Plantilla",
+    pilots_count: "30 / 30 Pilotos",
+    banner_desc: "[Ragnarök] Odin's Demise: Escuadron competitivo<br>Contamos con Discord / English & Spanish speakers!<br>Respeto ante todo / Juego en equipo / contamos con nuestro sitioweb!<br>150 fichas mínimo de contribución semanal.<br><b class=\"skal\">¡SKAL por nuestros pilotos!</b>",
+    req_trophies_lbl: "Trofeos Requeridos",
+    members_lbl: "Miembros",
+    allowed_lbl: "(Permitidas)",
+    location_lbl: "Ubicación",
+    location_val: "Internacional",
+    squad_code_lbl: "Código de Escuadrón (Copiar)",
+    copy_badge: "COPIAR",
+    rot_title: "Rotación de Modos & Wallpapers en Vivo",
+    rot_sub: "Horario dinámico de modos en combate aeroespacial y visualización cinemática con luz neón blanca sobre el mapa activo.",
+    next_change_lbl: "PRÓXIMO CAMBIO EN",
+    next_mode_lbl: "SIGUIENTE MODO",
+    active_badge: "MAPA EN ROTACIÓN ACTIVA",
+    next_maps_title: "PRÓXIMOS MAPAS EN ROTACIÓN (ORDEN CRONOLÓGICO)",
+    next_maps_sub: "★ El próximo mapa luce resaltado con luz neón",
+    next_badge_pill: "⚡ PRÓXIMO EN ROTACIÓN",
+    lb_title: "Marcadores Mundiales · #7 de los 200 Mejores Escuadrones del Mundo",
+    top_badge_row: "7 de 200 Mejores del Mundo",
+    members_sec_title: "Pilotos del Escuadrón (30 / 30)",
+    members_sec_sub: "Plantilla oficial completa. Rangos oficiales asignados según copas personales en Metalstorm.",
+    search_placeholder: "Buscar piloto o cargo…",
+    filter_all: "Todos (30)",
+    filter_owner: "Dueño",
+    filter_admin: "Admin",
+    filter_veteran: "Veteranos",
+    filter_member: "Miembros",
+    col_pos: "#",
+    col_pilot: "Piloto",
+    col_role: "Cargo Escuadrón",
+    col_rank: "Rango por Copas",
+    footer_brand: "[RØ] Øɖɨn'ѕ ƉєɱɨѕɆ · ESCUADRÓN TOP #7 MUNDIAL",
+    footer_p: "Sitio web oficial del escuadrón [RØ] Øɖɨn'ѕ ƉєɱɨѕɆ. Todas las marcas registradas, nombres y artes del juego pertenecen a Starform Inc.<br>Horario y datos sincronizados con la rotación de servidores oficiales de Metalstorm.",
+    footer_sig: 'BY DEUS VULT "LYCONS" — [RØ] Øɖɨn\'ѕ ƉєɱɨѕɆ · METALSTORM',
+    toast_copy: "✓ Código #JHP3JF copiado"
+  },
+  en: {
+    nav_squad: "Squadron",
+    nav_rotation: "Rotation & Maps",
+    nav_ranking: "Global Top 10",
+    nav_members: "Pilots (30)",
+    nav_code: "Code: #JHP3JF",
+    ribbon_title: '¡#7 OF THE <span class="gold">TOP 200 SQUADRONS</span> IN THE WORLD!',
+    ribbon_sub: "Official Global Squadron Leaderboards · Metalstorm World Leaderboards",
+    trophies_lbl: "Global Trophies",
+    roster_lbl: "Roster",
+    pilots_count: "30 / 30 Pilots",
+    banner_desc: "[Ragnarök] Odin's Demise: Competitive squadron<br>We have Discord / English & Spanish speakers!<br>Respect above all / Team play / We have our own website!<br>150 minimum weekly token contribution.<br><b class=\"skal\">SKAL to our pilots!</b>",
+    req_trophies_lbl: "Required Trophies",
+    members_lbl: "Members",
+    allowed_lbl: "(Capacity)",
+    location_lbl: "Location",
+    location_val: "International",
+    squad_code_lbl: "Squadron Code (Copy)",
+    copy_badge: "COPY",
+    rot_title: "Live Game Modes & Wallpapers Rotation",
+    rot_sub: "Dynamic schedule of aerospace combat modes and cinematic display with white neon over the active map.",
+    next_change_lbl: "NEXT ROTATION IN",
+    next_mode_lbl: "UPCOMING MODE",
+    active_badge: "CURRENT ACTIVE MAP",
+    next_maps_title: "UPCOMING MAPS IN ROTATION (CHRONOLOGICAL ORDER)",
+    next_maps_sub: "★ The next incoming map glows with neon light",
+    next_badge_pill: "⚡ NEXT IN ROTATION",
+    lb_title: "World Leaderboards · #7 of the Top 200 Squadrons Worldwide",
+    top_badge_row: "#7 of Top 200 Global",
+    members_sec_title: "Squadron Pilots (30 / 30)",
+    members_sec_sub: "Complete official roster. Official ranks assigned based on in-game personal trophies.",
+    search_placeholder: "Search pilot or role…",
+    filter_all: "All (30)",
+    filter_owner: "Owner",
+    filter_admin: "Admin",
+    filter_veteran: "Veterans",
+    filter_member: "Members",
+    col_pos: "#",
+    col_pilot: "Pilot",
+    col_role: "Squad Role",
+    col_rank: "Rank by Trophies",
+    footer_brand: "[RØ] Øɖɨn'ѕ ƉєɱɨѕɆ · TOP #7 GLOBAL SQUADRON",
+    footer_p: "Official website of the [RØ] Øɖɨn'ѕ ƉєɱɨѕɆ squadron. All trademarks, names and game artwork belong to Starform Inc.<br>Schedule and stats synced with official Metalstorm server rotation.",
+    footer_sig: 'BY DEUS VULT "LYCONS" — [RØ] Øɖɨn\'ѕ ƉєɱɨѕɆ · METALSTORM',
+    toast_copy: "✓ Code #JHP3JF copied"
+  }
+};
+
+let currentLang = localStorage.getItem('odin_lang') || 'es';
+
+function setLanguage(lang) {
+  currentLang = (lang === 'en') ? 'en' : 'es';
+  localStorage.setItem('odin_lang', currentLang);
+
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (I18N[currentLang] && I18N[currentLang][key]) {
+      el.innerHTML = I18N[currentLang][key];
+    }
+  });
+
+  const searchEl = document.getElementById('memberSearch');
+  if (searchEl) {
+    searchEl.placeholder = I18N[currentLang].search_placeholder;
+  }
+
+  const esBtn = document.getElementById('langES');
+  const enBtn = document.getElementById('langEN');
+  if (esBtn) esBtn.classList.toggle('active', currentLang === 'es');
+  if (enBtn) enBtn.classList.toggle('active', currentLang === 'en');
+
+  lastRenderedSlot = -1;
+  renderPilots();
+  renderRotation();
+}
+
+document.getElementById('langToggle').addEventListener('click', () => {
+  setLanguage(currentLang === 'es' ? 'en' : 'es');
+});
 
 /* ============================================================================
    CLIPBOARD & TOAST
@@ -1700,14 +1873,14 @@ function copyCode() {
     document.execCommand('copy');
     document.body.removeChild(ta);
   }
-  showToast('✓ Código ' + SQUAD_CODE + ' copiado');
+  showToast(I18N[currentLang].toast_copy);
 }
 
 document.getElementById('copyCodeNav').addEventListener('click', copyCode);
 document.getElementById('copyCodeBanner').addEventListener('click', copyCode);
 
 /* ============================================================================
-   PILOTS DATA & RENDERING (SIN AVATARES, SIN ÚLTIMA CONEXIÓN)
+   PILOTS DATA & RENDERING
    ========================================================================== */
 let PILOTS_DATA = [];
 let currentFilter = 'todos';
@@ -1734,6 +1907,24 @@ function getRankClass(tipo) {
   }
 }
 
+function getRoleLabel(rango) {
+  if (currentLang === 'en') {
+    switch (rango) {
+      case 'Dueño': return '👑 Owner';
+      case 'Admin': return '🛡️ Admin';
+      case 'Veterano': return '⭐ Veteran';
+      default: return 'Member';
+    }
+  } else {
+    switch (rango) {
+      case 'Dueño': return '👑 Dueño';
+      case 'Admin': return '🛡️ Admin';
+      case 'Veterano': return '⭐ Veterano';
+      default: return 'Miembro';
+    }
+  }
+}
+
 function getDivisionBadge(trofeos) {
   if (trofeos >= 25000) {
     return `<span class="pilot-division-badge badge-grandmaster">★ GRANDMASTER ★</span>`;
@@ -1748,6 +1939,8 @@ function getDivisionBadge(trofeos) {
 
 function renderPilots() {
   const container = document.getElementById('pilotListRows');
+  if (!container) return;
+
   const filtered = PILOTS_DATA.filter(p => {
     let matchFilter = true;
     if (currentFilter === 'dueno') matchFilter = p.rangoTipo === 'dueno';
@@ -1776,7 +1969,7 @@ function renderPilots() {
         </div>
 
         <div class="pilot-rank-badge ${rankClass}">
-          ${p.rango === 'Dueño' ? '👑 Dueño' : (p.rango === 'Admin' ? '🛡️ Admin' : (p.rango === 'Veterano' ? '⭐ Veterano' : 'Miembro'))}
+          ${getRoleLabel(p.rango)}
         </div>
 
         <div style="text-align:right;">
@@ -1815,12 +2008,12 @@ const MODES = {
 };
 
 const MAPAS = {
-  Arctic:      { day: 'Rumbo al Hielo',    sub: 'Tundra Ártica & Glaciares',     wall: 'assets/wall-arctic.jpg' },
-  Canyon:      { day: 'Cañón Carmesí',     sub: 'Desfiladeros Rojos & Formaciones', wall: 'assets/wall-canyon.jpg' },
-  Seastacks:   { day: 'Tormenta Marina',   sub: 'Columnas de Piedra sobre el Mar', wall: 'assets/wall-seastacks.jpg' },
-  Stoneforest: { day: 'Bosque de Piedra',  sub: 'Pilares Rocosos & Valles Estrechos', wall: 'assets/wall-stoneforest.jpg' },
-  Volcano:     { day: 'Crisol Volcánico',  sub: 'Ríos de Lava & Actividad Térmica', wall: 'assets/wall-volcano.jpg' },
-  Countdown:   { day: 'Base Cuenta Atrás', sub: 'Instalación de Lanzamiento Militar', wall: 'assets/wall-countdown.jpg' }
+  Arctic:      { es: 'Rumbo al Hielo',    en: 'Arctic Rush',        sub_es: 'Tundra Ártica & Glaciares',          sub_en: 'Arctic Tundra & Glaciers',      wall: 'assets/wall-arctic.jpg' },
+  Canyon:      { es: 'Cañón Carmesí',     en: 'Crimson Canyon',     sub_es: 'Desfiladeros Rojos & Formaciones',    sub_en: 'Red Canyons & Formations',       wall: 'assets/wall-canyon.jpg' },
+  Seastacks:   { es: 'Tormenta Marina',   en: 'Seastacks',          sub_es: 'Columnas de Piedra sobre el Mar',     sub_en: 'Sea Pillar Formations',         wall: 'assets/wall-seastacks.jpg' },
+  Stoneforest: { es: 'Bosque de Piedra',  en: 'Stone Forest',       sub_es: 'Pilares Rocosos & Valles Estrechos', sub_en: 'Rock Pillars & Narrow Valleys', wall: 'assets/wall-stoneforest.jpg' },
+  Volcano:     { es: 'Crisol Volcánico',  en: 'Volcanic Crucible',  sub_es: 'Ríos de Lava & Actividad Térmica',   sub_en: 'Lava Rivers & Thermal Vents',    wall: 'assets/wall-volcano.jpg' },
+  Countdown:   { es: 'Base Cuenta Atrás', en: 'Countdown Base',     sub_es: 'Instalación de Lanzamiento Militar', sub_en: 'Military Launch Facility',     wall: 'assets/wall-countdown.jpg' }
 };
 
 const MODO_MAP = {
@@ -1858,8 +2051,10 @@ function getSlotAt(date) {
   const parts = String(ROTACION.slots[idx]).split(':');
   const mapa = parts[0];
   const modoStr = parts[2] || 'deathmatch';
-  const mObj = MAPAS[mapa] || { day: mapa, sub: 'Zona de Combate', wall: 'assets/wall-canyon.jpg' };
-  return { index: idx, mapa, modoId: MODO_MAP[modoStr] || 'tdm', nombreMapa: mObj.day, sub: mObj.sub, wall: mObj.wall };
+  const mObj = MAPAS[mapa] || { es: mapa, en: mapa, sub_es: 'Zona de Combate', sub_en: 'Combat Zone', wall: 'assets/wall-canyon.jpg' };
+  const nombre = (currentLang === 'en' ? mObj.en : mObj.es) || mObj.es;
+  const sub = (currentLang === 'en' ? mObj.sub_en : mObj.sub_es) || mObj.sub_es;
+  return { index: idx, mapa, modoId: MODO_MAP[modoStr] || 'tdm', nombreMapa: nombre, sub: sub, wall: mObj.wall };
 }
 
 /* Renderiza la galería ordenada según los mapas que vienen a continuación */
@@ -1871,13 +2066,11 @@ function renderOrderedMapGallery(currentSlotIdx, activeMapKey, nextMapKey, nextS
   const galleryEl = document.getElementById('orderedMapGallery');
   if (!galleryEl || !ROTACION) return;
 
-  // El mapa activo es el único mapa grande superior.
-  // La galería inferior contiene SOLO los próximos mapas en llegar, iluminando con neón el próximo.
   const total = ROTACION.slots.length;
   const seenMaps = new Set();
   const orderedList = [];
 
-  // Excluir el mapa activo actual para no duplicarlo abajo
+  // Excluir el mapa activo actual para que solo aparezca en la tarjeta grande superior
   seenMaps.add(activeMapKey);
 
   // Recorrer los siguientes slots cronológicamente
@@ -1889,29 +2082,36 @@ function renderOrderedMapGallery(currentSlotIdx, activeMapKey, nextMapKey, nextS
       seenMaps.add(mKey);
       const isNext = (orderedList.length === 0);
       const timeOffsetMin = offset * 30;
+      const timeLabel = isNext 
+        ? ((currentLang === 'en') ? `NEXT (${nextStartTime})` : `PRÓXIMO (${nextStartTime})`)
+        : ((currentLang === 'en') ? `In +${timeOffsetMin}m` : `En +${timeOffsetMin}m`);
+
       orderedList.push({
         key: mKey,
         status: isNext ? 'next' : 'upcoming',
-        timeLabel: isNext ? `PRÓXIMO EN ROTACIÓN (${nextStartTime})` : `En +${timeOffsetMin}m`
+        timeLabel: timeLabel
       });
     }
   }
+
+  const nextBadgeText = (currentLang === 'en') ? '⚡ NEXT IN ROTATION' : '⚡ PRÓXIMO EN ROTACIÓN';
 
   // Renderizar tarjetas con visibilidad neón para el más próximo
   galleryEl.innerHTML = orderedList.map((item, idx) => {
     const m = MAPAS[item.key];
     const isNext = item.status === 'next';
+    const mapName = (currentLang === 'en') ? m.en : m.es;
 
     return `
       <div class="bg-thumb-card ${isNext ? 'next-incoming' : ''}" 
            data-map="${item.key}" onclick="selectMapPreview('${item.key}')">
         <div class="bg-thumb-img" style="background-image:url('${m.wall}')"></div>
         
-        ${isNext ? `<span class="bg-thumb-badge-top badge-next-now">⚡ PRÓXIMO EN ROTACIÓN</span>` : ''}
+        ${isNext ? `<span class="bg-thumb-badge-top badge-next-now">${nextBadgeText}</span>` : ''}
 
         <div class="bg-thumb-info">
           <div>
-            <div class="bg-thumb-title">${m.day}</div>
+            <div class="bg-thumb-title">${mapName}</div>
             <div style="font-size:11px;color:#94a3b8;">${item.timeLabel}</div>
           </div>
           <span class="bg-thumb-tag">${item.key}</span>
@@ -1937,8 +2137,11 @@ function renderRotation() {
   const remMs = end - now;
   const pct = Math.min(100, Math.max(0, (now - start) / 1800000 * 100));
 
-  document.getElementById('rotModeName').textContent = modeNow.es;
-  document.getElementById('rotModeEn').textContent = modeNow.en;
+  const modeName = (currentLang === 'en') ? modeNow.en : modeNow.es;
+  const modeSub = (currentLang === 'en') ? modeNow.es : modeNow.en;
+
+  document.getElementById('rotModeName').textContent = modeName;
+  document.getElementById('rotModeEn').textContent = modeSub.toUpperCase();
   document.getElementById('rotBadge').textContent = modeNow.tag;
   document.getElementById('rotBadge').style.background = modeNow.color;
 
@@ -1950,7 +2153,8 @@ function renderRotation() {
   document.getElementById('rotBarFill').style.background = modeNow.color;
 
   if (slotNext && modeNext) {
-    document.getElementById('rotNextTitle').textContent = modeNext.es;
+    const nextModeName = (currentLang === 'en') ? modeNext.en : modeNext.es;
+    document.getElementById('rotNextTitle').textContent = nextModeName;
     document.getElementById('rotNextTime').textContent = slotNext.nombreMapa + ' · ' + fmtHora(end);
   }
 
@@ -1981,7 +2185,9 @@ function selectMapPreview(mapKey) {
   manualPreview = true;
   const m = MAPAS[mapKey];
   if (m) {
-    setCinematicMap(mapKey, m.day, m.sub, m.wall);
+    const name = (currentLang === 'en') ? m.en : m.es;
+    const sub = (currentLang === 'en') ? m.sub_en : m.sub_es;
+    setCinematicMap(mapKey, name, sub, m.wall);
   }
 }
 
@@ -1996,7 +2202,7 @@ if (burger && navMenu) {
 (async function init() {
   await loadPilots();
   await loadRotation();
-  renderRotation();
+  setLanguage(currentLang);
   setInterval(renderRotation, 1000);
 })();
 </script>
