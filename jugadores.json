@@ -4,7 +4,7 @@
   "nombreCorto": "Odin's Demise",
   "tag": "[RØ]",
   "codigo": "#JHP3JF",
-  "trofeos": "1.029.336",
+  "trofeos": "1.029.339",
   "puestoMundial": 7,
   "rankingTexto": "PUESTO #7 DEL MUNDO (TOP 7 GLOBAL)",
   "trofeosRequeridos": "4.000",
@@ -17,18 +17,21 @@
     "tiempo": "2d 16h"
   },
   "temporada": {
-    "tiempoRestante": "12d 0h",
-    "tablaTop": [
+    "duracionDias": 30,
+    "tablaTop10": [
       { "pos": 1, "nombre": "N Σ M Ξ S I S", "miembros": "29/30", "trofeos": "1.229.263" },
       { "pos": 2, "nombre": "Korea Top Gun", "miembros": "30/30", "trofeos": "1.161.783" },
       { "pos": 3, "nombre": "VШM★Ξ M P I R Σ", "miembros": "30/30", "trofeos": "1.160.370" },
       { "pos": 4, "nombre": "丂ENTINELS apac", "miembros": "29/30", "trofeos": "1.146.849" },
       { "pos": 5, "nombre": "ΧΗΙΜΣΓΔ", "miembros": "30/30", "trofeos": "1.108.753" },
       { "pos": 6, "nombre": "N Ξ M Σ S I S™", "miembros": "29/30", "trofeos": "1.098.550" },
-      { "pos": 7, "nombre": "Øɖɨn'ѕ ƉєɱɨѕɆ", "miembros": "30/30", "trofeos": "1.029.336", "destacado": true }
+      { "pos": 7, "nombre": "Øɖɨn'ѕ ƉєɱɨѕɆ", "miembros": "30/30", "trofeos": "1.029.339", "destacado": true },
+      { "pos": 8, "nombre": "TOP★GUN★BRASIL", "miembros": "29/30", "trofeos": "1.018.639" },
+      { "pos": 9, "nombre": "ACΣ", "miembros": "26/30", "trofeos": "1.018.621" },
+      { "pos": 10, "nombre": "4QヅSEVEN", "miembros": "30/30", "trofeos": "1.016.906" }
     ]
   },
-  "descripcion": "[Ragnarök] Odin's Demise: Escuadrón competitivo. Contamos con Discord / English & Spanish speakers! Respeto ante todo, juego en equipo. 150 fichas mínimo de contribución semanal. ¡SKAL por nuestros pilotos!",
+  "descripcion": "[Ragnarök] Odin's Demise: Escuadron competitivo. Contamos con Discord / English & Spanish speakers! Respeto ante todo, juego en equipo. 150 fichas mínimo de contribución semanal. ¡SKAL por nuestros pilotos!",
   "jugadores": [
     {
       "posicion": 1,
@@ -36,11 +39,10 @@
       "tag": "[RØ]",
       "rango": "Admin",
       "rangoTipo": "admin",
+      "division": "Grandmaster ★",
       "trofeos": 46490,
       "estado": "1h 27m atrás",
-      "enLinea": false,
-      "avatarTipo": "devil",
-      "avatarColor": "#ef4444"
+      "enLinea": false
     },
     {
       "posicion": 2,
@@ -48,11 +50,10 @@
       "tag": "[RØ]",
       "rango": "Dueño",
       "rangoTipo": "dueno",
+      "division": "Grandmaster ★",
       "trofeos": 45463,
       "estado": "19m 12s atrás",
-      "enLinea": false,
-      "avatarTipo": "gold-jet",
-      "avatarColor": "#eab308"
+      "enLinea": false
     },
     {
       "posicion": 3,
@@ -60,11 +61,10 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
+      "division": "Grandmaster ★",
       "trofeos": 44526,
       "estado": "19m 13s atrás",
-      "enLinea": false,
-      "avatarTipo": "eagle",
-      "avatarColor": "#14b8a6"
+      "enLinea": false
     },
     {
       "posicion": 4,
@@ -72,11 +72,10 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
+      "division": "Grandmaster ★",
       "trofeos": 42745,
       "estado": "17h 50m atrás",
-      "enLinea": false,
-      "avatarTipo": "dagger",
-      "avatarColor": "#3b82f6"
+      "enLinea": false
     },
     {
       "posicion": 5,
@@ -84,11 +83,10 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
+      "division": "Grandmaster ★",
       "trofeos": 42388,
       "estado": "1h 2m atrás",
-      "enLinea": false,
-      "avatarTipo": "star",
-      "avatarColor": "#94a3b8"
+      "enLinea": false
     },
     {
       "posicion": 6,
@@ -96,11 +94,10 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
+      "division": "Grandmaster ★",
       "trofeos": 42350,
       "estado": "En línea",
-      "enLinea": true,
-      "avatarTipo": "clover",
-      "avatarColor": "#22c55e"
+      "enLinea": true
     },
     {
       "posicion": 7,
@@ -108,11 +105,10 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
+      "division": "Grandmaster ★",
       "trofeos": 40480,
       "estado": "19m 11s atrás",
-      "enLinea": false,
-      "avatarTipo": "wing2025",
-      "avatarColor": "#eab308"
+      "enLinea": false
     },
     {
       "posicion": 8,
@@ -120,11 +116,10 @@
       "tag": "[RØ]",
       "rango": "Admin",
       "rangoTipo": "admin",
+      "division": "Grandmaster ★",
       "trofeos": 40352,
       "estado": "3h 15m atrás",
-      "enLinea": false,
-      "avatarTipo": "cat",
-      "avatarColor": "#ef4444"
+      "enLinea": false
     },
     {
       "posicion": 9,
@@ -132,11 +127,10 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
+      "division": "Grandmaster ★",
       "trofeos": 38058,
       "estado": "2h 34m atrás",
-      "enLinea": false,
-      "avatarTipo": "wing2026",
-      "avatarColor": "#eab308"
+      "enLinea": false
     },
     {
       "posicion": 10,
@@ -144,11 +138,10 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
+      "division": "Grandmaster ★",
       "trofeos": 35934,
       "estado": "16h 53m atrás",
-      "enLinea": false,
-      "avatarTipo": "star",
-      "avatarColor": "#eab308"
+      "enLinea": false
     },
     {
       "posicion": 11,
@@ -156,11 +149,10 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
+      "division": "Grandmaster ★",
       "trofeos": 35600,
       "estado": "16h 20m atrás",
-      "enLinea": false,
-      "avatarTipo": "ace",
-      "avatarColor": "#ffffff"
+      "enLinea": false
     },
     {
       "posicion": 12,
@@ -169,12 +161,11 @@
       "rango": "Veterano",
       "rangoTipo": "admin",
       "insignia": "TOP 50",
+      "division": "Grandmaster ★",
       "destacado": true,
       "trofeos": 35157,
       "estado": "En línea",
-      "enLinea": true,
-      "avatarTipo": "top50",
-      "avatarColor": "#0ea5e9"
+      "enLinea": true
     },
     {
       "posicion": 13,
@@ -182,11 +173,10 @@
       "tag": "[RØ]",
       "rango": "Miembro",
       "rangoTipo": "miembro",
+      "division": "Grandmaster ★",
       "trofeos": 35070,
       "estado": "2h 4m atrás",
-      "enLinea": false,
-      "avatarTipo": "bomb",
-      "avatarColor": "#84cc16"
+      "enLinea": false
     },
     {
       "posicion": 14,
@@ -194,11 +184,10 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
+      "division": "Grandmaster ★",
       "trofeos": 34525,
       "estado": "En línea",
-      "enLinea": true,
-      "avatarTipo": "dragon",
-      "avatarColor": "#ef4444"
+      "enLinea": true
     },
     {
       "posicion": 15,
@@ -206,11 +195,10 @@
       "tag": "[RØ]",
       "rango": "Admin",
       "rangoTipo": "admin",
+      "division": "Grandmaster ★",
       "trofeos": 34082,
       "estado": "12h 7m atrás",
-      "enLinea": false,
-      "avatarTipo": "star",
-      "avatarColor": "#dc2626"
+      "enLinea": false
     },
     {
       "posicion": 16,
@@ -218,11 +206,10 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
+      "division": "Grandmaster ★",
       "trofeos": 33033,
       "estado": "1h 47m atrás",
-      "enLinea": false,
-      "avatarTipo": "wolf",
-      "avatarColor": "#f87171"
+      "enLinea": false
     },
     {
       "posicion": 17,
@@ -230,11 +217,10 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
+      "division": "Grandmaster ★",
       "trofeos": 32968,
       "estado": "34m 56s atrás",
-      "enLinea": false,
-      "avatarTipo": "gold-jet",
-      "avatarColor": "#eab308"
+      "enLinea": false
     },
     {
       "posicion": 18,
@@ -242,11 +228,10 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
+      "division": "Grandmaster ★",
       "trofeos": 32800,
       "estado": "11m 57s atrás",
-      "enLinea": false,
-      "avatarTipo": "cat-eyes",
-      "avatarColor": "#22c55e"
+      "enLinea": false
     },
     {
       "posicion": 19,
@@ -254,11 +239,10 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
+      "division": "Grandmaster ★",
       "trofeos": 32713,
       "estado": "2d 20h atrás",
-      "enLinea": false,
-      "avatarTipo": "shark",
-      "avatarColor": "#f97316"
+      "enLinea": false
     },
     {
       "posicion": 20,
@@ -266,11 +250,10 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
+      "division": "Grandmaster ★",
       "trofeos": 32674,
       "estado": "22h 51m atrás",
-      "enLinea": false,
-      "avatarTipo": "coin",
-      "avatarColor": "#eab308"
+      "enLinea": false
     },
     {
       "posicion": 21,
@@ -278,11 +261,10 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
+      "division": "Grandmaster ★",
       "trofeos": 32433,
       "estado": "57m 20s atrás",
-      "enLinea": false,
-      "avatarTipo": "raven",
-      "avatarColor": "#ea580c"
+      "enLinea": false
     },
     {
       "posicion": 22,
@@ -290,11 +272,10 @@
       "tag": "[RØ]",
       "rango": "Miembro",
       "rangoTipo": "miembro",
+      "division": "Grandmaster ★",
       "trofeos": 31128,
       "estado": "En línea",
-      "enLinea": true,
-      "avatarTipo": "sakura",
-      "avatarColor": "#f43f5e"
+      "enLinea": true
     },
     {
       "posicion": 23,
@@ -302,11 +283,10 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
+      "division": "Grandmaster ★",
       "trofeos": 30590,
       "estado": "1h 17m atrás",
-      "enLinea": false,
-      "avatarTipo": "cat-eyes",
-      "avatarColor": "#22c55e"
+      "enLinea": false
     },
     {
       "posicion": 24,
@@ -314,11 +294,10 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
+      "division": "Grandmaster ★",
       "trofeos": 29978,
       "estado": "3h 11m atrás",
-      "enLinea": false,
-      "avatarTipo": "doberman",
-      "avatarColor": "#e2e8f0"
+      "enLinea": false
     },
     {
       "posicion": 25,
@@ -326,11 +305,10 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
+      "division": "Grandmaster ★",
       "trofeos": 28416,
       "estado": "16h 13m atrás",
-      "enLinea": false,
-      "avatarTipo": "cowboy",
-      "avatarColor": "#eab308"
+      "enLinea": false
     },
     {
       "posicion": 26,
@@ -338,11 +316,10 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
+      "division": "Grandmaster ★",
       "trofeos": 28209,
       "estado": "1h 43m atrás",
-      "enLinea": false,
-      "avatarTipo": "wolf",
-      "avatarColor": "#cbd5e1"
+      "enLinea": false
     },
     {
       "posicion": 27,
@@ -350,11 +327,10 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
+      "division": "Grandmaster ★",
       "trofeos": 26508,
       "estado": "34m 30s atrás",
-      "enLinea": false,
-      "avatarTipo": "cyber-helmet",
-      "avatarColor": "#8b5cf6"
+      "enLinea": false
     },
     {
       "posicion": 28,
@@ -362,11 +338,10 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
+      "division": "Grandmaster ★",
       "trofeos": 22184,
       "estado": "16h 35m atrás",
-      "enLinea": false,
-      "avatarTipo": "raptor",
-      "avatarColor": "#22c55e"
+      "enLinea": false
     },
     {
       "posicion": 29,
@@ -374,11 +349,10 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
+      "division": "Grandmaster ★",
       "trofeos": 21578,
       "estado": "19h 8m atrás",
-      "enLinea": false,
-      "avatarTipo": "dragon",
-      "avatarColor": "#ef4444"
+      "enLinea": false
     },
     {
       "posicion": 30,
@@ -386,11 +360,10 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
+      "division": "Grandmaster ★",
       "trofeos": 20904,
       "estado": "33m 34s atrás",
-      "enLinea": false,
-      "avatarTipo": "owl",
-      "avatarColor": "#eab308"
+      "enLinea": false
     }
   ]
 }

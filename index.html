@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>[RØ] Øɖɨn'ѕ ƉєɱɨѕɆ — Top #7 Mundial · Escuadrón Metalstorm</title>
-<meta name="description" content="[RØ] Øɖɨn'ѕ ƉєɱɨѕɆ (Odin's Demise): Escuadrón en el Puesto #7 del Mundo en Metalstorm. Más de 1.029.000 trofeos, 30 pilotos oficiales, rotación en vivo y wallpapers oficiales.">
+<meta name="description" content="[RØ] Øɖɨn'ѕ ƉєɱɨѕɆ (Odin's Demise): Escuadrón en el Puesto #7 del Mundo en Metalstorm. 1.029.339 trofeos, 30 pilotos oficiales, rotación en vivo y wallpapers oficiales.">
 <meta name="theme-color" content="#07101e">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -34,6 +34,8 @@
     --ms-red: #ef4444;
     --ms-green: #22c55e;
     --ms-green-glow: rgba(34, 197, 94, 0.5);
+    --ms-gm-purple: #c026d3;
+    --ms-gm-gradient: linear-gradient(135deg, #a855f7 0%, #d946ef 50%, #ec4899 100%);
 
     --border-line: rgba(255, 255, 255, 0.08);
     --border-card: rgba(40, 123, 240, 0.28);
@@ -211,7 +213,7 @@
     cursor: pointer;
   }
 
-  /* ================= PUESTO #7 DEL MUNDO (TOP 7 GLOBAL STRIP) ================= */
+  /* ================= PUESTO #7 DEL MUNDO (STRIP DESTACADO) ================= */
   .world-rank-ribbon {
     margin-top: 22px;
     background: linear-gradient(90deg, #b45309 0%, #f59e0b 25%, #fbbf24 50%, #f59e0b 75%, #b45309 100%);
@@ -300,7 +302,7 @@
     color: var(--ms-gold-bright);
   }
 
-  /* In-Game Metalstorm Banner */
+  /* In-Game Metalstorm Banner (NO PENCIL EMOJIS) */
   .ingame-squad-banner {
     position: relative;
     background: linear-gradient(135deg, #1b63d1 0%, #114ca6 55%, #0c3677 100%);
@@ -309,7 +311,7 @@
     box-shadow: 0 16px 45px rgba(0, 0, 0, 0.6), 0 0 35px rgba(25, 103, 210, 0.35);
     padding: 24px 28px;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
     overflow: hidden;
   }
   .ingame-squad-banner::before {
@@ -350,6 +352,7 @@
     gap: 12px;
     margin-bottom: 6px;
   }
+  /* NO PENCIL EMOJIS */
   .banner-tag-box {
     background: rgba(0, 0, 0, 0.32);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -357,11 +360,10 @@
     font-size: 20px;
     font-weight: 800;
     color: #ffffff;
-    padding: 3px 12px;
+    padding: 3px 14px;
     border-radius: 6px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 8px;
   }
   .banner-name-box {
     background: rgba(0, 0, 0, 0.28);
@@ -370,12 +372,11 @@
     font-size: clamp(20px, 4vw, 30px);
     font-weight: 900;
     color: #ffffff;
-    padding: 3px 16px;
+    padding: 3px 18px;
     border-radius: 6px;
     letter-spacing: 0.04em;
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 10px;
   }
   .banner-trophies-row {
     display: flex;
@@ -445,99 +446,6 @@
     font-family: var(--font-mono);
   }
 
-  /* Global Leaderboard Table Component */
-  .leaderboard-modal-preview {
-    background: rgba(10, 19, 34, 0.9);
-    border: 1px solid var(--border-card);
-    border-radius: 14px;
-    padding: 24px;
-    margin-bottom: 34px;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
-  }
-  .lb-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-  }
-  .lb-title-group h3 {
-    font-family: var(--font-heading);
-    font-size: 20px;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .lb-season-badge {
-    background: rgba(245, 158, 11, 0.15);
-    border: 1px solid var(--ms-gold);
-    color: var(--ms-gold-bright);
-    font-family: var(--font-mono);
-    font-size: 12px;
-    font-weight: 700;
-    padding: 4px 12px;
-    border-radius: 99px;
-  }
-  .lb-table {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-  }
-  .lb-row {
-    display: grid;
-    grid-template-columns: 46px 1fr 100px 160px;
-    align-items: center;
-    padding: 10px 16px;
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.04);
-    border-radius: 8px;
-    font-family: var(--font-heading);
-    font-size: 15px;
-    font-weight: 700;
-  }
-  .lb-row.active-squad {
-    background: linear-gradient(90deg, rgba(245, 158, 11, 0.22), rgba(25, 103, 210, 0.2));
-    border: 1.5px solid var(--ms-gold-bright);
-    box-shadow: 0 0 20px rgba(245, 158, 11, 0.25);
-  }
-  .lb-pos {
-    font-family: var(--font-mono);
-    font-size: 18px;
-    font-weight: 900;
-    color: var(--text-muted);
-  }
-  .lb-row.active-squad .lb-pos {
-    color: var(--ms-gold-bright);
-  }
-  .lb-name {
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .lb-members {
-    font-family: var(--font-mono);
-    font-size: 13px;
-    color: var(--text-muted);
-    text-align: center;
-  }
-  .lb-trophies {
-    font-family: var(--font-mono);
-    font-size: 16px;
-    font-weight: 800;
-    color: var(--ms-gold-bright);
-    text-align: right;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 6px;
-  }
-
   /* Squad Event Status Strip */
   .squad-event-bar {
     background: linear-gradient(135deg, rgba(13, 26, 45, 0.95), rgba(7, 15, 26, 0.95));
@@ -549,7 +457,7 @@
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
-    margin-bottom: 34px;
+    margin-bottom: 30px;
   }
   .event-badge {
     background: #1967d2;
@@ -603,307 +511,34 @@
     box-shadow: 0 0 12px var(--ms-cyan);
   }
 
-  /* In-Game Tab Header */
-  .ingame-tabs-row {
-    display: flex;
-    align-items: center;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.08);
-    gap: 20px;
-    margin-bottom: 24px;
-    overflow-x: auto;
-    padding-bottom: 2px;
-  }
-  .ingame-tab {
-    font-family: var(--font-heading);
-    font-size: 15px;
-    font-weight: 800;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--text-secondary);
-    background: none;
-    border: none;
-    padding: 10px 4px 14px;
-    cursor: pointer;
-    position: relative;
-    white-space: nowrap;
-  }
-  .ingame-tab.active {
-    color: var(--text-pure);
-  }
-  .ingame-tab.active::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: var(--ms-cyan);
-    box-shadow: 0 0 12px var(--ms-cyan);
-    border-radius: 99px;
-  }
-  .tab-badge-num {
-    background: #22c55e;
-    color: #061220;
-    font-family: var(--font-mono);
-    font-size: 11px;
-    font-weight: 800;
-    padding: 2px 7px;
-    border-radius: 99px;
-    margin-left: 6px;
-  }
-
-  /* Members Roster List */
-  .members-panel {
-    background: rgba(10, 19, 34, 0.85);
-    border: 1px solid var(--border-card);
-    border-radius: 14px;
-    overflow: hidden;
-    backdrop-filter: blur(14px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
-    margin-bottom: 60px;
-  }
-  .members-toolbar {
-    padding: 18px 22px;
-    border-bottom: 1px solid var(--border-line);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    flex-wrap: wrap;
-    background: rgba(6, 12, 22, 0.5);
-  }
-  .search-box {
-    position: relative;
-    flex: 1;
-    min-width: 220px;
-    max-width: 400px;
-  }
-  .search-box input {
-    width: 100%;
-    background: rgba(13, 26, 45, 0.8);
-    border: 1px solid var(--border-line);
-    border-radius: 8px;
-    padding: 10px 14px 10px 38px;
-    color: var(--text-pure);
-    font-family: var(--font-body);
-    font-size: 14px;
-    outline: none;
-    transition: all 0.2s ease;
-  }
-  .search-box input:focus {
-    border-color: var(--ms-cyan);
-    box-shadow: 0 0 14px var(--ms-cyan-dim);
-  }
-  .search-box .search-ico {
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--text-muted);
-    font-size: 16px;
-  }
-
-  .filter-pills {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-  }
-  .filter-pill {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid var(--border-line);
-    color: var(--text-secondary);
-    font-family: var(--font-heading);
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    padding: 6px 14px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-  }
-  .filter-pill.active {
-    background: #1967d2;
-    border-color: var(--ms-cyan);
-    color: #ffffff;
-    box-shadow: 0 0 14px rgba(25, 103, 210, 0.5);
-  }
-
-  /* Pilot Row Item */
-  .pilot-list {
-    display: flex;
-    flex-direction: column;
-  }
-  .pilot-row {
-    display: grid;
-    grid-template-columns: 50px 58px 1fr 180px 150px;
-    align-items: center;
-    gap: 16px;
-    padding: 14px 22px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    transition: background 0.2s ease;
-  }
-  .pilot-row:last-child {
-    border-bottom: none;
-  }
-  .pilot-row:hover {
-    background: rgba(25, 103, 210, 0.08);
-  }
-  .pilot-row.highlight-user {
-    background: linear-gradient(90deg, rgba(14, 165, 233, 0.18), rgba(25, 103, 210, 0.08));
-    border-left: 4px solid var(--ms-cyan);
-  }
-
-  .pilot-rank-num {
-    font-family: var(--font-mono);
-    font-size: 16px;
-    font-weight: 800;
-    color: var(--text-muted);
-    text-align: center;
-  }
-  .pilot-rank-num.top3 {
-    color: var(--ms-gold-bright);
-    font-size: 18px;
-    text-shadow: 0 0 10px var(--ms-gold-glow);
-  }
-
-  .pilot-avatar-frame {
-    width: 48px;
-    height: 48px;
-    border-radius: 10px;
-    background: #091322;
-    border: 1.5px solid rgba(255, 255, 255, 0.15);
-    display: grid;
-    place-items: center;
-    position: relative;
-    overflow: hidden;
-    flex: 0 0 auto;
-  }
-  .avatar-top-tag {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #0284c7;
-    color: #ffffff;
-    font-family: var(--font-mono);
-    font-size: 8.5px;
-    font-weight: 800;
-    text-align: center;
-    line-height: 12px;
-  }
-
-  .pilot-info-col {
-    min-width: 0;
-  }
-  .pilot-name-text {
-    font-family: var(--font-heading);
-    font-size: 17px;
-    font-weight: 800;
-    letter-spacing: 0.03em;
-    color: var(--text-pure);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .pilot-rank-badge {
-    font-size: 12px;
-    font-family: var(--font-heading);
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    margin-top: 3px;
-  }
-  .rank-dueno { color: var(--ms-gold-bright); }
-  .rank-admin { color: var(--ms-red); }
-  .rank-veterano { color: var(--ms-cyan); }
-  .rank-miembro { color: var(--text-secondary); }
-
-  .pilot-status-col {
-    font-size: 13px;
-    color: var(--text-secondary);
-  }
-  .status-online {
-    color: var(--ms-green);
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-  .status-online-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--ms-green);
-    box-shadow: 0 0 10px var(--ms-green);
-    animation: blink-dot 1.8s infinite;
-  }
-  @keyframes blink-dot {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.35; }
-  }
-
-  .pilot-trophies-col {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 8px;
-    font-family: var(--font-mono);
-    font-size: 17px;
-    font-weight: 800;
-    color: var(--ms-gold-bright);
-  }
-  .pilot-trophies-col svg {
-    width: 18px;
-    height: 18px;
-    fill: var(--ms-gold-bright);
-  }
-
-  @media (max-width: 768px) {
-    .pilot-row {
-      grid-template-columns: 36px 44px 1fr auto;
-      gap: 10px;
-      padding: 12px 14px;
-    }
-    .pilot-status-col { display: none; }
-    .pilot-name-text { font-size: 15px; }
-    .pilot-trophies-col { font-size: 15px; }
-    .lb-row { grid-template-columns: 36px 1fr auto; }
-    .lb-members { display: none; }
-  }
-
-  /* ================= REAL MAP WALLPAPERS & ROTATION ================= */
-  section.hud-section {
-    padding: 60px 0;
-    border-top: 1px solid var(--border-line);
+  /* ================= ROTACIÓN DE MAPAS (SUBIDA AQUÍ) ================= */
+  section.rotation-section-placed {
+    padding: 10px 0 35px;
     position: relative;
   }
   .hud-sec-title {
     font-family: var(--font-heading);
-    font-size: clamp(24px, 4vw, 34px);
+    font-size: clamp(24px, 4vw, 32px);
     font-weight: 800;
     text-transform: uppercase;
     color: var(--text-pure);
-    margin-bottom: 8px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
   .hud-sec-sub {
-    font-size: 14.5px;
+    font-size: 14px;
     color: var(--text-secondary);
-    max-width: 600px;
-    margin-bottom: 28px;
+    max-width: 650px;
+    margin-bottom: 24px;
   }
 
   .rotation-showcase {
     display: grid;
     grid-template-columns: 1.15fr 0.85fr;
     gap: 22px;
-    margin-bottom: 34px;
+    margin-bottom: 24px;
   }
   @media (max-width: 900px) {
     .rotation-showcase { grid-template-columns: 1fr; }
@@ -1019,20 +654,62 @@
     transition: width 0.3s linear;
   }
 
-  /* Cinematic Wallpaper Showcase Card */
+  /* ================= CINEMATIC WALLPAPER CON LUZ NEÓN BLANCO EN MOVIMIENTO ================= */
   .cinematic-wallpaper-card {
     position: relative;
     border-radius: 14px;
     overflow: hidden;
     background: #040912;
-    border: 1px solid var(--border-card);
+    border: 1.5px solid rgba(255, 255, 255, 0.4);
     aspect-ratio: 16 / 10;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 22px;
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.7), 0 0 25px rgba(255, 255, 255, 0.25);
   }
+
+  /* Luz neón blanca animada en movimiento por encima de la foto */
+  .cinematic-wallpaper-card::after {
+    content: '';
+    position: absolute;
+    inset: -100% 0 -100% 0;
+    background: linear-gradient(
+      115deg,
+      transparent 35%,
+      rgba(255, 255, 255, 0.05) 45%,
+      rgba(255, 255, 255, 0.85) 50%,
+      rgba(255, 255, 255, 0.05) 55%,
+      transparent 65%
+    );
+    transform: rotate(25deg);
+    animation: neon-white-sweep 4.5s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 3;
+    mix-blend-mode: overlay;
+  }
+  @keyframes neon-white-sweep {
+    0% { transform: translateY(-80%) rotate(25deg); opacity: 0; }
+    15% { opacity: 1; }
+    85% { opacity: 1; }
+    100% { transform: translateY(80%) rotate(25deg); opacity: 0; }
+  }
+
+  /* Luz neón blanca palpitante en los bordes */
+  .cwc-neon-border {
+    position: absolute;
+    inset: 0;
+    border-radius: 14px;
+    pointer-events: none;
+    z-index: 4;
+    box-shadow: inset 0 0 18px rgba(255, 255, 255, 0.45), 0 0 20px rgba(255, 255, 255, 0.3);
+    animation: border-neon-pulse 2.2s infinite alternate;
+  }
+  @keyframes border-neon-pulse {
+    0% { box-shadow: inset 0 0 10px rgba(255,255,255,0.25), 0 0 14px rgba(255,255,255,0.25); }
+    100% { box-shadow: inset 0 0 24px rgba(255,255,255,0.65), 0 0 32px rgba(255,255,255,0.5); }
+  }
+
   .cwc-bg-img {
     position: absolute;
     inset: 0;
@@ -1044,40 +721,44 @@
   .cwc-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(4,9,18,0.2) 0%, rgba(4,9,18,0.85) 100%);
+    background: linear-gradient(180deg, rgba(4,9,18,0.15) 0%, rgba(4,9,18,0.88) 100%);
+    z-index: 1;
   }
   .cwc-badge-top {
     position: absolute;
     top: 14px;
     left: 14px;
-    background: rgba(0, 0, 0, 0.7);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 4px 10px;
+    background: rgba(0, 0, 0, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 5px 12px;
     border-radius: 6px;
-    font-family: var(--font-mono);
+    font-family: var(--font-heading);
     font-size: 11px;
     font-weight: 800;
-    color: var(--ms-cyan);
+    letter-spacing: 0.12em;
+    color: #ffffff;
+    text-shadow: 0 0 10px #ffffff;
     backdrop-filter: blur(8px);
-    z-index: 2;
+    z-index: 5;
   }
   .cwc-content {
     position: relative;
-    z-index: 2;
+    z-index: 5;
   }
   .cwc-map-title {
     font-family: var(--font-heading);
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 900;
     text-transform: uppercase;
     color: #ffffff;
-    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.8);
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.9), 0 0 15px rgba(255,255,255,0.4);
   }
   .cwc-map-sub {
-    font-size: 12px;
+    font-size: 12.5px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--text-secondary);
+    color: var(--ms-cyan);
+    font-weight: 700;
   }
 
   /* Gallery of All Battlegrounds */
@@ -1085,7 +766,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 16px;
-    margin-top: 24px;
   }
   .bg-thumb-card {
     border-radius: 10px;
@@ -1099,12 +779,12 @@
   }
   .bg-thumb-card:hover {
     transform: translateY(-4px);
-    border-color: var(--ms-cyan);
-    box-shadow: 0 8px 24px rgba(0, 229, 255, 0.25);
+    border-color: #ffffff;
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.25);
   }
   .bg-thumb-card.active-now {
-    border: 2px solid var(--ms-cyan);
-    box-shadow: 0 0 20px rgba(0, 229, 255, 0.4);
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 24px rgba(255, 255, 255, 0.5);
   }
   .bg-thumb-img {
     width: 100%;
@@ -1134,6 +814,380 @@
     font-family: var(--font-mono);
     font-size: 10px;
     color: var(--ms-cyan);
+  }
+
+  /* ================= TABLA TOP 10 MUNDIAL ================= */
+  .leaderboard-modal-preview {
+    background: rgba(10, 19, 34, 0.9);
+    border: 1px solid var(--border-card);
+    border-radius: 14px;
+    padding: 24px;
+    margin: 35px 0 50px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+  }
+  .lb-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .lb-title-group h3 {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .lb-season-badge {
+    background: rgba(245, 158, 11, 0.15);
+    border: 1px solid var(--ms-gold);
+    color: var(--ms-gold-bright);
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 99px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .lb-season-badge .pulse {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--ms-gold);
+    animation: blink-dot 1.8s infinite;
+  }
+  .lb-table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .lb-row {
+    display: grid;
+    grid-template-columns: 46px 1fr 100px 160px;
+    align-items: center;
+    padding: 10px 16px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 8px;
+    font-family: var(--font-heading);
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .lb-row.active-squad {
+    background: linear-gradient(90deg, rgba(245, 158, 11, 0.22), rgba(25, 103, 210, 0.2));
+    border: 1.5px solid var(--ms-gold-bright);
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.25);
+  }
+  .lb-pos {
+    font-family: var(--font-mono);
+    font-size: 18px;
+    font-weight: 900;
+    color: var(--text-muted);
+  }
+  .lb-row.active-squad .lb-pos {
+    color: var(--ms-gold-bright);
+  }
+  .lb-name {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .lb-members {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--text-muted);
+    text-align: center;
+  }
+  .lb-trophies {
+    font-family: var(--font-mono);
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--ms-gold-bright);
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+  }
+
+  /* ================= GUÍA DE RANGOS MATCHMAKING ================= */
+  .ranks-guide-strip {
+    background: linear-gradient(135deg, rgba(14, 23, 38, 0.9), rgba(8, 14, 24, 0.95));
+    border: 1px solid var(--border-line);
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .rg-title {
+    font-family: var(--font-heading);
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ms-cyan);
+  }
+  .rg-chips {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .rg-chip {
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-secondary);
+  }
+  .rg-chip.grandmaster {
+    background: var(--ms-gm-gradient);
+    color: #ffffff;
+    font-weight: 800;
+    border: none;
+    box-shadow: 0 0 12px rgba(217, 70, 239, 0.5);
+  }
+
+  /* ================= ROSTER DE PILOTOS (AL PIE DE PÁGINA) ================= */
+  .members-panel {
+    background: rgba(10, 19, 34, 0.85);
+    border: 1px solid var(--border-card);
+    border-radius: 14px;
+    overflow: hidden;
+    backdrop-filter: blur(14px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+    margin-bottom: 70px;
+  }
+  .members-toolbar {
+    padding: 18px 22px;
+    border-bottom: 1px solid var(--border-line);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    background: rgba(6, 12, 22, 0.5);
+  }
+  .search-box {
+    position: relative;
+    flex: 1;
+    min-width: 220px;
+    max-width: 400px;
+  }
+  .search-box input {
+    width: 100%;
+    background: rgba(13, 26, 45, 0.8);
+    border: 1px solid var(--border-line);
+    border-radius: 8px;
+    padding: 10px 14px 10px 38px;
+    color: var(--text-pure);
+    font-family: var(--font-body);
+    font-size: 14px;
+    outline: none;
+    transition: all 0.2s ease;
+  }
+  .search-box input:focus {
+    border-color: var(--ms-cyan);
+    box-shadow: 0 0 14px var(--ms-cyan-dim);
+  }
+  .search-box .search-ico {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    font-size: 16px;
+  }
+
+  .filter-pills {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .filter-pill {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-line);
+    color: var(--text-secondary);
+    font-family: var(--font-heading);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .filter-pill:hover {
+    color: var(--text-pure);
+    border-color: rgba(255, 255, 255, 0.25);
+  }
+  .filter-pill.active {
+    background: #1967d2;
+    border-color: var(--ms-cyan);
+    color: #ffffff;
+    box-shadow: 0 0 14px rgba(25, 103, 210, 0.5);
+  }
+
+  /* Pilot List Items (SIN AVATARES, SOLO NOMBRES) */
+  .pilot-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .pilot-row {
+    display: grid;
+    grid-template-columns: 50px 1.5fr 150px 160px 160px 140px;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 22px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: background 0.2s ease;
+  }
+  .pilot-row:last-child {
+    border-bottom: none;
+  }
+  .pilot-row:hover {
+    background: rgba(25, 103, 210, 0.09);
+  }
+  .pilot-row.highlight-user {
+    background: linear-gradient(90deg, rgba(14, 165, 233, 0.18), rgba(25, 103, 210, 0.08));
+    border-left: 4px solid var(--ms-cyan);
+  }
+
+  .pilot-rank-num {
+    font-family: var(--font-mono);
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--text-muted);
+    text-align: center;
+  }
+  .pilot-rank-num.top3 {
+    color: var(--ms-gold-bright);
+    font-size: 18px;
+    text-shadow: 0 0 10px var(--ms-gold-glow);
+  }
+
+  .pilot-name-text {
+    font-family: var(--font-heading);
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    color: var(--text-pure);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .pilot-top50-tag {
+    background: #0284c7;
+    color: #ffffff;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 800;
+    padding: 2px 7px;
+    border-radius: 4px;
+    letter-spacing: 0.06em;
+  }
+
+  .pilot-rank-badge {
+    font-size: 12.5px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .rank-dueno { color: var(--ms-gold-bright); }
+  .rank-admin { color: var(--ms-red); }
+  .rank-veterano { color: var(--ms-cyan); }
+  .rank-miembro { color: var(--text-secondary); }
+
+  /* Matchmaking Division Badge (RANGO POR COPAS) */
+  .pilot-division-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-heading);
+    font-size: 11.5px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: var(--ms-gm-gradient);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(192, 38, 211, 0.35);
+    width: fit-content;
+  }
+
+  .pilot-status-col {
+    font-size: 13px;
+    color: var(--text-secondary);
+  }
+  .status-online {
+    color: var(--ms-green);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .status-online-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--ms-green);
+    box-shadow: 0 0 10px var(--ms-green);
+    animation: blink-dot 1.8s infinite;
+  }
+
+  .pilot-trophies-col {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    font-family: var(--font-mono);
+    font-size: 17px;
+    font-weight: 800;
+    color: var(--ms-gold-bright);
+  }
+  .pilot-trophies-col svg {
+    width: 18px;
+    height: 18px;
+    fill: var(--ms-gold-bright);
+  }
+
+  @media (max-width: 860px) {
+    .pilot-row {
+      grid-template-columns: 36px 1fr auto auto;
+      gap: 10px;
+      padding: 14px 16px;
+    }
+    .pilot-division-badge { display: none; }
+    .pilot-status-col { display: none; }
+    .pilot-name-text { font-size: 15px; }
+    .pilot-trophies-col { font-size: 15px; }
+    .lb-row { grid-template-columns: 36px 1fr auto; }
+    .lb-members { display: none; }
   }
 
   /* Footer */
@@ -1202,7 +1256,6 @@
     <div class="nav-flex">
       <a href="#inicio" class="brand-group">
         <div class="squad-emblem-badge">
-          <!-- Official Twin Eagle Shield Crest -->
           <svg viewBox="0 0 100 100" width="28" height="28" fill="#ffffff">
             <path d="M50 5 L88 22 L88 56 C88 78 50 95 50 95 C50 95 12 78 12 56 L12 22 Z" fill="#1b63d1" stroke="#ffffff" stroke-width="4"/>
             <path d="M50 18 L68 34 L62 46 L50 38 L38 46 L32 34 Z" fill="#ffffff"/>
@@ -1214,7 +1267,7 @@
             <span class="squad-tag-badge">RØ</span>
             <span>Øɖɨn'ѕ ƉєɱɨѕɆ</span>
           </div>
-          <span class="brand-sub">★ TOP #7 GLOBAL · METALSTORM</span>
+          <span class="brand-sub">★ PUESTO #7 DEL MUNDO · METALSTORM</span>
         </div>
       </a>
 
@@ -1222,9 +1275,9 @@
 
       <nav class="nav-menu" id="navMenu">
         <a href="#inicio">Escuadrón</a>
-        <a href="#ranking">Top 7 Mundial</a>
-        <a href="#miembros">Pilotos (30)</a>
         <a href="#rotacion">Rotación & Mapas</a>
+        <a href="#ranking">Top 10 Mundial</a>
+        <a href="#miembros">Pilotos (30)</a>
       </nav>
 
       <button class="nav-btn-action" id="copyCodeNav">
@@ -1237,34 +1290,34 @@
 <main class="wrap" id="inicio">
 
   <!-- ================= PUESTO #7 DEL MUNDO (STRIP DESTACADO) ================= -->
-  <div class="world-rank-ribbon" id="ranking">
+  <div class="world-rank-ribbon">
     <div class="world-rank-inner">
       <div class="wr-badge-group">
         <div class="wr-rank-circle">#7</div>
         <div class="wr-title-box">
           <h2>¡PUESTO <span class="gold">#7 DEL MUNDO</span> EN METALSTORM!</h2>
-          <p>Tabla Oficial de Escuadrones Globales · Temporada Competitiva Activa</p>
+          <p>Tabla Oficial de Escuadrones Globales · Temporada Competitiva</p>
         </div>
       </div>
 
       <div class="wr-stats-pill">
         <div class="wr-stat-item">
           <span class="lbl">Trofeos Globales</span>
-          <span class="val">1.029.336 🏆</span>
+          <span class="val">1.029.339 🏆</span>
         </div>
         <div class="wr-stat-item">
           <span class="lbl">Plantilla</span>
           <span class="val" style="color:var(--ms-cyan)">30 / 30 Pilotos</span>
         </div>
         <div class="wr-stat-item">
-          <span class="lbl">Cierre Temporada</span>
-          <span class="val" style="color:#ffffff;">12d 0h</span>
+          <span class="lbl">Cierre Temporada (30d)</span>
+          <span class="val" id="seasonCountdownRibbon" style="color:#ffffff;">12d 00h 00m</span>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- ================= IN-GAME STYLE SQUAD BANNER ================= -->
+  <!-- ================= IN-GAME STYLE SQUAD BANNER (SIN EMOJIS DE LÁPIZ) ================= -->
   <section class="ingame-squad-banner">
     <div class="banner-top-row">
       <div class="banner-crest">
@@ -1279,19 +1332,18 @@
 
       <div class="banner-titles">
         <div class="banner-header-badges">
+          <!-- SIN EMOJIS DE LÁPIZ -->
           <div class="banner-tag-box">
             <span>RØ</span>
-            <span style="font-size:13px;opacity:0.7;">✎</span>
           </div>
           <div class="banner-name-box">
             <span>Øɖɨn'ѕ ƉєɱɨѕɆ</span>
-            <span style="font-size:14px;opacity:0.6;">✎</span>
           </div>
         </div>
 
         <div class="banner-trophies-row">
           <svg viewBox="0 0 24 24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>
-          <span id="bannerTrophyCount">1.029.336</span>
+          <span id="bannerTrophyCount">1.029.339</span>
         </div>
       </div>
     </div>
@@ -1336,68 +1388,6 @@
     </div>
   </section>
 
-  <!-- ================= MARCADORES: TOP 7 GLOBAL WIDGET ================= -->
-  <section class="leaderboard-modal-preview">
-    <div class="lb-header">
-      <div class="lb-title-group">
-        <h3>
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>
-          Marcadores Mundiales de Escuadrones
-        </h3>
-      </div>
-      <div class="lb-season-badge">La temporada finaliza en 12d 0h</div>
-    </div>
-
-    <div class="lb-table">
-      <div class="lb-row">
-        <div class="lb-pos">1</div>
-        <div class="lb-name">N Σ M Ξ S I S</div>
-        <div class="lb-members">29/30</div>
-        <div class="lb-trophies"><svg viewBox="0 0 24 24" width="16" height="16" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>1.229.263</div>
-      </div>
-      <div class="lb-row">
-        <div class="lb-pos">2</div>
-        <div class="lb-name">Korea Top Gun</div>
-        <div class="lb-members">30/30</div>
-        <div class="lb-trophies"><svg viewBox="0 0 24 24" width="16" height="16" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>1.161.783</div>
-      </div>
-      <div class="lb-row">
-        <div class="lb-pos">3</div>
-        <div class="lb-name">VШM★Ξ M P I R Σ</div>
-        <div class="lb-members">30/30</div>
-        <div class="lb-trophies"><svg viewBox="0 0 24 24" width="16" height="16" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>1.160.370</div>
-      </div>
-      <div class="lb-row">
-        <div class="lb-pos">4</div>
-        <div class="lb-name">丂ENTINELS apac</div>
-        <div class="lb-members">29/30</div>
-        <div class="lb-trophies"><svg viewBox="0 0 24 24" width="16" height="16" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>1.146.849</div>
-      </div>
-      <div class="lb-row">
-        <div class="lb-pos">5</div>
-        <div class="lb-name">ΧΗΙΜΣΓΔ</div>
-        <div class="lb-members">30/30</div>
-        <div class="lb-trophies"><svg viewBox="0 0 24 24" width="16" height="16" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>1.108.753</div>
-      </div>
-      <div class="lb-row">
-        <div class="lb-pos">6</div>
-        <div class="lb-name">N Ξ M Σ S I S™</div>
-        <div class="lb-members">29/30</div>
-        <div class="lb-trophies"><svg viewBox="0 0 24 24" width="16" height="16" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>1.098.550</div>
-      </div>
-      <!-- ACTIVE SQUAD #7 -->
-      <div class="lb-row active-squad">
-        <div class="lb-pos">7</div>
-        <div class="lb-name">
-          <span class="squad-tag-badge" style="font-size:11px;">RØ</span>
-          <span>Øɖɨn'ѕ ƉєɱɨѕɆ</span>
-        </div>
-        <div class="lb-members" style="color:var(--ms-cyan);font-weight:800;">30/30</div>
-        <div class="lb-trophies"><svg viewBox="0 0 24 24" width="16" height="16" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>1.029.336</div>
-      </div>
-    </div>
-  </section>
-
   <!-- ================= SQUAD EVENT STATUS STRIP ================= -->
   <div class="squad-event-bar">
     <div style="display:flex;align-items:center;gap:14px;">
@@ -1420,43 +1410,14 @@
     </div>
   </div>
 
-  <!-- ================= IN-GAME TABS ================= -->
-  <div class="ingame-tabs-row" id="miembros">
-    <button class="ingame-tab" onclick="location.href='#inicio'">Chat</button>
-    <button class="ingame-tab" onclick="location.href='#ranking'">Marcadores</button>
-    <button class="ingame-tab active">
-      Miembros <span class="tab-badge-num">30</span>
-    </button>
-    <button class="ingame-tab" onclick="location.href='#rotacion'">Rotación</button>
-  </div>
-
-  <!-- ================= MEMBERS LIST (ROSTER OF ALL 30 PILOTS) ================= -->
-  <section class="members-panel">
-    <div class="members-toolbar">
-      <div class="search-box">
-        <span class="search-ico">⌕</span>
-        <input type="search" id="memberSearch" placeholder="Buscar piloto o rango…">
-      </div>
-
-      <div class="filter-pills" id="rankFilters">
-        <button class="filter-pill active" data-filter="todos">Todos (30)</button>
-        <button class="filter-pill" data-filter="dueno">Dueño</button>
-        <button class="filter-pill" data-filter="admin">Admin</button>
-        <button class="filter-pill" data-filter="veterano">Veteranos</button>
-        <button class="filter-pill" data-filter="online">En Línea</button>
-      </div>
+  <!-- ================= ROTACIÓN DE MAPAS (COLOCADA AQUÍ DEBAJO DEL RECUADRO AZUL) ================= -->
+  <section class="rotation-section-placed" id="rotacion">
+    <div class="hud-sec-title">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="var(--ms-cyan)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/></svg>
+      Rotación de Modos & Wallpapers en Vivo
     </div>
-
-    <div class="pilot-list" id="pilotListRows">
-      <!-- Generated via JS with all 30 real pilots -->
-    </div>
-  </section>
-
-  <!-- ================= REAL MAP WALLPAPERS & ROTATION ================= -->
-  <section class="hud-section" id="rotacion">
-    <div class="hud-sec-title">Rotación de Modos & Wallpapers Oficiales</div>
     <div class="hud-sec-sub">
-      Escenarios de combate aeroespacial en alta definición y ciclo de rotación 24/7 sincronizado con los servidores de Metalstorm.
+      Horario dinámico de modos en combate aeroespacial y visualización cinemática con luz neón del mapa activo.
     </div>
 
     <div class="rotation-showcase">
@@ -1489,11 +1450,13 @@
         </div>
       </div>
 
-      <!-- Cinematic Active Map Wallpaper Card -->
+      <!-- Cinematic Active Map Wallpaper Card con LUZ NEÓN BLANCA EN MOVIMIENTO -->
       <div class="cinematic-wallpaper-card" id="cinematicCard">
+        <div class="cwc-neon-border"></div>
         <div class="cwc-bg-img" id="cwcBgImg" style="background-image: url('assets/wall-canyon.jpg');"></div>
         <div class="cwc-overlay"></div>
-        <div class="cwc-badge-top">MAPA ACTIVO · HD 1920×1080</div>
+        <!-- SIN PÍXELES DE FOTO, SOLO ETIQUETA TÁCTICA -->
+        <div class="cwc-badge-top">MAPA EN ROTACIÓN ACTIVA</div>
         <div class="cwc-content">
           <div class="cwc-map-title" id="cwcMapTitle">Cañón Carmesí</div>
           <div class="cwc-map-sub" id="cwcMapSub">Despliegue de Combate Cercano</div>
@@ -1502,9 +1465,12 @@
     </div>
 
     <!-- Gallery of all official battlegrounds -->
-    <h4 style="font-family:var(--font-heading);font-size:16px;text-transform:uppercase;color:var(--text-secondary);letter-spacing:0.12em;margin-bottom:14px;">
-      Mapas y Escenarios del Juego
-    </h4>
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+      <h4 style="font-family:var(--font-heading);font-size:15px;text-transform:uppercase;color:var(--text-secondary);letter-spacing:0.12em;">
+        Galería de Mapas del Juego
+      </h4>
+      <span style="font-size:12px;color:var(--text-muted);">Haz clic para previsualizar</span>
+    </div>
     <div class="battleground-gallery">
       <div class="bg-thumb-card" data-map="Canyon" onclick="selectMapPreview('Canyon')">
         <div class="bg-thumb-img" style="background-image:url('assets/wall-canyon.jpg')"></div>
@@ -1551,6 +1517,148 @@
     </div>
   </section>
 
+  <!-- ================= MARCADORES: TOP 10 GLOBAL (CON REINICIO CADA 30 DÍAS) ================= -->
+  <section class="leaderboard-modal-preview" id="ranking">
+    <div class="lb-header">
+      <div class="lb-title-group">
+        <h3>
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>
+          Marcadores Mundiales · Top 10 Escuadrones
+        </h3>
+      </div>
+      <div class="lb-season-badge">
+        <span class="pulse"></span>
+        <span>Temporada finaliza en: <b id="seasonTimerLb" style="color:#ffffff;">12d 00h 00m 00s</b> (Ciclo 30 días)</span>
+      </div>
+    </div>
+
+    <!-- TODOS LOS 10 ESCUADRONES DEL TOP 10 MUNDIAL -->
+    <div class="lb-table">
+      <div class="lb-row">
+        <div class="lb-pos">1</div>
+        <div class="lb-name">N Σ M Ξ S I S</div>
+        <div class="lb-members">29/30</div>
+        <div class="lb-trophies"><svg viewBox="0 0 24 24" width="16" height="16" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>1.229.263</div>
+      </div>
+      <div class="lb-row">
+        <div class="lb-pos">2</div>
+        <div class="lb-name">Korea Top Gun</div>
+        <div class="lb-members">30/30</div>
+        <div class="lb-trophies"><svg viewBox="0 0 24 24" width="16" height="16" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>1.161.783</div>
+      </div>
+      <div class="lb-row">
+        <div class="lb-pos">3</div>
+        <div class="lb-name">VШM★Ξ M P I R Σ</div>
+        <div class="lb-members">30/30</div>
+        <div class="lb-trophies"><svg viewBox="0 0 24 24" width="16" height="16" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>1.160.370</div>
+      </div>
+      <div class="lb-row">
+        <div class="lb-pos">4</div>
+        <div class="lb-name">丂ENTINELS apac</div>
+        <div class="lb-members">29/30</div>
+        <div class="lb-trophies"><svg viewBox="0 0 24 24" width="16" height="16" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>1.146.849</div>
+      </div>
+      <div class="lb-row">
+        <div class="lb-pos">5</div>
+        <div class="lb-name">ΧΗΙΜΣΓΔ</div>
+        <div class="lb-members">30/30</div>
+        <div class="lb-trophies"><svg viewBox="0 0 24 24" width="16" height="16" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>1.108.753</div>
+      </div>
+      <div class="lb-row">
+        <div class="lb-pos">6</div>
+        <div class="lb-name">N Ξ M Σ S I S™</div>
+        <div class="lb-members">29/30</div>
+        <div class="lb-trophies"><svg viewBox="0 0 24 24" width="16" height="16" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>1.098.550</div>
+      </div>
+      <!-- ACTIVE SQUAD #7 DESTACADO -->
+      <div class="lb-row active-squad">
+        <div class="lb-pos">7</div>
+        <div class="lb-name">
+          <span class="squad-tag-badge" style="font-size:11px;">RØ</span>
+          <span>Øɖɨn'ѕ ƉєɱɨѕɆ</span>
+        </div>
+        <div class="lb-members" style="color:var(--ms-cyan);font-weight:800;">30/30</div>
+        <div class="lb-trophies"><svg viewBox="0 0 24 24" width="16" height="16" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>1.029.339</div>
+      </div>
+      <div class="lb-row">
+        <div class="lb-pos">8</div>
+        <div class="lb-name">TOP★GUN★BRASIL</div>
+        <div class="lb-members">29/30</div>
+        <div class="lb-trophies"><svg viewBox="0 0 24 24" width="16" height="16" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>1.018.639</div>
+      </div>
+      <div class="lb-row">
+        <div class="lb-pos">9</div>
+        <div class="lb-name">ACΣ</div>
+        <div class="lb-members">26/30</div>
+        <div class="lb-trophies"><svg viewBox="0 0 24 24" width="16" height="16" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>1.018.621</div>
+      </div>
+      <div class="lb-row">
+        <div class="lb-pos">10</div>
+        <div class="lb-name">4QヅSEVEN</div>
+        <div class="lb-members">30/30</div>
+        <div class="lb-trophies"><svg viewBox="0 0 24 24" width="16" height="16" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>1.016.906</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GUÍA DE RANGOS MATCHMAKING ================= -->
+  <div class="ranks-guide-strip">
+    <div class="rg-title">
+      Rangos Oficiales por Copas (Matchmaking):
+    </div>
+    <div class="rg-chips">
+      <span class="rg-chip">Iron (0 🏆)</span>
+      <span class="rg-chip">Bronze (75 🏆)</span>
+      <span class="rg-chip">Silver (300 🏆)</span>
+      <span class="rg-chip">Gold (600 🏆)</span>
+      <span class="rg-chip">Platinum (900 🏆)</span>
+      <span class="rg-chip">Diamond (1,200 🏆)</span>
+      <span class="rg-chip">Master (1,500 🏆)</span>
+      <span class="rg-chip grandmaster">★ Grandmaster (2,000+ 🏆)</span>
+    </div>
+  </div>
+
+  <!-- ================= MEMBERS LIST (AL PIE DE LA PÁGINA) ================= -->
+  <div class="hud-sec-title" id="miembros" style="margin-top:20px;">
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="var(--ms-gold-bright)"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+    Pilotos del Escuadrón (30 / 30)
+  </div>
+  <div class="hud-sec-sub">
+    Plantilla oficial completa. Todos los miembros ostentan el rango de <b>Grandmaster ★</b> en base a sus copas personales.
+  </div>
+
+  <section class="members-panel">
+    <div class="members-toolbar">
+      <div class="search-box">
+        <span class="search-ico">⌕</span>
+        <input type="search" id="memberSearch" placeholder="Buscar piloto o cargo…">
+      </div>
+
+      <div class="filter-pills" id="rankFilters">
+        <button class="filter-pill active" data-filter="todos">Todos (30)</button>
+        <button class="filter-pill" data-filter="dueno">Dueño</button>
+        <button class="filter-pill" data-filter="admin">Admin</button>
+        <button class="filter-pill" data-filter="veterano">Veteranos</button>
+        <button class="filter-pill" data-filter="online">En Línea</button>
+      </div>
+    </div>
+
+    <!-- Roster Headers -->
+    <div style="display:grid;grid-template-columns:50px 1.5fr 150px 160px 160px 140px;gap:14px;padding:12px 22px;background:rgba(0,0,0,0.3);font-family:var(--font-heading);font-size:11.5px;text-transform:uppercase;letter-spacing:0.12em;color:var(--text-muted);border-bottom:1px solid rgba(255,255,255,0.08);">
+      <div style="text-align:center;">#</div>
+      <div>Piloto</div>
+      <div>Cargo Escuadrón</div>
+      <div>Rango por Copas</div>
+      <div>Última Conexión</div>
+      <div style="text-align:right;">Trofeos</div>
+    </div>
+
+    <!-- SIN AVATARES: SOLO NOMBRE Y METADATOS CLAROS -->
+    <div class="pilot-list" id="pilotListRows">
+      <!-- Generated via JS -->
+    </div>
+  </section>
+
 </main>
 
 <!-- ================= FOOTER ================= -->
@@ -1584,43 +1692,35 @@
 const SQUAD_CODE = "#JHP3JF";
 
 /* ============================================================================
-   AVATARES SVG TEMÁTICOS SIMILARES AL JUEGO
+   TEMPORIZADOR DE TEMPORADA DE 30 DÍAS CON REINICIO AUTOMÁTICO EN 0
    ========================================================================== */
-function getAvatarSvg(tipo, color) {
-  const c = color || '#38bdf8';
-  switch (tipo) {
-    case 'devil':
-      return `<svg viewBox="0 0 100 100"><path d="M50 15 L68 35 L62 55 L50 48 L38 55 L32 35 Z" fill="${c}"/><polygon points="25,20 32,38 20,40" fill="${c}"/><polygon points="75,20 68,38 80,40" fill="${c}"/><circle cx="42" cy="48" r="4" fill="#ffffff"/><circle cx="58" cy="48" r="4" fill="#ffffff"/></svg>`;
-    case 'gold-jet':
-      return `<svg viewBox="0 0 100 100"><polygon points="50,12 56,42 82,65 56,62 50,88 44,62 18,65 44,42" fill="${c}"/><path d="M42 22 L50 15 L58 22 L54 26 L50 24 L46 26 Z" fill="#ffffff"/></svg>`;
-    case 'top50':
-      return `<svg viewBox="0 0 100 100"><polygon points="50,10 56,42 82,65 56,62 50,88 44,62 18,65 44,42" fill="${c}"/><circle cx="50" cy="50" r="38" fill="none" stroke="${c}" stroke-width="3" stroke-dasharray="4 3"/><div class="avatar-top-tag">TOP 50</div></svg>`;
-    case 'eagle':
-      return `<svg viewBox="0 0 100 100"><path d="M25 45 C35 25 65 25 75 45 C65 55 60 75 50 82 C40 75 35 55 25 45 Z" fill="${c}"/><circle cx="43" cy="44" r="4" fill="#ffffff"/><polygon points="50,56 56,66 44,66" fill="#f59e0b"/></svg>`;
-    case 'dagger':
-      return `<svg viewBox="0 0 100 100"><polygon points="50,15 57,48 50,82 43,48" fill="${c}"/><line x1="30" y1="52" x2="70" y2="52" stroke="#ffffff" stroke-width="4"/><circle cx="50" cy="85" r="5" fill="${c}"/></svg>`;
-    case 'star':
-      return `<svg viewBox="0 0 100 100"><polygon points="50,12 61,38 88,40 68,58 74,85 50,70 26,85 32,58 12,40 39,38" fill="${c}"/></svg>`;
-    case 'clover':
-      return `<svg viewBox="0 0 100 100"><circle cx="40" cy="40" r="14" fill="${c}"/><circle cx="60" cy="40" r="14" fill="${c}"/><circle cx="40" cy="60" r="14" fill="${c}"/><circle cx="60" cy="60" r="14" fill="${c}"/><line x1="50" y1="50" x2="50" y2="82" stroke="${c}" stroke-width="4"/></svg>`;
-    case 'ace':
-      return `<svg viewBox="0 0 100 100"><path d="M50 20 C60 38 78 48 70 65 C62 76 52 70 50 64 C48 70 38 76 30 65 C22 48 40 38 50 20 Z" fill="${c}"/><polygon points="50,60 55,80 45,80" fill="${c}"/></svg>`;
-    case 'cat':
-    case 'cat-eyes':
-      return `<svg viewBox="0 0 100 100"><polygon points="30,25 42,46 22,46" fill="${c}"/><polygon points="70,25 78,46 58,46" fill="${c}"/><circle cx="50" cy="55" r="26" fill="${c}"/><polygon points="40,54 44,58 36,58" fill="#ffffff"/><polygon points="60,54 64,58 56,58" fill="#ffffff"/></svg>`;
-    case 'shark':
-      return `<svg viewBox="0 0 100 100"><path d="M20 55 C35 30 70 30 85 55 C70 65 40 65 20 55 Z" fill="${c}"/><polygon points="50,34 62,18 64,34" fill="${c}"/></svg>`;
-    case 'wolf':
-    case 'doberman':
-      return `<svg viewBox="0 0 100 100"><polygon points="32,20 42,46 24,46" fill="${c}"/><polygon points="68,20 76,46 58,46" fill="${c}"/><polygon points="50,35 68,60 50,82 32,60" fill="${c}"/></svg>`;
-    case 'owl':
-      return `<svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="38" fill="none" stroke="${c}" stroke-width="3"/><circle cx="40" cy="45" r="10" fill="${c}"/><circle cx="60" cy="45" r="10" fill="${c}"/><circle cx="40" cy="45" r="4" fill="#ffffff"/><circle cx="60" cy="45" r="4" fill="#ffffff"/><polygon points="50,52 55,62 45,62" fill="#ffffff"/></svg>`;
-    case 'dragon':
-      return `<svg viewBox="0 0 100 100"><path d="M20 70 C30 35 60 25 80 40 C75 55 60 65 50 65 C40 65 30 75 20 70 Z" fill="${c}"/><circle cx="65" cy="42" r="4" fill="#ffffff"/></svg>`;
-    default:
-      return `<svg viewBox="0 0 100 100"><polygon points="50,15 56,42 82,65 56,62 50,85 44,62 18,65 44,42" fill="${c}"/></svg>`;
+const CYCLE_MS = 30 * 24 * 60 * 60 * 1000; // 30 días exactos en ms
+// Alineado con la fecha de la captura: 12d 0h restantes
+const BASE_END_TIMESTAMP = Date.now() + (12 * 24 * 60 * 60 * 1000);
+
+function updateSeasonCountdown() {
+  const now = Date.now();
+  let remainingMs = (BASE_END_TIMESTAMP - now) % CYCLE_MS;
+  if (remainingMs <= 0) {
+    remainingMs += CYCLE_MS; // Se reinicia automáticamente a 30 días
   }
+
+  const days = Math.floor(remainingMs / (24 * 3600 * 1000));
+  const hours = Math.floor((remainingMs % (24 * 3600 * 1000)) / (3600 * 1000));
+  const mins = Math.floor((remainingMs % (3600 * 1000)) / (60 * 1000));
+  const secs = Math.floor((remainingMs % (60 * 1000)) / 1000);
+
+  const pad2 = n => String(n).padStart(2, '0');
+  const strFull = `${days}d ${pad2(hours)}h ${pad2(mins)}m ${pad2(secs)}s`;
+  const strShort = `${days}d ${pad2(hours)}h ${pad2(mins)}m`;
+
+  const lbEl = document.getElementById('seasonTimerLb');
+  const ribEl = document.getElementById('seasonCountdownRibbon');
+  if (lbEl) lbEl.textContent = strFull;
+  if (ribEl) ribEl.textContent = strShort;
 }
+setInterval(updateSeasonCountdown, 1000);
+updateSeasonCountdown();
 
 /* ============================================================================
    CLIPBOARD & TOAST
@@ -1651,7 +1751,7 @@ document.getElementById('copyCodeNav').addEventListener('click', copyCode);
 document.getElementById('copyCodeBanner').addEventListener('click', copyCode);
 
 /* ============================================================================
-   PILOTS DATA & RENDERING (30 PILOTOS EXACTOS DEL JUEGO)
+   PILOTS DATA & RENDERING (SIN AVATARES, SOLO NOMBRES Y RANGOS POR COPAS)
    ========================================================================== */
 let PILOTS_DATA = [];
 let currentFilter = 'todos';
@@ -1702,19 +1802,21 @@ function renderPilots() {
     return `
       <div class="pilot-row ${isDeusVult ? 'highlight-user' : ''}">
         <div class="pilot-rank-num ${isTop3 ? 'top3' : ''}">${p.posicion}</div>
-        
-        <div class="pilot-avatar-frame">
-          ${getAvatarSvg(p.avatarTipo, p.avatarColor)}
-          ${p.insignia ? `<div class="avatar-top-tag">${p.insignia}</div>` : ''}
+
+        <div class="pilot-name-text">
+          <span>${p.callsign}</span>
+          ${p.insignia ? `<span class="pilot-top50-tag">${p.insignia}</span>` : ''}
         </div>
 
-        <div class="pilot-info-col">
-          <div class="pilot-name-text">
-            <span>${p.callsign}</span>
-          </div>
-          <div class="pilot-rank-badge ${rankClass}">
-            ${p.rango === 'Dueño' ? '👑 Dueño' : (p.rango === 'Admin' ? '🛡️ Admin' : (p.rango === 'Veterano' ? '⭐ Veterano' : 'Miembro'))}
-          </div>
+        <div class="pilot-rank-badge ${rankClass}">
+          ${p.rango === 'Dueño' ? '👑 Dueño' : (p.rango === 'Admin' ? '🛡️ Admin' : (p.rango === 'Veterano' ? '⭐ Veterano' : 'Miembro'))}
+        </div>
+
+        <div>
+          <span class="pilot-division-badge">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="#ffffff"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            Grandmaster ★
+          </span>
         </div>
 
         <div class="pilot-status-col">
@@ -1749,7 +1851,7 @@ document.querySelectorAll('.filter-pill').forEach(btn => {
 });
 
 /* ============================================================================
-   ROTACIÓN EN VIVO & WALLPAPERS OFICIALES
+   ROTACIÓN EN VIVO & WALLPAPERS OFICIALES (Luz neón en blanco animada)
    ========================================================================== */
 const MODES = {
   tdm:  { es: 'Combate por Equipos',  en: 'Team Deathmatch',  tag: 'TDM',  color: '#38bdf8', icon: 'assets/icon-tdm.png' },
@@ -1846,7 +1948,6 @@ function renderRotation() {
   iconEl.style.webkitMaskImage = 'url("' + modeNow.icon + '")';
   iconEl.style.maskImage = 'url("' + modeNow.icon + '")';
 
-  // Update cinematic wallpaper if not manually overridden
   if (!manualPreview) {
     setCinematicMap(slotNow.mapa, slotNow.nombreMapa, slotNow.sub, slotNow.wall);
   }
@@ -1874,7 +1975,7 @@ function selectMapPreview(mapKey) {
   }
 }
 
-// Mobile menu toggle
+// Burger menu
 const burger = document.getElementById('burgerToggle');
 const navMenu = document.getElementById('navMenu');
 if (burger && navMenu) {
