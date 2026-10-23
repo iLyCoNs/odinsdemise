@@ -2132,13 +2132,39 @@ document.querySelectorAll('.filter-pill').forEach(btn => {
    ROTACIÓN EN VIVO, ORDEN CRONOLÓGICO DE MAPAS Y LUZ NEÓN
    ========================================================================== */
 const MODES = {
-  tdm:  { es: 'Combate por Equipos',  en: 'Team Deathmatch',  tag: 'TDM',  color: '#38bdf8', icon: 'assets/icon-tdm.png' },
-  as:   { es: 'Superioridad Aérea',   en: 'Air Superiority',  tag: 'SA',   color: '#00e5ff', icon: 'assets/icon-as.png' },
-  pt:   { es: 'Objetivo Prioritario', en: 'Priority Target',  tag: 'VIP',  color: '#a855f7', icon: 'assets/icon-pt.png' },
-  ctf:  { es: 'Captura la Bandera',   en: 'Capture the Flag', tag: 'CTF',  color: '#f59e0b', icon: 'assets/icon-ctf.png' },
-  vip:  { es: 'Duelo VIP',            en: 'VIP Deathmatch',   tag: 'VIP-D',color: '#22c55e', icon: 'assets/icon-vip.png' },
-  elim: { es: 'Eliminación Total',    en: 'Elimination',      tag: 'ELIM', color: '#94a3b8', icon: 'assets/icon-elim.png' }
+  tdm:  { es: 'Combate por Equipos',  en: 'Team Deathmatch',  sigla_es: 'CM',  sigla_en: 'TDM',  tag: 'TDM',  color: '#38bdf8', icon: 'assets/icon-tdm.png' },
+  as:   { es: 'Superioridad Aérea',   en: 'Air Superiority',  sigla_es: 'SA',  sigla_en: 'AS',   tag: 'SA',   color: '#00e5ff', icon: 'assets/icon-as.png' },
+  pt:   { es: 'Objetivo Prioritario', en: 'Priority Target',  sigla_es: 'OP',  sigla_en: 'PT',   tag: 'VIP',  color: '#a855f7', icon: 'assets/icon-pt.png' },
+  ctf:  { es: 'Captura la Bandera',   en: 'Capture the Flag', sigla_es: 'CB',  sigla_en: 'CTF',  tag: 'CTF',  color: '#f59e0b', icon: 'assets/icon-ctf.png' },
+  vip:  { es: 'Duelo VIP',            en: 'VIP Deathmatch',   sigla_es: 'VIP', sigla_en: 'VIP',  tag: 'VIP-D',color: '#22c55e', icon: 'assets/icon-vip.png' },
+  elim: { es: 'Eliminación Total',    en: 'Elimination',      sigla_es: 'ET',  sigla_en: 'ELIM', tag: 'ELIM', color: '#94a3b8', icon: 'assets/icon-elim.png' }
 };
+
+let titleTickerOffset = 0;
+let lastTickerKey = '';
+
+function updateBrowserTabTitle(modeNow, remMs, mapKey, mapObj) {
+  const timerStr = mmss(remMs);
+  const sEs = (modeNow && modeNow.sigla_es) ? modeNow.sigla_es : 'CM';
+  const sEn = (modeNow && modeNow.sigla_en) ? modeNow.sigla_en : 'TDM';
+  const modeSiglas = (sEs === sEn) ? sEs : `${sEs}/${sEn}`;
+
+  const mapNameEs = (mapObj && mapObj.es) ? mapObj.es : mapKey;
+  const mapNameEn = (mapObj && mapObj.en) ? mapObj.en : mapKey;
+  const mapText = (mapNameEs === mapNameEn) ? mapNameEs : `${mapNameEs} (${mapNameEn})`;
+
+  const tickerBase = `${mapText} · [RØ] Øɖɨn'ѕ ƉєɱɨѕɆ · `;
+
+  if (lastTickerKey !== mapKey) {
+    lastTickerKey = mapKey;
+    titleTickerOffset = 0;
+  } else {
+    titleTickerOffset = (titleTickerOffset + 1) % tickerBase.length;
+  }
+
+  const movingText = tickerBase.slice(titleTickerOffset) + tickerBase.slice(0, titleTickerOffset);
+  document.title = `[${modeSiglas}] ${timerStr} · ${movingText}`;
+}
 
 const MAPAS = {
   Arctic:      { es: 'Rumbo al Hielo',    en: 'Arctic Rush',        sub_es: 'Tundra Ártica & Glaciares',          sub_en: 'Arctic Tundra & Glaciers',      wall: 'assets/wall-arctic.jpg' },
@@ -2302,6 +2328,9 @@ function renderRotation() {
 
   // Ordenar y resaltar los mapas según el próximo que viene
   renderOrderedMapGallery(slotNow.index, slotNow.mapa, slotNext ? slotNext.mapa : '', fmtHora(end));
+
+  // Título dinámico en pestaña con sigla ES/EN, cronómetro y mapa en movimiento
+  updateBrowserTabTitle(modeNow, remMs, slotNow.mapa, MAPAS[slotNow.mapa]);
 }
 
 let manualPreview = false;
