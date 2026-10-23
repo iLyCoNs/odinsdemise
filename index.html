@@ -237,13 +237,59 @@
 
   .nav-burger-btn {
     display: none;
-    background: none;
-    border: 1px solid var(--border-line);
-    border-radius: 8px;
-    color: var(--text-pure);
-    padding: 6px 12px;
-    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+    width: 38px;
+    height: 38px;
+    background: rgba(8, 18, 36, 0.85);
+    border: 1.5px solid var(--ms-cyan);
+    border-radius: 9px;
+    padding: 7px;
     cursor: pointer;
+    box-shadow: 0 0 12px rgba(0, 229, 255, 0.3);
+    transition: all 0.25s ease;
+    flex-shrink: 0;
+  }
+  .nav-burger-btn:hover, .nav-burger-btn.open {
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.7);
+    border-color: #ffffff;
+    background: rgba(14, 28, 54, 0.95);
+  }
+  .burger-bar {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: #ffffff;
+    border-radius: 2px;
+    box-shadow: 0 0 6px var(--ms-cyan);
+    transition: all 0.25s ease;
+  }
+  .nav-burger-btn.open .burger-bar:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+  .nav-burger-btn.open .burger-bar:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  .nav-burger-btn.open .burger-bar:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+
+  .mobile-dock-code {
+    display: none;
+  }
+
+  @keyframes dockSlideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   /* Ribbon Top 7 Centrado */
@@ -1273,6 +1319,83 @@
   }
 
   @media (max-width: 860px) {
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .desktop-code-btn {
+      display: none !important;
+    }
+    .nav-burger-btn {
+      display: flex !important;
+    }
+    .lang-switch-btn {
+      display: inline-flex !important;
+      padding: 5px 10px;
+      font-size: 11px;
+    }
+    nav.nav-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      width: 100%;
+      background: rgba(5, 11, 22, 0.98);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border-bottom: 2px solid var(--ms-cyan);
+      box-shadow: 0 24px 50px rgba(0, 0, 0, 0.95), 0 0 30px rgba(0, 229, 255, 0.25);
+      flex-direction: column;
+      padding: 18px 20px 22px;
+      gap: 10px;
+      z-index: 999;
+    }
+    nav.nav-menu.open {
+      display: flex;
+      animation: dockSlideDown 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    nav.nav-menu a {
+      width: 100%;
+      padding: 13px 18px;
+      font-size: 14.5px;
+      border-radius: 9px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      text-align: left;
+    }
+    nav.nav-menu a:hover, nav.nav-menu a.active {
+      background: rgba(0, 229, 255, 0.12);
+      border-color: rgba(0, 229, 255, 0.5);
+      color: #ffffff;
+      text-shadow: 0 0 10px var(--ms-cyan);
+    }
+    .mobile-dock-code {
+      display: inline-flex !important;
+      width: 100%;
+      justify-content: center;
+      margin-top: 6px;
+      padding: 13px 18px;
+      font-size: 14px;
+    }
+    .brand-group {
+      gap: 8px;
+    }
+    .brand-ms-logo {
+      height: 28px;
+    }
+    .squad-title-brand {
+      font-size: clamp(14px, 3.5vw, 18px);
+    }
+    .squad-tag-badge {
+      font-size: 11.5px;
+      padding: 2px 6px;
+    }
+    .brand-v-divider {
+      height: 18px;
+      margin: 0 2px;
+    }
     .roster-headers-row {
       grid-template-columns: 36px 1fr auto;
     }
@@ -1379,25 +1502,35 @@
         <span class="squad-title-brand">Øɖɨn'ѕ ƉєɱɨѕɆ</span>
       </a>
 
-      <button class="nav-burger-btn" id="burgerToggle" aria-label="Menú">☰</button>
-
       <nav class="nav-menu" id="navMenu">
         <a href="#inicio" data-i18n="nav_squad">Escuadrón</a>
         <a href="#rotacion" data-i18n="nav_rotation">Rotación & Mapas</a>
         <a href="#ranking" data-i18n="nav_ranking">Top 10 Mundial</a>
         <a href="#miembros" data-i18n="nav_members">Pilotos (30)</a>
+        <!-- Botón de código para mobile dentro del dock -->
+        <button class="nav-btn-action mobile-dock-code" id="copyCodeMobile">
+          <span data-i18n="nav_code">Código: #JHP3JF</span>
+        </button>
       </nav>
 
       <div class="nav-right-actions">
-        <!-- Switch de idioma EN / ES -->
+        <!-- Switch de idioma EN / ES (siempre visible en desktop y mobile) -->
         <button class="lang-switch-btn" id="langToggle" aria-label="Cambiar idioma / Switch language" title="Switch Language (ES / EN)">
           <span class="lang-opt active" id="langES">ES</span>
           <span class="lang-slash">/</span>
           <span class="lang-opt" id="langEN">EN</span>
         </button>
 
-        <button class="nav-btn-action" id="copyCodeNav">
+        <!-- Botón de código para desktop -->
+        <button class="nav-btn-action desktop-code-btn" id="copyCodeNav">
           <span data-i18n="nav_code">Código: #JHP3JF</span>
+        </button>
+
+        <!-- Botón Hamburguesa Cyber Neón para Mobile Dock -->
+        <button class="nav-burger-btn" id="burgerToggle" aria-label="Menú / Dock" title="Menú / Dock">
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
         </button>
       </div>
     </div>
@@ -2191,12 +2324,33 @@ function selectMapPreview(mapKey) {
   }
 }
 
-// Burger menu
+// Burger menu & Mobile Dock
 const burger = document.getElementById('burgerToggle');
 const navMenu = document.getElementById('navMenu');
 if (burger && navMenu) {
-  burger.addEventListener('click', () => navMenu.classList.toggle('open'));
-  navMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navMenu.classList.remove('open')));
+  burger.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isOpen = navMenu.classList.toggle('open');
+    burger.classList.toggle('open', isOpen);
+  });
+  navMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navMenu.classList.remove('open');
+    burger.classList.remove('open');
+  }));
+  document.addEventListener('click', (e) => {
+    if (navMenu.classList.contains('open') && !navMenu.contains(e.target) && !burger.contains(e.target)) {
+      navMenu.classList.remove('open');
+      burger.classList.remove('open');
+    }
+  });
+}
+const copyCodeMobileBtn = document.getElementById('copyCodeMobile');
+if (copyCodeMobileBtn) {
+  copyCodeMobileBtn.addEventListener('click', () => {
+    copyCode();
+    if (navMenu) navMenu.classList.remove('open');
+    if (burger) burger.classList.remove('open');
+  });
 }
 
 (async function init() {
