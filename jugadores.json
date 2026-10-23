@@ -1,0 +1,92 @@
+{
+  "actualizado": "2026-10-23",
+  "escuadron": "Øɖɨn'ѕ ƉєɱɨѕɆ",
+  "nombreCorto": "Odin's Demise",
+  "tag": "[FACH]",
+  "codigo": "#3REFA3",
+  "trofeos": "550.183+",
+  "miembrosActivos": 26,
+  "cupos": 30,
+  "descripcion": "Ala de combate aéreo de élite en Metalstorm. Forjados en el fuego del combate aéreo, sincronizados por voz y dominando cada rotación del servidor.",
+  "jugadores": [
+    {
+      "callsign": "DÉUS·VULT",
+      "tag": "[FACH]",
+      "rol": "lider",
+      "lider": true,
+      "rango": "Comandante de Ala / Admin",
+      "nivel": 157,
+      "trofeos": 33909,
+      "avion": "MiG-29 Fulcrum",
+      "pais": "CL",
+      "estado": "activo",
+      "discord": "LyCoNs",
+      "destacado": true
+    },
+    {
+      "callsign": "VALKYRIE",
+      "tag": "[FACH]",
+      "rol": "interceptor",
+      "lider": false,
+      "rango": "Capitán de Vuelo",
+      "nivel": 142,
+      "trofeos": 28450,
+      "avion": "Su-57 Felon",
+      "pais": "CL",
+      "estado": "activo",
+      "discord": "Valkyrie"
+    },
+    {
+      "callsign": "GUNGNIR",
+      "tag": "[FACH]",
+      "rol": "cazabombardero",
+      "lider": false,
+      "rango": "Oficial Táctico",
+      "nivel": 138,
+      "trofeos": 26100,
+      "avion": "Tornado ADV",
+      "pais": "CL",
+      "estado": "activo",
+      "discord": "Gungnir"
+    },
+    {
+      "callsign": "HUGINN",
+      "tag": "[FACH]",
+      "rol": "reconocimiento",
+      "lider": false,
+      "rango": "Explorador de Escuadra",
+      "nivel": 135,
+      "trofeos": 24900,
+      "avion": "KF-21 Boramae",
+      "pais": "CL",
+      "estado": "activo",
+      "discord": "Huginn"
+    },
+    {
+      "callsign": "MUNINN",
+      "tag": "[FACH]",
+      "rol": "soporte",
+      "lider": false,
+      "rango": "Especialista EW",
+      "nivel": 129,
+      "trofeos": 23200,
+      "avion": "F3-R Rafale",
+      "pais": "CL",
+      "estado": "activo",
+      "discord": "Muninn"
+    },
+    {
+      "callsign": "FENRIR",
+      "tag": "[FACH]",
+      "rol": "frontline",
+      "lider": false,
+      "rango": "Piloto de Choque",
+      "nivel": 131,
+      "trofeos": 25400,
+      "avion": "F-22 Raptor",
+      "pais": "CL",
+      "estado": "activo",
+      "discord": "Fenrir"
+    }
+  ]
+}
