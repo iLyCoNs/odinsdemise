@@ -1094,10 +1094,10 @@
     box-shadow: 0 0 14px rgba(25, 103, 210, 0.5);
   }
 
-  /* Encabezados de Tabla: SIN ÚLTIMA CONEXIÓN */
+  /* Encabezados de Tabla: SIN ÚLTIMA CONEXIÓN Y SIN TROFEOS INDIVIDUALES */
   .roster-headers-row {
     display: grid;
-    grid-template-columns: 50px 1.8fr 160px 170px 140px;
+    grid-template-columns: 50px 1.4fr 180px 220px;
     gap: 16px;
     padding: 12px 22px;
     background: rgba(0,0,0,0.3);
@@ -1109,14 +1109,14 @@
     border-bottom: 1px solid rgba(255,255,255,0.08);
   }
 
-  /* Pilot List Items: SIN AVATARES Y SIN ÚLTIMA CONEXIÓN */
+  /* Pilot List Items: SIN AVATARES, SIN ÚLTIMA CONEXIÓN Y SIN TROFEOS INDIVIDUALES */
   .pilot-list {
     display: flex;
     flex-direction: column;
   }
   .pilot-row {
     display: grid;
-    grid-template-columns: 50px 1.8fr 160px 170px 140px;
+    grid-template-columns: 50px 1.4fr 180px 220px;
     align-items: center;
     gap: 16px;
     padding: 16px 22px;
@@ -1189,42 +1189,36 @@
   .pilot-division-badge {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 6px;
     font-family: var(--font-heading);
-    font-size: 11.5px;
-    font-weight: 800;
+    font-size: 11px;
+    font-weight: 900;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    padding: 4px 10px;
-    border-radius: 6px;
-    background: var(--ms-gm-gradient);
+    padding: 5px 14px;
+    border-radius: 9999px;
     color: #ffffff;
-    box-shadow: 0 2px 8px rgba(192, 38, 211, 0.35);
     width: fit-content;
   }
-
-  .pilot-trophies-col {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 8px;
-    font-family: var(--font-mono);
-    font-size: 17px;
-    font-weight: 800;
-    color: var(--ms-gold-bright);
+  .badge-grandmaster {
+    background: linear-gradient(90deg, #a855f7 0%, #d946ef 50%, #ec4899 100%);
+    box-shadow: 0 0 14px rgba(217, 70, 239, 0.55);
   }
-  .pilot-trophies-col svg {
-    width: 18px;
-    height: 18px;
-    fill: var(--ms-gold-bright);
+  .badge-maestro3 {
+    background: linear-gradient(90deg, #6d28d9 0%, #8b5cf6 100%);
+    box-shadow: 0 0 12px rgba(139, 92, 246, 0.45);
+  }
+  .badge-maestro2 {
+    background: linear-gradient(90deg, #4338ca 0%, #6366f1 100%);
+    box-shadow: 0 0 12px rgba(99, 102, 241, 0.4);
   }
 
   @media (max-width: 860px) {
     .roster-headers-row {
       grid-template-columns: 36px 1fr auto;
     }
-    .roster-headers-row div:nth-child(3),
-    .roster-headers-row div:nth-child(4) {
+    .roster-headers-row div:nth-child(3) {
       display: none;
     }
     .pilot-row {
@@ -1232,12 +1226,10 @@
       gap: 10px;
       padding: 14px 16px;
     }
-    .pilot-row > div:nth-child(3),
-    .pilot-row > div:nth-child(4) {
+    .pilot-row > div:nth-child(3) {
       display: none;
     }
     .pilot-name-text { font-size: 15px; }
-    .pilot-trophies-col { font-size: 15px; }
     .lb-row { grid-template-columns: 36px 1fr auto; }
     .lb-members { display: none; }
   }
@@ -1319,7 +1311,7 @@
             <span class="squad-tag-badge">RØ</span>
             <span>Øɖɨn'ѕ ƉєɱɨѕɆ</span>
           </div>
-          <span class="brand-sub">★ PUESTO #7 DEL MUNDO · METALSTORM</span>
+          <span class="brand-sub">★ #7 DE LOS 200 MEJORES ESCUADRONES DEL MUNDO · METALSTORM</span>
         </div>
       </a>
 
@@ -1347,8 +1339,8 @@
       <div class="wr-badge-group">
         <div class="wr-rank-circle">#7</div>
         <div class="wr-title-box">
-          <h2>¡PUESTO <span class="gold">#7 DEL MUNDO</span> EN METALSTORM!</h2>
-          <p>Tabla Oficial de Escuadrones Globales · Temporada Competitiva</p>
+          <h2>¡#7 DE LOS <span class="gold">200 MEJORES ESCUADRONES</span> DEL MUNDO!</h2>
+          <p>Tabla Oficial de Escuadrones Globales · Metalstorm World Leaderboards</p>
         </div>
       </div>
 
@@ -1535,7 +1527,7 @@
       <div class="lb-title-group">
         <h3>
           <svg viewBox="0 0 24 24" width="22" height="22" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>
-          Marcadores Mundiales · Top 10 Escuadrones
+          Marcadores Mundiales · #7 de los 200 Mejores Escuadrones del Mundo
         </h3>
       </div>
       <div class="lb-season-badge">
@@ -1588,6 +1580,7 @@
         <div class="lb-name">
           <span class="squad-tag-badge" style="font-size:11px;">RØ</span>
           <span>Øɖɨn'ѕ ƉєɱɨѕɆ</span>
+          <span style="font-size:11px;color:var(--ms-gold-bright);font-weight:800;margin-left:8px;background:rgba(245,158,11,0.15);padding:2px 7px;border-radius:4px;border:1px solid rgba(245,158,11,0.3);">7 de 200 Mejores del Mundo</span>
         </div>
         <div class="lb-members" style="color:var(--ms-cyan);font-weight:800;">30/30</div>
         <div class="lb-trophies"><svg viewBox="0 0 24 24" width="16" height="16" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>1.029.339</div>
@@ -1656,13 +1649,12 @@
       </div>
     </div>
 
-    <!-- Roster Headers: SIN ÚLTIMA CONEXIÓN -->
+    <!-- Roster Headers: SIN ÚLTIMA CONEXIÓN Y SIN TROFEOS INDIVIDUALES -->
     <div class="roster-headers-row">
       <div style="text-align:center;">#</div>
       <div>Piloto</div>
       <div>Cargo Escuadrón</div>
-      <div>Rango por Copas</div>
-      <div style="text-align:right;">Trofeos</div>
+      <div style="text-align:right;">Rango por Copas</div>
     </div>
 
     <!-- SIN AVATARES Y SIN ÚLTIMA CONEXIÓN -->
@@ -1789,6 +1781,18 @@ function getRankClass(tipo) {
   }
 }
 
+function getDivisionBadge(trofeos) {
+  if (trofeos >= 25000) {
+    return `<span class="pilot-division-badge badge-grandmaster">★ GRANDMASTER ★</span>`;
+  } else if (trofeos >= 22000) {
+    return `<span class="pilot-division-badge badge-maestro3">★★★ MAESTRO 3 ★★★</span>`;
+  } else if (trofeos >= 20000) {
+    return `<span class="pilot-division-badge badge-maestro2">★★ MAESTRO 2 ★★</span>`;
+  } else {
+    return `<span class="pilot-division-badge badge-maestro2">★ MAESTRO 1 ★</span>`;
+  }
+}
+
 function renderPilots() {
   const container = document.getElementById('pilotListRows');
   const filtered = PILOTS_DATA.filter(p => {
@@ -1823,16 +1827,8 @@ function renderPilots() {
           ${p.rango === 'Dueño' ? '👑 Dueño' : (p.rango === 'Admin' ? '🛡️ Admin' : (p.rango === 'Veterano' ? '⭐ Veterano' : 'Miembro'))}
         </div>
 
-        <div>
-          <span class="pilot-division-badge">
-            <svg viewBox="0 0 24 24" width="13" height="13" fill="#ffffff"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-            Grandmaster ★
-          </span>
-        </div>
-
-        <div class="pilot-trophies-col">
-          <svg viewBox="0 0 24 24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>
-          <span>${p.trofeos.toLocaleString()}</span>
+        <div style="text-align:right;">
+          ${getDivisionBadge(p.trofeos)}
         </div>
       </div>
     `;

@@ -5,8 +5,8 @@
   "tag": "[RØ]",
   "codigo": "#JHP3JF",
   "trofeos": "1.029.339",
-  "puestoMundial": 7,
-  "rankingTexto": "PUESTO #7 DEL MUNDO (TOP 7 GLOBAL)",
+  "puestoMundial": "7 de 200",
+  "rankingTexto": "PUESTO #7 DE LOS 200 MEJORES ESCUADRONES DEL MUNDO",
   "trofeosRequeridos": "4.000",
   "miembros": "30/30",
   "ubicacion": "Internacional",
@@ -19,16 +19,67 @@
   "temporada": {
     "duracionDias": 30,
     "tablaTop10": [
-      { "pos": 1, "nombre": "N Σ M Ξ S I S", "miembros": "29/30", "trofeos": "1.229.263" },
-      { "pos": 2, "nombre": "Korea Top Gun", "miembros": "30/30", "trofeos": "1.161.783" },
-      { "pos": 3, "nombre": "VШM★Ξ M P I R Σ", "miembros": "30/30", "trofeos": "1.160.370" },
-      { "pos": 4, "nombre": "丂ENTINELS apac", "miembros": "29/30", "trofeos": "1.146.849" },
-      { "pos": 5, "nombre": "ΧΗΙΜΣΓΔ", "miembros": "30/30", "trofeos": "1.108.753" },
-      { "pos": 6, "nombre": "N Ξ M Σ S I S™", "miembros": "29/30", "trofeos": "1.098.550" },
-      { "pos": 7, "nombre": "Øɖɨn'ѕ ƉєɱɨѕɆ", "miembros": "30/30", "trofeos": "1.029.339", "destacado": true },
-      { "pos": 8, "nombre": "TOP★GUN★BRASIL", "miembros": "29/30", "trofeos": "1.018.639" },
-      { "pos": 9, "nombre": "ACΣ", "miembros": "26/30", "trofeos": "1.018.621" },
-      { "pos": 10, "nombre": "4QヅSEVEN", "miembros": "30/30", "trofeos": "1.016.906" }
+      {
+        "pos": 1,
+        "nombre": "N Σ M Ξ S I S",
+        "miembros": "29/30",
+        "trofeos": "1.229.263"
+      },
+      {
+        "pos": 2,
+        "nombre": "Korea Top Gun",
+        "miembros": "30/30",
+        "trofeos": "1.161.783"
+      },
+      {
+        "pos": 3,
+        "nombre": "VШM★Ξ M P I R Σ",
+        "miembros": "30/30",
+        "trofeos": "1.160.370"
+      },
+      {
+        "pos": 4,
+        "nombre": "丂ENTINELS apac",
+        "miembros": "29/30",
+        "trofeos": "1.146.849"
+      },
+      {
+        "pos": 5,
+        "nombre": "ΧΗΙΜΣΓΔ",
+        "miembros": "30/30",
+        "trofeos": "1.108.753"
+      },
+      {
+        "pos": 6,
+        "nombre": "N Ξ M Σ S I S™",
+        "miembros": "29/30",
+        "trofeos": "1.098.550"
+      },
+      {
+        "pos": 7,
+        "nombre": "Øɖɨn'ѕ ƉєɱɨѕɆ",
+        "miembros": "30/30",
+        "trofeos": "1.029.339",
+        "destacado": true
+      },
+      {
+        "pos": 8,
+        "nombre": "TOP★GUN★BRASIL",
+        "miembros": "29/30",
+        "trofeos": "1.018.639"
+      },
+      {
+        "pos": 9,
+        "nombre": "ACΣ",
+        "miembros": "26/30",
+        "trofeos": "1.018.621"
+      },
+      {
+        "pos": 10,
+        "nombre": "4QヅSEVEN",
+        "miembros": "30/30",
+        "trofeos": "1.016.906"
+      }
     ]
   },
   "descripcion": "[Ragnarök] Odin's Demise: Escuadron competitivo. Contamos con Discord / English & Spanish speakers! Respeto ante todo, juego en equipo. 150 fichas mínimo de contribución semanal. ¡SKAL por nuestros pilotos!",
@@ -39,7 +90,7 @@
       "tag": "[RØ]",
       "rango": "Admin",
       "rangoTipo": "admin",
-      "division": "Grandmaster ★",
+      "division": "★ GRANDMASTER ★",
       "trofeos": 46490,
       "estado": "1h 27m atrás",
       "enLinea": false
@@ -50,7 +101,7 @@
       "tag": "[RØ]",
       "rango": "Dueño",
       "rangoTipo": "dueno",
-      "division": "Grandmaster ★",
+      "division": "★ GRANDMASTER ★",
       "trofeos": 45463,
       "estado": "19m 12s atrás",
       "enLinea": false
@@ -61,7 +112,7 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
-      "division": "Grandmaster ★",
+      "division": "★ GRANDMASTER ★",
       "trofeos": 44526,
       "estado": "19m 13s atrás",
       "enLinea": false
@@ -72,7 +123,7 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
-      "division": "Grandmaster ★",
+      "division": "★ GRANDMASTER ★",
       "trofeos": 42745,
       "estado": "17h 50m atrás",
       "enLinea": false
@@ -83,7 +134,7 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
-      "division": "Grandmaster ★",
+      "division": "★ GRANDMASTER ★",
       "trofeos": 42388,
       "estado": "1h 2m atrás",
       "enLinea": false
@@ -94,7 +145,7 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
-      "division": "Grandmaster ★",
+      "division": "★ GRANDMASTER ★",
       "trofeos": 42350,
       "estado": "En línea",
       "enLinea": true
@@ -105,7 +156,7 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
-      "division": "Grandmaster ★",
+      "division": "★ GRANDMASTER ★",
       "trofeos": 40480,
       "estado": "19m 11s atrás",
       "enLinea": false
@@ -116,7 +167,7 @@
       "tag": "[RØ]",
       "rango": "Admin",
       "rangoTipo": "admin",
-      "division": "Grandmaster ★",
+      "division": "★ GRANDMASTER ★",
       "trofeos": 40352,
       "estado": "3h 15m atrás",
       "enLinea": false
@@ -127,7 +178,7 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
-      "division": "Grandmaster ★",
+      "division": "★ GRANDMASTER ★",
       "trofeos": 38058,
       "estado": "2h 34m atrás",
       "enLinea": false
@@ -138,7 +189,7 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
-      "division": "Grandmaster ★",
+      "division": "★ GRANDMASTER ★",
       "trofeos": 35934,
       "estado": "16h 53m atrás",
       "enLinea": false
@@ -149,7 +200,7 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
-      "division": "Grandmaster ★",
+      "division": "★ GRANDMASTER ★",
       "trofeos": 35600,
       "estado": "16h 20m atrás",
       "enLinea": false
@@ -161,7 +212,7 @@
       "rango": "Veterano",
       "rangoTipo": "admin",
       "insignia": "TOP 50",
-      "division": "Grandmaster ★",
+      "division": "★ GRANDMASTER ★",
       "destacado": true,
       "trofeos": 35157,
       "estado": "En línea",
@@ -173,7 +224,7 @@
       "tag": "[RØ]",
       "rango": "Miembro",
       "rangoTipo": "miembro",
-      "division": "Grandmaster ★",
+      "division": "★ GRANDMASTER ★",
       "trofeos": 35070,
       "estado": "2h 4m atrás",
       "enLinea": false
@@ -184,7 +235,7 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
-      "division": "Grandmaster ★",
+      "division": "★ GRANDMASTER ★",
       "trofeos": 34525,
       "estado": "En línea",
       "enLinea": true
@@ -195,7 +246,7 @@
       "tag": "[RØ]",
       "rango": "Admin",
       "rangoTipo": "admin",
-      "division": "Grandmaster ★",
+      "division": "★ GRANDMASTER ★",
       "trofeos": 34082,
       "estado": "12h 7m atrás",
       "enLinea": false
@@ -206,7 +257,7 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
-      "division": "Grandmaster ★",
+      "division": "★ GRANDMASTER ★",
       "trofeos": 33033,
       "estado": "1h 47m atrás",
       "enLinea": false
@@ -217,7 +268,7 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
-      "division": "Grandmaster ★",
+      "division": "★ GRANDMASTER ★",
       "trofeos": 32968,
       "estado": "34m 56s atrás",
       "enLinea": false
@@ -228,7 +279,7 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
-      "division": "Grandmaster ★",
+      "division": "★ GRANDMASTER ★",
       "trofeos": 32800,
       "estado": "11m 57s atrás",
       "enLinea": false
@@ -239,7 +290,7 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
-      "division": "Grandmaster ★",
+      "division": "★ GRANDMASTER ★",
       "trofeos": 32713,
       "estado": "2d 20h atrás",
       "enLinea": false
@@ -250,7 +301,7 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
-      "division": "Grandmaster ★",
+      "division": "★ GRANDMASTER ★",
       "trofeos": 32674,
       "estado": "22h 51m atrás",
       "enLinea": false
@@ -261,7 +312,7 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
-      "division": "Grandmaster ★",
+      "division": "★ GRANDMASTER ★",
       "trofeos": 32433,
       "estado": "57m 20s atrás",
       "enLinea": false
@@ -272,7 +323,7 @@
       "tag": "[RØ]",
       "rango": "Miembro",
       "rangoTipo": "miembro",
-      "division": "Grandmaster ★",
+      "division": "★ GRANDMASTER ★",
       "trofeos": 31128,
       "estado": "En línea",
       "enLinea": true
@@ -283,7 +334,7 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
-      "division": "Grandmaster ★",
+      "division": "★ GRANDMASTER ★",
       "trofeos": 30590,
       "estado": "1h 17m atrás",
       "enLinea": false
@@ -294,7 +345,7 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
-      "division": "Grandmaster ★",
+      "division": "★ GRANDMASTER ★",
       "trofeos": 29978,
       "estado": "3h 11m atrás",
       "enLinea": false
@@ -305,7 +356,7 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
-      "division": "Grandmaster ★",
+      "division": "★ GRANDMASTER ★",
       "trofeos": 28416,
       "estado": "16h 13m atrás",
       "enLinea": false
@@ -316,7 +367,7 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
-      "division": "Grandmaster ★",
+      "division": "★ GRANDMASTER ★",
       "trofeos": 28209,
       "estado": "1h 43m atrás",
       "enLinea": false
@@ -327,7 +378,7 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
-      "division": "Grandmaster ★",
+      "division": "★ GRANDMASTER ★",
       "trofeos": 26508,
       "estado": "34m 30s atrás",
       "enLinea": false
@@ -338,7 +389,7 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
-      "division": "Grandmaster ★",
+      "division": "★★★ MAESTRO 3 ★★★",
       "trofeos": 22184,
       "estado": "16h 35m atrás",
       "enLinea": false
@@ -349,7 +400,7 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
-      "division": "Grandmaster ★",
+      "division": "★★ MAESTRO 2 ★★",
       "trofeos": 21578,
       "estado": "19h 8m atrás",
       "enLinea": false
@@ -360,7 +411,7 @@
       "tag": "[RØ]",
       "rango": "Veterano",
       "rangoTipo": "veterano",
-      "division": "Grandmaster ★",
+      "division": "★★ MAESTRO 2 ★★",
       "trofeos": 20904,
       "estado": "33m 34s atrás",
       "enLinea": false
