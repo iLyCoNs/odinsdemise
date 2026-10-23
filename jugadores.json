@@ -10,12 +10,6 @@
   "trofeosRequeridos": "4.000",
   "miembros": "30/30",
   "ubicacion": "Internacional",
-  "evento": {
-    "grado": "Grado 11",
-    "progreso": "305 / 320",
-    "recompensa": "Caja x11",
-    "tiempo": "2d 16h"
-  },
   "temporada": {
     "duracionDias": 30,
     "tablaTop10": [
@@ -210,10 +204,8 @@
       "callsign": "DEUSVULT-🅒🅗🅛",
       "tag": "[RØ]",
       "rango": "Veterano",
-      "rangoTipo": "admin",
-      "insignia": "TOP 50",
+      "rangoTipo": "veterano",
       "division": "★ GRANDMASTER ★",
-      "destacado": true,
       "trofeos": 35157,
       "estado": "En línea",
       "enLinea": true

@@ -111,16 +111,21 @@
     text-decoration: none;
     color: inherit;
   }
-  .squad-emblem-badge {
-    width: 44px;
-    height: 44px;
-    background: linear-gradient(135deg, #1d6fe5, #0d3f8f);
-    border: 1.5px solid rgba(255,255,255,0.25);
-    border-radius: 9px;
-    display: grid;
-    place-items: center;
-    box-shadow: 0 4px 14px rgba(25, 103, 210, 0.4);
-    flex: 0 0 auto;
+  .brand-ms-logo {
+    height: 34px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 0 10px rgba(0, 229, 255, 0.45));
+    transition: transform 0.2s ease;
+  }
+  .brand-group:hover .brand-ms-logo {
+    transform: scale(1.04);
+  }
+  .brand-v-divider {
+    width: 1px;
+    height: 28px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 0 2px;
   }
   .brand-titles {
     display: flex;
@@ -211,11 +216,11 @@
     cursor: pointer;
   }
 
-  /* Ribbon Top 7 */
+  /* Ribbon Top 7 Centrado */
   .world-rank-ribbon {
     margin-top: 22px;
     background: linear-gradient(90deg, #b45309 0%, #f59e0b 25%, #fbbf24 50%, #f59e0b 75%, #b45309 100%);
-    border-radius: 12px;
+    border-radius: 14px;
     padding: 3px;
     box-shadow: 0 8px 30px rgba(245, 158, 11, 0.35);
     animation: gold-pulse 3s infinite alternate;
@@ -226,66 +231,77 @@
   }
   .world-rank-inner {
     background: linear-gradient(135deg, #0f1c30, #091322);
-    border-radius: 10px;
-    padding: 16px 24px;
+    border-radius: 12px;
+    padding: 24px 28px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
   }
   .wr-badge-group {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 16px;
+    justify-content: center;
+    text-align: center;
+    gap: 12px;
   }
   .wr-rank-circle {
-    width: 56px;
-    height: 56px;
+    width: 62px;
+    height: 62px;
     border-radius: 50%;
     background: linear-gradient(135deg, #f59e0b, #fbbf24);
     color: #060e18;
     display: grid;
     place-items: center;
     font-family: var(--font-heading);
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 900;
-    box-shadow: 0 0 20px rgba(251, 191, 36, 0.6);
+    box-shadow: 0 0 25px rgba(251, 191, 36, 0.7);
     border: 3px solid #ffffff;
     flex: 0 0 auto;
   }
+  .wr-title-box {
+    text-align: center;
+  }
   .wr-title-box h2 {
     font-family: var(--font-heading);
-    font-size: clamp(18px, 3.4vw, 26px);
+    font-size: clamp(20px, 3.8vw, 30px);
     font-weight: 900;
     text-transform: uppercase;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.05em;
     color: #ffffff;
-    line-height: 1.1;
+    line-height: 1.2;
+    text-align: center;
   }
   .wr-title-box h2 span.gold {
     color: var(--ms-gold-bright);
-    text-shadow: 0 0 12px var(--ms-gold-glow);
+    text-shadow: 0 0 16px var(--ms-gold-glow);
   }
   .wr-title-box p {
-    font-size: 12.5px;
+    font-size: 13.5px;
     color: var(--text-secondary);
     text-transform: uppercase;
-    letter-spacing: 0.12em;
-    margin-top: 3px;
+    letter-spacing: 0.14em;
+    margin-top: 6px;
+    text-align: center;
   }
   .wr-stats-pill {
     display: flex;
     align-items: center;
-    gap: 14px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    padding: 10px 18px;
-    border-radius: 10px;
+    justify-content: center;
+    gap: 24px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 10px 24px;
+    border-radius: 9999px;
   }
   .wr-stat-item {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .wr-stat-item .lbl {
     font-size: 10px;
@@ -1299,19 +1315,14 @@
   <div class="wrap">
     <div class="nav-flex">
       <a href="#inicio" class="brand-group">
-        <div class="squad-emblem-badge">
-          <svg viewBox="0 0 100 100" width="28" height="28" fill="#ffffff">
-            <path d="M50 5 L88 22 L88 56 C88 78 50 95 50 95 C50 95 12 78 12 56 L12 22 Z" fill="#1b63d1" stroke="#ffffff" stroke-width="4"/>
-            <path d="M50 18 L68 34 L62 46 L50 38 L38 46 L32 34 Z" fill="#ffffff"/>
-            <polygon points="50,48 66,62 50,84 34,62" fill="#ffffff"/>
-          </svg>
-        </div>
+        <img src="assets/logo-metalstorm.png" alt="Metalstorm" class="brand-ms-logo">
+        <div class="brand-v-divider"></div>
         <div class="brand-titles">
           <div class="brand-main">
             <span class="squad-tag-badge">RØ</span>
             <span>Øɖɨn'ѕ ƉєɱɨѕɆ</span>
           </div>
-          <span class="brand-sub">★ #7 DE LOS 200 MEJORES ESCUADRONES DEL MUNDO · METALSTORM</span>
+          <span class="brand-sub">★ #7 DE LOS 200 MEJORES ESCUADRONES DEL MUNDO</span>
         </div>
       </a>
 
@@ -1352,10 +1363,6 @@
         <div class="wr-stat-item">
           <span class="lbl">Plantilla</span>
           <span class="val" style="color:var(--ms-cyan)">30 / 30 Pilotos</span>
-        </div>
-        <div class="wr-stat-item">
-          <span class="lbl">Cierre Temporada (30d)</span>
-          <span class="val" id="seasonCountdownRibbon" style="color:#ffffff;">12d 00h 00m</span>
         </div>
       </div>
     </div>
@@ -1432,27 +1439,6 @@
     </div>
   </section>
 
-  <!-- ================= SQUAD EVENT STATUS STRIP ================= -->
-  <div class="squad-event-bar">
-    <div style="display:flex;align-items:center;gap:14px;">
-      <span class="event-badge">Evento de Escuadrón ⓘ</span>
-      <span class="event-time-pill">2d 16h</span>
-    </div>
-
-    <div class="event-progress-wrap">
-      <div class="event-progress-head">
-        <span>GRADO 11 · Caja x11</span>
-        <span class="tokens">305 / 320 🛡️</span>
-      </div>
-      <div class="event-track">
-        <div class="event-fill"></div>
-      </div>
-    </div>
-
-    <div style="font-family:var(--font-heading);font-size:12.5px;color:var(--text-secondary);">
-      ¡Únete al escuadrón para obtener recompensas!
-    </div>
-  </div>
 
   <!-- ================= ROTACIÓN DE MAPAS (COLOCADA DEBAJO DEL RECUADRO AZUL) ================= -->
   <section class="rotation-section-placed" id="rotacion">
@@ -1521,18 +1507,14 @@
     </div>
   </section>
 
-  <!-- ================= MARCADORES: TOP 10 GLOBAL (CON REINICIO CADA 30 DÍAS) ================= -->
+  <!-- ================= MARCADORES: TOP 10 GLOBAL ================= -->
   <section class="leaderboard-modal-preview" id="ranking">
-    <div class="lb-header">
-      <div class="lb-title-group">
-        <h3>
+    <div class="lb-header" style="justify-content:center;text-align:center;">
+      <div class="lb-title-group" style="text-align:center;">
+        <h3 style="justify-content:center;">
           <svg viewBox="0 0 24 24" width="22" height="22" fill="#fbbf24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.25-1.55 3.61-3.06C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>
           Marcadores Mundiales · #7 de los 200 Mejores Escuadrones del Mundo
         </h3>
-      </div>
-      <div class="lb-season-badge">
-        <span class="pulse"></span>
-        <span>Temporada finaliza en: <b id="seasonTimerLb" style="color:#ffffff;">12d 00h 00m 00s</b> (Ciclo 30 días)</span>
       </div>
     </div>
 
@@ -1695,35 +1677,6 @@
 <script>
 const SQUAD_CODE = "#JHP3JF";
 
-/* ============================================================================
-   TEMPORIZADOR DE TEMPORADA DE 30 DÍAS CON REINICIO AUTOMÁTICO EN 0
-   ========================================================================== */
-const CYCLE_MS = 30 * 24 * 60 * 60 * 1000;
-const BASE_END_TIMESTAMP = Date.now() + (12 * 24 * 60 * 60 * 1000);
-
-function updateSeasonCountdown() {
-  const now = Date.now();
-  let remainingMs = (BASE_END_TIMESTAMP - now) % CYCLE_MS;
-  if (remainingMs <= 0) {
-    remainingMs += CYCLE_MS;
-  }
-
-  const days = Math.floor(remainingMs / (24 * 3600 * 1000));
-  const hours = Math.floor((remainingMs % (24 * 3600 * 1000)) / (3600 * 1000));
-  const mins = Math.floor((remainingMs % (3600 * 1000)) / (60 * 1000));
-  const secs = Math.floor((remainingMs % (60 * 1000)) / 1000);
-
-  const pad2 = n => String(n).padStart(2, '0');
-  const strFull = `${days}d ${pad2(hours)}h ${pad2(mins)}m ${pad2(secs)}s`;
-  const strShort = `${days}d ${pad2(hours)}h ${pad2(mins)}m`;
-
-  const lbEl = document.getElementById('seasonTimerLb');
-  const ribEl = document.getElementById('seasonCountdownRibbon');
-  if (lbEl) lbEl.textContent = strFull;
-  if (ribEl) ribEl.textContent = strShort;
-}
-setInterval(updateSeasonCountdown, 1000);
-updateSeasonCountdown();
 
 /* ============================================================================
    CLIPBOARD & TOAST
@@ -1811,11 +1764,10 @@ function renderPilots() {
 
   container.innerHTML = filtered.map(p => {
     const isTop3 = p.posicion <= 3;
-    const isDeusVult = p.callsign.includes('DEUSVULT');
     const rankClass = getRankClass(p.rangoTipo);
 
     return `
-      <div class="pilot-row ${isDeusVult ? 'highlight-user' : ''}">
+      <div class="pilot-row">
         <div class="pilot-rank-num ${isTop3 ? 'top3' : ''}">${p.posicion}</div>
 
         <div class="pilot-name-text">
@@ -1919,14 +1871,14 @@ function renderOrderedMapGallery(currentSlotIdx, activeMapKey, nextMapKey, nextS
   const galleryEl = document.getElementById('orderedMapGallery');
   if (!galleryEl || !ROTACION) return;
 
-  // Encontrar el orden cronológico de los 6 mapas únicos a partir del slot actual
+  // El mapa activo es el único mapa grande superior.
+  // La galería inferior contiene SOLO los próximos mapas en llegar, iluminando con neón el próximo.
   const total = ROTACION.slots.length;
   const seenMaps = new Set();
   const orderedList = [];
 
-  // Agregar primero el mapa activo
+  // Excluir el mapa activo actual para no duplicarlo abajo
   seenMaps.add(activeMapKey);
-  orderedList.push({ key: activeMapKey, status: 'active', timeLabel: 'ACTIVO AHORA' });
 
   // Recorrer los siguientes slots cronológicamente
   for (let offset = 1; offset < total && seenMaps.size < 6; offset++) {
@@ -1935,12 +1887,12 @@ function renderOrderedMapGallery(currentSlotIdx, activeMapKey, nextMapKey, nextS
     const mKey = parts[0];
     if (!seenMaps.has(mKey) && MAPAS[mKey]) {
       seenMaps.add(mKey);
-      const isNext = (mKey === nextMapKey);
+      const isNext = (orderedList.length === 0);
       const timeOffsetMin = offset * 30;
       orderedList.push({
         key: mKey,
         status: isNext ? 'next' : 'upcoming',
-        timeLabel: isNext ? `PRÓXIMO (${nextStartTime})` : `En +${timeOffsetMin}m`
+        timeLabel: isNext ? `PRÓXIMO EN ROTACIÓN (${nextStartTime})` : `En +${timeOffsetMin}m`
       });
     }
   }
@@ -1948,15 +1900,13 @@ function renderOrderedMapGallery(currentSlotIdx, activeMapKey, nextMapKey, nextS
   // Renderizar tarjetas con visibilidad neón para el más próximo
   galleryEl.innerHTML = orderedList.map((item, idx) => {
     const m = MAPAS[item.key];
-    const isActive = item.status === 'active';
     const isNext = item.status === 'next';
 
     return `
-      <div class="bg-thumb-card ${isActive ? 'active-now' : ''} ${isNext ? 'next-incoming' : ''}" 
+      <div class="bg-thumb-card ${isNext ? 'next-incoming' : ''}" 
            data-map="${item.key}" onclick="selectMapPreview('${item.key}')">
         <div class="bg-thumb-img" style="background-image:url('${m.wall}')"></div>
         
-        ${isActive ? `<span class="bg-thumb-badge-top badge-active-now">● ACTIVO</span>` : ''}
         ${isNext ? `<span class="bg-thumb-badge-top badge-next-now">⚡ PRÓXIMO EN ROTACIÓN</span>` : ''}
 
         <div class="bg-thumb-info">
