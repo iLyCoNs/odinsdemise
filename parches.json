@@ -1,0 +1,234 @@
+{
+  "version": "2.14.0",
+  "actualizado": "2026-10-23T21:55:00Z",
+  "posts": [
+    {
+      "id": "patch_f15_rework",
+      "pinned_default": true,
+      "flair": "REWORK & META",
+      "flair_en": "REWORK & META",
+      "category": "rework",
+      "author": "u/StarformLeadDesigner",
+      "author_title": "Starform Dev Team · Lead Combat Designer",
+      "fecha": "2026-10-20",
+      "tiempo_relativo_es": "Hace 3 días",
+      "tiempo_relativo_en": "3 days ago",
+      "upvotes": 1482,
+      "comentarios": 184,
+      "titulo_es": "🔥 [REWORK MAYOR] F-15 Eagle: Habilidad Especial «Death Sparrows», Salto al Meta A-Tier y Calibración Completa de Maniobrabilidad",
+      "titulo_en": "🔥 [MAJOR REWORK] F-15 Eagle: «Death Sparrows» Special Ability, A-Tier Meta Ascent & Full Maneuverability Overhaul",
+      "resumen_es": "El F-15 Eagle recibe una reconstrucción integral de su rol en combate aéreo. Se reemplaza la antigua habilidad pasiva genérica de enfriamiento por «Death Sparrows», convirtiéndolo en un destructor ofensivo capaz de vulnerar bengalas a media distancia.",
+      "resumen_en": "The F-15 Eagle receives a complete combat role overhaul. Generic cooling/refuel abilities are replaced with «Death Sparrows», making it a devastating mid-range dogfighter capable of bypassing countermeasures.",
+      "secciones_es": [
+        {
+          "tipo": "rework",
+          "icono": "⚡",
+          "titulo": "Nueva Habilidad Especial: «Death Sparrows»",
+          "puntos": [
+            "<b>Mecánica Ofensiva:</b> Los misiles disparados bajo Death Sparrows <b>ignoran bengalas (flares)</b> enemigas en su trayectoria inicial.",
+            "<b>Compensación Táctica:</b> Se retira la recarga defensiva de bengalas. El F-15 ahora premia el posicionamiento agresivo y la anticipación sobre la defensa pasiva.",
+            "<b>Letalidad a Media Distancia:</b> Daño por impacto concentrado optimizado contra cazas medianos y pesados."
+          ]
+        },
+        {
+          "tipo": "buff",
+          "icono": "🟢",
+          "titulo": "Modelo de Vuelo & Agilidad Mejorada",
+          "puntos": [
+            "<b>Tasa de Viraje (Pitch & Roll):</b> Aceleración de giro incrementada en un +14% a velocidades subsónicas y supersónicas.",
+            "<b>Respuesta de Postquemador:</b> Transición más suave sin pérdida drástica de energía cinética en maniobras de tijeras (scissors).",
+            "<b>Posición en Meta:</b> Ascenso directo de B-Tier a <b>Tier A+</b> competitivo en Combate por Equipos y Superioridad Aérea."
+          ]
+        }
+      ],
+      "secciones_en": [
+        {
+          "tipo": "rework",
+          "icono": "⚡",
+          "titulo": "New Special Ability: «Death Sparrows»",
+          "puntos": [
+            "<b>Offensive Mechanics:</b> Missiles launched with Death Sparrows active <b>bypass enemy flares</b> during their initial track phase.",
+            "<b>Tactical Trade-off:</b> Defensive flare reload has been removed. The F-15 now rewards aggressive offensive positioning.",
+            "<b>Mid-Range Lethality:</b> Concentrated impact damage tuned specifically against medium and heavy fighters."
+          ]
+        },
+        {
+          "tipo": "buff",
+          "icono": "🟢",
+          "titulo": "Flight Model & Maneuverability Tune-Up",
+          "puntos": [
+            "<b>Turn Rates (Pitch & Roll):</b> Turn rate acceleration increased by +14% across subsonic and supersonic profiles.",
+            "<b>Afterburner Response:</b> Smoother kinetic retention in scissors and horizontal rolling engagements.",
+            "<b>Tier Ranking:</b> Pushed directly from lower B-Tier into competitive <b>Tier A+</b>."
+          ]
+        }
+      ],
+      "imagen": "assets/news/2026_10_13_f15_rework-1-death-sparrow.jpg"
+    },
+    {
+      "id": "patch_global_balance",
+      "pinned_default": true,
+      "flair": "NOTAS DE PARCHE",
+      "flair_en": "PATCH NOTES",
+      "category": "balance",
+      "author": "u/MetalstormBalanceTeam",
+      "author_title": "Starform Operations · Combat Balancing",
+      "fecha": "2026-10-13",
+      "tiempo_relativo_es": "Hace 10 días",
+      "tiempo_relativo_en": "10 days ago",
+      "upvotes": 938,
+      "comentarios": 92,
+      "titulo_es": "⚡ [BALANCE DE CAZAS] Ajustes a A-4 Skyhawk, F-106 Delta Dart, F-4 Phantom y Mecánica de Viraje de Misiles Guiados",
+      "titulo_en": "⚡ [AIRCRAFT BALANCE] Adjustments to A-4 Skyhawk, F-106 Delta Dart, F-4 Phantom & Guided Missile Turn Rates",
+      "resumen_es": "Ajustes de equilibrio táctico destinados a diversificar el meta competitivo y balancear la efectividad del combate a corta distancia frente a interceptores pesados.",
+      "resumen_en": "Tactical balance tuning aimed at expanding competitive meta diversity and leveling close-range turn-fighters with high-altitude interceptors.",
+      "secciones_es": [
+        {
+          "tipo": "nerf",
+          "icono": "🔴",
+          "titulo": "A-4 Skyhawk (Ajuste a la baja / Nerf)",
+          "puntos": [
+            "<b>Salud Base Reducida:</b> Pasa de 155 a <b>145</b> para castigar sobreextensiones en dogfights cerrados.",
+            "<b>Enfriamiento de Cañones:</b> Tiempo de disipación de calor aumentado en 0.4s tras ráfagas continuas."
+          ]
+        },
+        {
+          "tipo": "buff",
+          "icono": "🟢",
+          "titulo": "F-106 Delta Dart (Mejora / Buff)",
+          "puntos": [
+            "<b>Salud Base Aumentada:</b> De 135 a <b>150 HP</b>.",
+            "<b>Tanques de Combustible Externos:</b> Capacidad de combustible de postquemador incrementada en +12%.",
+            "<b>Generación Pasiva:</b> Tasa de recarga de habilidad de interceptación optimizada."
+          ]
+        },
+        {
+          "tipo": "rework",
+          "icono": "⚡",
+          "titulo": "F-4 Phantom & J-20 Mighty Dragon",
+          "puntos": [
+            "<b>F-4 Phantom:</b> Misiles IR sustituidos por pods de cohetes ligeros; munición de misiles manuales de medio alcance incrementada de 4 a 6.",
+            "<b>J-20 Mighty Dragon:</b> Dispersión y cono de fijación ajustados para evitar spam monótono de misiles de largo alcance."
+          ]
+        }
+      ],
+      "secciones_en": [
+        {
+          "tipo": "nerf",
+          "icono": "🔴",
+          "titulo": "A-4 Skyhawk (Nerf)",
+          "puntos": [
+            "<b>Base HP Reduced:</b> Decreased from 155 to <b>145</b> to increase vulnerability in sustained dogfights.",
+            "<b>Cannon Heat Cooling:</b> Heat dissipation window increased by 0.4s after sustained burst fire."
+          ]
+        },
+        {
+          "tipo": "buff",
+          "icono": "🟢",
+          "titulo": "F-106 Delta Dart (Buff)",
+          "puntos": [
+            "<b>Base HP Increased:</b> Up from 135 to <b>150 HP</b>.",
+            "<b>External Fuel Pods:</b> Afterburner fuel reserve capacity increased by +12%.",
+            "<b>Passive Generation:</b> Tactical interception readiness rate accelerated."
+          ]
+        },
+        {
+          "tipo": "rework",
+          "icono": "⚡",
+          "titulo": "F-4 Phantom & J-20 Mighty Dragon",
+          "puntos": [
+            "<b>F-4 Phantom:</b> IR missiles replaced with Light Rocket Pods; manual medium-range missile capacity raised from 4 to 6.",
+            "<b>J-20 Mighty Dragon:</b> Long-range missile tracking cone adjusted to tone down repetitive long-distance missile spam."
+          ]
+        }
+      ],
+      "imagen": "assets/news/2026_8_26_f18_lastcall-0-fa-18.jpg"
+    },
+    {
+      "id": "patch_desktop_optimization",
+      "pinned_default": false,
+      "flair": "CLIENTE & NETCODE",
+      "flair_en": "CLIENT & NETCODE",
+      "category": "client",
+      "author": "u/StarformEngineTeam",
+      "author_title": "Starform Engineering · PC Client & Infrastructure",
+      "fecha": "2026-09-29",
+      "tiempo_relativo_es": "Hace 3 semanas",
+      "tiempo_relativo_en": "3 weeks ago",
+      "upvotes": 624,
+      "comentarios": 48,
+      "titulo_es": "🖥️ [SISTEMAS PC] Optimización del Cliente de Escritorio: Pantallas Ultra-Wide 21:9, Mapeo HOTAS/Teclado y Netcode de Servidores",
+      "titulo_en": "🖥️ [PC SYSTEMS] Desktop Client Optimization: 21:9 Ultra-Wide Support, Custom Controls & Server Netcode Enhancements",
+      "resumen_es": "Actualización técnica integral para la versión de PC y Steam: compatibilidad nativa con resoluciones panorámicas, calibración de entrada sin latencia y sincronización de servidores.",
+      "resumen_en": "Major performance update for the PC & Steam ecosystem: native ultra-wide field of view, low-latency control mapping, and improved squadron server synchronization.",
+      "secciones_es": [
+        {
+          "tipo": "buff",
+          "icono": "🛠️",
+          "titulo": "Mejoras de Rendimiento & Interfaz",
+          "puntos": [
+            "<b>Ultra-Wide (21:9 & 32:9):</b> Corrección de FOV en cabina y menús sin estiramiento de textura ni barras negras.",
+            "<b>Input Latency:</b> Reducción de latencia de entrada en un 15% para teclados mecánicos y joysticks.",
+            "<b>Netcode de Escuadrones:</b> Mayor estabilidad en salas con 10 pilotos simultáneos y reducción drástica de micro-rubberbanding."
+          ]
+        }
+      ],
+      "secciones_en": [
+        {
+          "tipo": "buff",
+          "icono": "🛠️",
+          "titulo": "Performance & Interface Overhaul",
+          "puntos": [
+            "<b>Ultra-Wide (21:9 & 32:9):</b> Corrected aspect ratio scaling for widescreen monitors without stretching or letterboxing.",
+            "<b>Input Latency:</b> Input lag reduced by ~15% for gaming keyboards and flight controllers.",
+            "<b>Squadron Netcode:</b> Smoother position replication for 10-player rooms, virtually eliminating micro-rubberbanding."
+          ]
+        }
+      ],
+      "imagen": "assets/news/2026_9_29_desktop_ui-1-body-image.jpg"
+    },
+    {
+      "id": "patch_mcs_competitive",
+      "pinned_default": false,
+      "flair": "TORNEO OFICIAL",
+      "flair_en": "OFFICIAL TOURNAMENT",
+      "category": "tournament",
+      "author": "u/MetalstormEsports",
+      "author_title": "Metalstorm Championship Series · Operations",
+      "fecha": "2026-09-18",
+      "tiempo_relativo_es": "Hace 1 mes",
+      "tiempo_relativo_en": "1 month ago",
+      "upvotes": 812,
+      "comentarios": 76,
+      "titulo_es": "🏆 [COMPETITIVO] Metalstorm Championship Series (MCS): Ronda LCQ, Reglas de Escuadrón y Bolsa de Premios",
+      "titulo_en": "🏆 [COMPETITIVE] Metalstorm Championship Series (MCS): Last Chance Qualifier Rules & Prize Pool",
+      "resumen_es": "Comienza la recta final del torneo mundial de escuadrones. Consulta los horarios de emparejamiento, restricciones de cazas y transmisión en directo.",
+      "resumen_en": "The final stage of the world squadron championship begins. Check match schedules, aircraft tier restrictions, and official broadcast streams.",
+      "secciones_es": [
+        {
+          "tipo": "buff",
+          "icono": "🏆",
+          "titulo": "Reglas de Torneo & Clasificación",
+          "puntos": [
+            "<b>Restricción de Hangar:</b> Máximo 2 interceptores pesados por escuadrón en mapas de Objetivo Prioritario.",
+            "<b>Bolsa de Premios:</b> Moneda premium in-game, títulos oficiales exclusivos y pinturas cosméticas conmemorativas.",
+            "<b>Transmisiones en Vivo:</b> Cobertura en directo a través de los canales oficiales de Twitch y YouTube de Metalstorm."
+          ]
+        }
+      ],
+      "secciones_en": [
+        {
+          "tipo": "buff",
+          "icono": "🏆",
+          "titulo": "Tournament Rules & Qualifications",
+          "puntos": [
+            "<b>Hangar Limits:</b> Maximum of 2 heavy interceptors per squadron on Priority Target maps.",
+            "<b>Prize Pool:</b> In-game premium credits, official champion titles, and exclusive commemorative paint jobs.",
+            "<b>Live Streams:</b> Official live coverage on Metalstorm's Twitch and YouTube channels."
+          ]
+        }
+      ],
+      "imagen": "assets/news/2026_10_20_mcs_lcq-1-mcs-body.jpg"
+    }
+  ]
+}
