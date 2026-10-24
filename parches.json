@@ -1,7 +1,906 @@
 {
   "version": "2.14.0",
-  "actualizado": "2026-10-23T21:55:00Z",
+  "actualizado": "2026-10-24T02:26:46Z",
   "posts": [
+    {
+      "id": "steam_1843481262700183",
+      "pinned_default": false,
+      "flair": "NOTAS DE PARCHE",
+      "flair_en": "PATCH NOTES",
+      "category": "balance",
+      "author": "u/StarformSidd",
+      "author_title": "Starform Official · Steam Hub",
+      "fecha": "2026-09-13",
+      "tiempo_relativo_es": "Publicado el 2026-09-13",
+      "tiempo_relativo_en": "Posted on 2026-09-13",
+      "upvotes": 520,
+      "comentarios": 34,
+      "titulo_es": "⚡ Metalstorm is Coming to Steam!",
+      "titulo_en": "⚡ Metalstorm is Coming to Steam!",
+      "resumen_es": "The skies are about to get a little more crowded.\n\n<b>Metalstorm is officially coming to Steam this year!</b>\n\n<i>What’s Metalstorm?</i> Think fast jets, big missiles, 5v5 battles, and the occasional ...",
+      "resumen_en": "The skies are about to get a little more crowded.\n\n<b>Metalstorm is officially coming to Steam this year!</b>\n\n<i>What’s Metalstorm?</i> Think fast jets, big missiles, 5v5 battles, and the occasional ...",
+      "secciones_es": [
+        {
+          "tipo": "buff",
+          "icono": "🛠️",
+          "titulo": "Detalles del Parche",
+          "puntos": [
+            "The skies are about to get a little more crowded.",
+            "<b>Metalstorm is officially coming to Steam this year!</b>",
+            "<i>What’s Metalstorm?</i> Think fast jets, big missiles, 5v5 battles, and the occasional mountain that absolutely came out of nowhere.",
+            "[p]But we can explain all of that later."
+          ]
+        }
+      ],
+      "secciones_en": [
+        {
+          "tipo": "buff",
+          "icono": "🛠️",
+          "titulo": "Patch Details",
+          "puntos": [
+            "The skies are about to get a little more crowded.",
+            "<b>Metalstorm is officially coming to Steam this year!</b>",
+            "<i>What’s Metalstorm?</i> Think fast jets, big missiles, 5v5 battles, and the occasional mountain that absolutely came out of nowhere.",
+            "[p]But we can explain all of that later."
+          ]
+        }
+      ],
+      "imagen": null
+    },
+    {
+      "id": "steam_1833968530898788",
+      "pinned_default": false,
+      "flair": "NOTAS DE PARCHE",
+      "flair_en": "PATCH NOTES",
+      "category": "balance",
+      "author": "u/somethingcool",
+      "author_title": "Starform Official · Steam Hub",
+      "fecha": "2026-06-01",
+      "tiempo_relativo_es": "Publicado el 2026-06-01",
+      "tiempo_relativo_en": "Posted on 2026-06-01",
+      "upvotes": 520,
+      "comentarios": 34,
+      "titulo_es": "⚡ Metalstorm 20260602 Patch Notes",
+      "titulo_en": "⚡ Metalstorm 20260602 Patch Notes",
+      "resumen_es": "Latest update going live <b>Tuesday, June 2nd at 8:30 AM PT</b>. We’ve actually already updated this with no downtime, so enjoy the changes below now!\n\n<b><b>General Updates</b></b><b>Upgrades 2.0:</b...",
+      "resumen_en": "Latest update going live <b>Tuesday, June 2nd at 8:30 AM PT</b>. We’ve actually already updated this with no downtime, so enjoy the changes below now!\n\n<b><b>General Updates</b></b><b>Upgrades 2.0:</b...",
+      "secciones_es": [
+        {
+          "tipo": "buff",
+          "icono": "🛠️",
+          "titulo": "Detalles del Parche",
+          "puntos": [
+            "Latest update going live <b>Tuesday, June 2nd at 8:30 AM PT</b>. We’ve actually already updated this with no downtime, so enjoy the changes below now!",
+            "<b><b>General Updates</b></b><b>Upgrades 2.0:</b> The future is now, pilots. Our brand new upgrade feature is here, and it’s all about catering and building your aircraft to match your preferred playstyle(s). Here’s a summary of what you can expect to see.",
+            "Aircraft Upgrades still exist, however once you reach Aircraft Level 6, you’ll unlock access to individual Systems on your plane: Fuselage, Engine, Avionics, and various weapons systems depending on your loadout. Each of these systems has 8 levels which will drastically alter your aircraft’s capabilities like never before.",
+            "These new system upgrades introduce new resource types: System Parts + Advanced Parts. Don’t worry–your upgrades and power from before will be carrying over. Based on a number of conditions, existing accounts will also receive a number of resources during this migration. Make sure you check your system messages!"
+          ]
+        }
+      ],
+      "secciones_en": [
+        {
+          "tipo": "buff",
+          "icono": "🛠️",
+          "titulo": "Patch Details",
+          "puntos": [
+            "Latest update going live <b>Tuesday, June 2nd at 8:30 AM PT</b>. We’ve actually already updated this with no downtime, so enjoy the changes below now!",
+            "<b><b>General Updates</b></b><b>Upgrades 2.0:</b> The future is now, pilots. Our brand new upgrade feature is here, and it’s all about catering and building your aircraft to match your preferred playstyle(s). Here’s a summary of what you can expect to see.",
+            "Aircraft Upgrades still exist, however once you reach Aircraft Level 6, you’ll unlock access to individual Systems on your plane: Fuselage, Engine, Avionics, and various weapons systems depending on your loadout. Each of these systems has 8 levels which will drastically alter your aircraft’s capabilities like never before.",
+            "These new system upgrades introduce new resource types: System Parts + Advanced Parts. Don’t worry–your upgrades and power from before will be carrying over. Based on a number of conditions, existing accounts will also receive a number of resources during this migration. Make sure you check your system messages!"
+          ]
+        }
+      ],
+      "imagen": null
+    },
+    {
+      "id": "steam_1829528821316315",
+      "pinned_default": false,
+      "flair": "NOTAS DE PARCHE",
+      "flair_en": "PATCH NOTES",
+      "category": "balance",
+      "author": "u/somethingcool",
+      "author_title": "Starform Official · Steam Hub",
+      "fecha": "2026-04-13",
+      "tiempo_relativo_es": "Publicado el 2026-04-13",
+      "tiempo_relativo_en": "Posted on 2026-04-13",
+      "upvotes": 520,
+      "comentarios": 34,
+      "titulo_es": "⚡ Black Market Debrief: KF-21 Boramae",
+      "titulo_en": "⚡ Black Market Debrief: KF-21 Boramae",
+      "resumen_es": "The first ever <u>drone-equipped</u> aircraft is set to take flight when the <b>Black Market begins April 15th, 2025 @ 12:00 PM PDT (19:00 UTC).</b> Remember, <i>it's dangerous to go alone</i>--read u...",
+      "resumen_en": "The first ever <u>drone-equipped</u> aircraft is set to take flight when the <b>Black Market begins April 15th, 2025 @ 12:00 PM PDT (19:00 UTC).</b> Remember, <i>it's dangerous to go alone</i>--read u...",
+      "secciones_es": [
+        {
+          "tipo": "buff",
+          "icono": "🛠️",
+          "titulo": "Detalles del Parche",
+          "puntos": [
+            "The first ever <u>drone-equipped</u> aircraft is set to take flight when the <b>Black Market begins April 15th, 2025 @ 12:00 PM PDT (19:00 UTC).</b> Remember, <i>it's dangerous to go alone</i>--read up on this unique aircraft below:",
+            "<b><b>New Aircraft: KF-21 Boramae</b></b>While the Black Market event is active, <b>you can unlock this plane at Hangar Level 11</b>, afterwards it will return to its normal Hangar Level of 18.",
+            "<b>Role Type: Medium Fighter</b>",
+            "[img src=\"{STEAM_CLAN_IMAGE}/45080690/64756fec0a88e92d5f1ecbf4fd695066cc262b21.png\"][/img]"
+          ]
+        }
+      ],
+      "secciones_en": [
+        {
+          "tipo": "buff",
+          "icono": "🛠️",
+          "titulo": "Patch Details",
+          "puntos": [
+            "The first ever <u>drone-equipped</u> aircraft is set to take flight when the <b>Black Market begins April 15th, 2025 @ 12:00 PM PDT (19:00 UTC).</b> Remember, <i>it's dangerous to go alone</i>--read up on this unique aircraft below:",
+            "<b><b>New Aircraft: KF-21 Boramae</b></b>While the Black Market event is active, <b>you can unlock this plane at Hangar Level 11</b>, afterwards it will return to its normal Hangar Level of 18.",
+            "<b>Role Type: Medium Fighter</b>",
+            "[img src=\"{STEAM_CLAN_IMAGE}/45080690/64756fec0a88e92d5f1ecbf4fd695066cc262b21.png\"][/img]"
+          ]
+        }
+      ],
+      "imagen": null
+    },
+    {
+      "id": "steam_1828894815568127",
+      "pinned_default": false,
+      "flair": "NOTAS DE PARCHE",
+      "flair_en": "PATCH NOTES",
+      "category": "balance",
+      "author": "u/somethingcool",
+      "author_title": "Starform Official · Steam Hub",
+      "fecha": "2026-04-07",
+      "tiempo_relativo_es": "Publicado el 2026-04-07",
+      "tiempo_relativo_en": "Posted on 2026-04-07",
+      "upvotes": 520,
+      "comentarios": 34,
+      "titulo_es": "⚡ Metalstorm 20260407 Patch Notes",
+      "titulo_en": "⚡ Metalstorm 20260407 Patch Notes",
+      "resumen_es": "Latest update going live <b>Wednesday, April 7th at 8:30 AM PT</b>. We’ve actually already updated this with no downtime, so enjoy the changes below.. today!\n\n<b><b>General Updates</b></b><b>Special F...",
+      "resumen_en": "Latest update going live <b>Wednesday, April 7th at 8:30 AM PT</b>. We’ve actually already updated this with no downtime, so enjoy the changes below.. today!\n\n<b><b>General Updates</b></b><b>Special F...",
+      "secciones_es": [
+        {
+          "tipo": "buff",
+          "icono": "🛠️",
+          "titulo": "Detalles del Parche",
+          "puntos": [
+            "Latest update going live <b>Wednesday, April 7th at 8:30 AM PT</b>. We’ve actually already updated this with no downtime, so enjoy the changes below.. today!",
+            "<b><b>General Updates</b></b><b>Special Flight Pass Event:</b> Someone call Hannah Montana because with this flight pass you’ll get the best of both worlds. Not only is the “Draw 3 Pick 1” staying from the current flight pass, but we’re bringing back aircrafts to the mix! That’s right, and anytime you obtain aircraft credits–you’ll get that same D3P1 choice as well. There's still a chance to receive a full random aircraft unlock too! These new loot tables will be included in specially marked “Priority Target” crates, and the upcoming flight pass.",
+            "[p]<b>Priority Target Flight Pass:</b> Speaking of, the new flight pass will go live on <u>Saturday, April 11th, 2026, at 9:00 AM PST.</u> Make sure to grab yours at http://playmetalstorm.com/shop</a> so your squadmates can gain access to bonus Silver, and so you can net yourself some Star Points to boot!",
+            "[/p][img src=\"{STEAM_CLAN_IMAGE}/45080690/4748de112fb41c7028294cec183d19367b7bcc3f.jpg\"][/img]"
+          ]
+        }
+      ],
+      "secciones_en": [
+        {
+          "tipo": "buff",
+          "icono": "🛠️",
+          "titulo": "Patch Details",
+          "puntos": [
+            "Latest update going live <b>Wednesday, April 7th at 8:30 AM PT</b>. We’ve actually already updated this with no downtime, so enjoy the changes below.. today!",
+            "<b><b>General Updates</b></b><b>Special Flight Pass Event:</b> Someone call Hannah Montana because with this flight pass you’ll get the best of both worlds. Not only is the “Draw 3 Pick 1” staying from the current flight pass, but we’re bringing back aircrafts to the mix! That’s right, and anytime you obtain aircraft credits–you’ll get that same D3P1 choice as well. There's still a chance to receive a full random aircraft unlock too! These new loot tables will be included in specially marked “Priority Target” crates, and the upcoming flight pass.",
+            "[p]<b>Priority Target Flight Pass:</b> Speaking of, the new flight pass will go live on <u>Saturday, April 11th, 2026, at 9:00 AM PST.</u> Make sure to grab yours at http://playmetalstorm.com/shop</a> so your squadmates can gain access to bonus Silver, and so you can net yourself some Star Points to boot!",
+            "[/p][img src=\"{STEAM_CLAN_IMAGE}/45080690/4748de112fb41c7028294cec183d19367b7bcc3f.jpg\"][/img]"
+          ]
+        }
+      ],
+      "imagen": null
+    },
+    {
+      "id": "steam_1828441623112840",
+      "pinned_default": false,
+      "flair": "NOTAS DE PARCHE",
+      "flair_en": "PATCH NOTES",
+      "category": "balance",
+      "author": "u/somethingcool",
+      "author_title": "Starform Official · Steam Hub",
+      "fecha": "2026-03-31",
+      "tiempo_relativo_es": "Publicado el 2026-03-31",
+      "tiempo_relativo_en": "Posted on 2026-03-31",
+      "upvotes": 520,
+      "comentarios": 34,
+      "titulo_es": "⚡ Metalstorm 20260331 Patch Notes",
+      "titulo_en": "⚡ Metalstorm 20260331 Patch Notes",
+      "resumen_es": "This update is scheduled to go live <b>Tuesday, March 31st</b>. This will require no downtime.\n\n<b><b>Upcoming Event</b></b><b>MCS Spring Open Qualifiers: </b>That’s right, the Metalstorm Championship...",
+      "resumen_en": "This update is scheduled to go live <b>Tuesday, March 31st</b>. This will require no downtime.\n\n<b><b>Upcoming Event</b></b><b>MCS Spring Open Qualifiers: </b>That’s right, the Metalstorm Championship...",
+      "secciones_es": [
+        {
+          "tipo": "rework",
+          "icono": "⚡",
+          "titulo": "Reestructuración & Habilidades",
+          "puntos": [
+            "Replaced IR Missiles with Light Rocket Pods."
+          ]
+        },
+        {
+          "tipo": "buff",
+          "icono": "🟢",
+          "titulo": "Mejoras de Rendimiento (Buffs)",
+          "puntos": [
+            "[/*]• Medium Range Manual Missile ammo count increased from 4 to 6.",
+            "[/*]• Lock FOV End increased from 8° to 11°.",
+            "[/*]• Continuous Guidance FOV increased from 8.5° to 11.5°.",
+            "<b>F-106 Delta Dart </b>(Buff)"
+          ]
+        },
+        {
+          "tipo": "nerf",
+          "icono": "🔴",
+          "titulo": "Ajustes de Balance (Nerfs)",
+          "puntos": [
+            "<b><b>Balance Adjustments</b></b><b><b>Aircraft Balance</b></b><b>A-4 Skyhawk </b>(Nerf)",
+            "Health decreased from 155 to 145.",
+            "Lock FOV Start reduced from 8° to 7°.",
+            "Passive Generation Rate reduced from 2/s to 1/s."
+          ]
+        }
+      ],
+      "secciones_en": [
+        {
+          "tipo": "rework",
+          "icono": "⚡",
+          "titulo": "Skill Reworks & Mechanics",
+          "puntos": [
+            "Replaced IR Missiles with Light Rocket Pods."
+          ]
+        },
+        {
+          "tipo": "buff",
+          "icono": "🟢",
+          "titulo": "Performance Buffs",
+          "puntos": [
+            "[/*]• Medium Range Manual Missile ammo count increased from 4 to 6.",
+            "[/*]• Lock FOV End increased from 8° to 11°.",
+            "[/*]• Continuous Guidance FOV increased from 8.5° to 11.5°.",
+            "<b>F-106 Delta Dart </b>(Buff)"
+          ]
+        },
+        {
+          "tipo": "nerf",
+          "icono": "🔴",
+          "titulo": "Balance Adjustments (Nerfs)",
+          "puntos": [
+            "<b><b>Balance Adjustments</b></b><b><b>Aircraft Balance</b></b><b>A-4 Skyhawk </b>(Nerf)",
+            "Health decreased from 155 to 145.",
+            "Lock FOV Start reduced from 8° to 7°.",
+            "Passive Generation Rate reduced from 2/s to 1/s."
+          ]
+        }
+      ],
+      "imagen": null
+    },
+    {
+      "id": "steam_1826362059933845",
+      "pinned_default": false,
+      "flair": "NOTAS DE PARCHE",
+      "flair_en": "PATCH NOTES",
+      "category": "balance",
+      "author": "u/somethingcool",
+      "author_title": "Starform Official · Steam Hub",
+      "fecha": "2026-03-10",
+      "tiempo_relativo_es": "Publicado el 2026-03-10",
+      "tiempo_relativo_en": "Posted on 2026-03-10",
+      "upvotes": 520,
+      "comentarios": 34,
+      "titulo_es": "⚡ Metalstorm 20260311 Patch Notes",
+      "titulo_en": "⚡ Metalstorm 20260311 Patch Notes",
+      "resumen_es": "This update is set to go live <b>Wednesday, March 11th at 8:30 AM PT</b>. This update will <u>not</u> require a new client download.\n\n[h3]<b>General Updates</b>[/h3]<b>Special Flight Pass Event:</b> W...",
+      "resumen_en": "This update is set to go live <b>Wednesday, March 11th at 8:30 AM PT</b>. This update will <u>not</u> require a new client download.\n\n[h3]<b>General Updates</b>[/h3]<b>Special Flight Pass Event:</b> W...",
+      "secciones_es": [
+        {
+          "tipo": "buff",
+          "icono": "🛠️",
+          "titulo": "Detalles del Parche",
+          "puntos": [
+            "This update is set to go live <b>Wednesday, March 11th at 8:30 AM PT</b>. This update will <u>not</u> require a new client download.",
+            "[h3]<b>General Updates</b>[/h3]<b>Special Flight Pass Event:</b> We have brand new choice-based opportunities launching with the upcoming First Light Flight Pass. We’ve created 2 new case types: <u>Ability & Mod Cases.</u> When you collect one of these nodes in the flight pass, you will be given up to 3 random options based on your hangar for you to choose from. <i>Developer Note: If you do not have any mods/abilities available you will receive silver instead.</i>",
+            "Alongside this, we’ve updated our reward tracks with even more Silver + Universal Parts than ever before. Not just that, but this “Draw 3 Pick 1” system will appear for <u>every</u> opportunity you would receive an ability/mod drop from a <i>specially-marked FL crate</i>. This season is all about giving you more control on the things you earn, and where your upgrades go. Enjoy!",
+            "<b>First Light Flight Pass:</b> Speaking of the flight pass, this new one will go live on <u>Saturday, March 14th, 2026, at 9:00 AM PST.</u> Make sure to grab yours at http://playmetalstorm.com/shop</a> so your squadmates can gain access to bonus Silver, and so you can net yourself some Star Points to boot!"
+          ]
+        }
+      ],
+      "secciones_en": [
+        {
+          "tipo": "buff",
+          "icono": "🛠️",
+          "titulo": "Patch Details",
+          "puntos": [
+            "This update is set to go live <b>Wednesday, March 11th at 8:30 AM PT</b>. This update will <u>not</u> require a new client download.",
+            "[h3]<b>General Updates</b>[/h3]<b>Special Flight Pass Event:</b> We have brand new choice-based opportunities launching with the upcoming First Light Flight Pass. We’ve created 2 new case types: <u>Ability & Mod Cases.</u> When you collect one of these nodes in the flight pass, you will be given up to 3 random options based on your hangar for you to choose from. <i>Developer Note: If you do not have any mods/abilities available you will receive silver instead.</i>",
+            "Alongside this, we’ve updated our reward tracks with even more Silver + Universal Parts than ever before. Not just that, but this “Draw 3 Pick 1” system will appear for <u>every</u> opportunity you would receive an ability/mod drop from a <i>specially-marked FL crate</i>. This season is all about giving you more control on the things you earn, and where your upgrades go. Enjoy!",
+            "<b>First Light Flight Pass:</b> Speaking of the flight pass, this new one will go live on <u>Saturday, March 14th, 2026, at 9:00 AM PST.</u> Make sure to grab yours at http://playmetalstorm.com/shop</a> so your squadmates can gain access to bonus Silver, and so you can net yourself some Star Points to boot!"
+          ]
+        }
+      ],
+      "imagen": null
+    },
+    {
+      "id": "steam_1823825466509556",
+      "pinned_default": false,
+      "flair": "NOTAS DE PARCHE",
+      "flair_en": "PATCH NOTES",
+      "category": "balance",
+      "author": "u/somethingcool",
+      "author_title": "Starform Official · Steam Hub",
+      "fecha": "2026-02-10",
+      "tiempo_relativo_es": "Publicado el 2026-02-10",
+      "tiempo_relativo_en": "Posted on 2026-02-10",
+      "upvotes": 520,
+      "comentarios": 34,
+      "titulo_es": "⚡ Metalstorm 20260211 Patch Notes",
+      "titulo_en": "⚡ Metalstorm 20260211 Patch Notes",
+      "resumen_es": "Latest update going live <b>Wednesday, February 11th at 8:30 AM PT</b>. This update will not require a new client, but there is an optional client going out with some additional fixes.\n[p]\n[/p]<b><b>G...",
+      "resumen_en": "Latest update going live <b>Wednesday, February 11th at 8:30 AM PT</b>. This update will not require a new client, but there is an optional client going out with some additional fixes.\n[p]\n[/p]<b><b>G...",
+      "secciones_es": [
+        {
+          "tipo": "buff",
+          "icono": "🟢",
+          "titulo": "Mejoras de Rendimiento (Buffs)",
+          "puntos": [
+            "Improved hangar performance on high and low devices."
+          ]
+        }
+      ],
+      "secciones_en": [
+        {
+          "tipo": "buff",
+          "icono": "🟢",
+          "titulo": "Performance Buffs",
+          "puntos": [
+            "Improved hangar performance on high and low devices."
+          ]
+        }
+      ],
+      "imagen": null
+    },
+    {
+      "id": "steam_1822556746167853",
+      "pinned_default": false,
+      "flair": "NOTAS DE PARCHE",
+      "flair_en": "PATCH NOTES",
+      "category": "balance",
+      "author": "u/somethingcool",
+      "author_title": "Starform Official · Steam Hub",
+      "fecha": "2026-01-26",
+      "tiempo_relativo_es": "Publicado el 2026-01-26",
+      "tiempo_relativo_en": "Posted on 2026-01-26",
+      "upvotes": 520,
+      "comentarios": 34,
+      "titulo_es": "⚡ Metalstorm 20260127 Patch Notes",
+      "titulo_en": "⚡ Metalstorm 20260127 Patch Notes",
+      "resumen_es": "Latest update going live <b>Tuesday, January 27th at 8:00 AM PT</b>. There will be a new client to download so keep in mind it may take some time before appearing on your app store.\n[p]\n[/p]<b><b>Gene...",
+      "resumen_en": "Latest update going live <b>Tuesday, January 27th at 8:00 AM PT</b>. There will be a new client to download so keep in mind it may take some time before appearing on your app store.\n[p]\n[/p]<b><b>Gene...",
+      "secciones_es": [
+        {
+          "tipo": "buff",
+          "icono": "🛠️",
+          "titulo": "Detalles del Parche",
+          "puntos": [
+            "Latest update going live <b>Tuesday, January 27th at 8:00 AM PT</b>. There will be a new client to download so keep in mind it may take some time before appearing on your app store.",
+            "[/p]<b><b>General Updates</b></b><b>New LIMITED Game Mode:</b> A brand new objective-based mode, <u><b>Priority Target</b></u>, will be available for a limited time from <b>1/27 - 2/10</b>. Here’s your mission orders:",
+            "[img src=\"{STEAM_CLAN_IMAGE}/45080690/028f468d31ead8505b86399d5b666b3d4b4a71a9.png\"][/img]",
+            "Teams fight over a new objective to capture. Here’s the catch; if you fly through the objective you become the target."
+          ]
+        }
+      ],
+      "secciones_en": [
+        {
+          "tipo": "buff",
+          "icono": "🛠️",
+          "titulo": "Patch Details",
+          "puntos": [
+            "Latest update going live <b>Tuesday, January 27th at 8:00 AM PT</b>. There will be a new client to download so keep in mind it may take some time before appearing on your app store.",
+            "[/p]<b><b>General Updates</b></b><b>New LIMITED Game Mode:</b> A brand new objective-based mode, <u><b>Priority Target</b></u>, will be available for a limited time from <b>1/27 - 2/10</b>. Here’s your mission orders:",
+            "[img src=\"{STEAM_CLAN_IMAGE}/45080690/028f468d31ead8505b86399d5b666b3d4b4a71a9.png\"][/img]",
+            "Teams fight over a new objective to capture. Here’s the catch; if you fly through the objective you become the target."
+          ]
+        }
+      ],
+      "imagen": null
+    },
+    {
+      "id": "starform_2026-10-20-mcs-lcq",
+      "pinned_default": false,
+      "flair": "TORNEO OFICIAL",
+      "flair_en": "OFFICIAL TOURNAMENT",
+      "category": "tournament",
+      "author": "u/StarformLiveOps",
+      "author_title": "Starform In-Game LiveOps",
+      "fecha": "2026-10-23",
+      "tiempo_relativo_es": "Reciente",
+      "tiempo_relativo_en": "Recent",
+      "upvotes": 410,
+      "comentarios": 22,
+      "titulo_es": "🚀 2026 10 20 Mcs Lcq",
+      "titulo_en": "🚀 2026 10 20 Mcs Lcq",
+      "resumen_es": "Novedad oficial transmitida directamente a través del cliente de juego de Metalstorm.",
+      "resumen_en": "Official in-game bulletin broadcasted directly through the Metalstorm game client.",
+      "secciones_es": [
+        {
+          "tipo": "buff",
+          "icono": "⚡",
+          "titulo": "Resumen de Contenido",
+          "puntos": [
+            "Evento / Actualización: <b>2026 10 20 Mcs Lcq</b> disponible en servidores globales."
+          ]
+        }
+      ],
+      "secciones_en": [
+        {
+          "tipo": "buff",
+          "icono": "⚡",
+          "titulo": "Content Overview",
+          "puntos": [
+            "Event / Update: <b>2026 10 20 Mcs Lcq</b> live across global servers."
+          ]
+        }
+      ],
+      "imagen": "assets/news/2026-10-20-mcs-lcq_main.jpg"
+    },
+    {
+      "id": "starform_flight-pass-61",
+      "pinned_default": false,
+      "flair": "FLIGHT PASS",
+      "flair_en": "FLIGHT PASS",
+      "category": "pass",
+      "author": "u/StarformLiveOps",
+      "author_title": "Starform In-Game LiveOps",
+      "fecha": "2026-10-23",
+      "tiempo_relativo_es": "Reciente",
+      "tiempo_relativo_en": "Recent",
+      "upvotes": 410,
+      "comentarios": 22,
+      "titulo_es": "🚀 Flight Pass 61",
+      "titulo_en": "🚀 Flight Pass 61",
+      "resumen_es": "Novedad oficial transmitida directamente a través del cliente de juego de Metalstorm.",
+      "resumen_en": "Official in-game bulletin broadcasted directly through the Metalstorm game client.",
+      "secciones_es": [
+        {
+          "tipo": "buff",
+          "icono": "⚡",
+          "titulo": "Resumen de Contenido",
+          "puntos": [
+            "Evento / Actualización: <b>Flight Pass 61</b> disponible en servidores globales."
+          ]
+        }
+      ],
+      "secciones_en": [
+        {
+          "tipo": "buff",
+          "icono": "⚡",
+          "titulo": "Content Overview",
+          "puntos": [
+            "Event / Update: <b>Flight Pass 61</b> live across global servers."
+          ]
+        }
+      ],
+      "imagen": "assets/news/flight-pass-61_main.jpg"
+    },
+    {
+      "id": "starform_2026_10_13_f15_rework",
+      "pinned_default": false,
+      "flair": "REWORK & META",
+      "flair_en": "REWORK & META",
+      "category": "rework",
+      "author": "u/StarformLiveOps",
+      "author_title": "Starform In-Game LiveOps",
+      "fecha": "2026-10-23",
+      "tiempo_relativo_es": "Reciente",
+      "tiempo_relativo_en": "Recent",
+      "upvotes": 410,
+      "comentarios": 22,
+      "titulo_es": "🚀 2026 10 13 F15 Rework",
+      "titulo_en": "🚀 2026 10 13 F15 Rework",
+      "resumen_es": "Novedad oficial transmitida directamente a través del cliente de juego de Metalstorm.",
+      "resumen_en": "Official in-game bulletin broadcasted directly through the Metalstorm game client.",
+      "secciones_es": [
+        {
+          "tipo": "buff",
+          "icono": "⚡",
+          "titulo": "Resumen de Contenido",
+          "puntos": [
+            "Evento / Actualización: <b>2026 10 13 F15 Rework</b> disponible en servidores globales."
+          ]
+        }
+      ],
+      "secciones_en": [
+        {
+          "tipo": "buff",
+          "icono": "⚡",
+          "titulo": "Content Overview",
+          "puntos": [
+            "Event / Update: <b>2026 10 13 F15 Rework</b> live across global servers."
+          ]
+        }
+      ],
+      "imagen": "assets/news/2026_10_13_f15_rework_main.jpg"
+    },
+    {
+      "id": "starform_2026_10_8_matcherino",
+      "pinned_default": false,
+      "flair": "TORNEO OFICIAL",
+      "flair_en": "OFFICIAL TOURNAMENT",
+      "category": "tournament",
+      "author": "u/StarformLiveOps",
+      "author_title": "Starform In-Game LiveOps",
+      "fecha": "2026-10-23",
+      "tiempo_relativo_es": "Reciente",
+      "tiempo_relativo_en": "Recent",
+      "upvotes": 410,
+      "comentarios": 22,
+      "titulo_es": "🚀 2026 10 8 Matcherino",
+      "titulo_en": "🚀 2026 10 8 Matcherino",
+      "resumen_es": "Novedad oficial transmitida directamente a través del cliente de juego de Metalstorm.",
+      "resumen_en": "Official in-game bulletin broadcasted directly through the Metalstorm game client.",
+      "secciones_es": [
+        {
+          "tipo": "buff",
+          "icono": "⚡",
+          "titulo": "Resumen de Contenido",
+          "puntos": [
+            "Evento / Actualización: <b>2026 10 8 Matcherino</b> disponible en servidores globales."
+          ]
+        }
+      ],
+      "secciones_en": [
+        {
+          "tipo": "buff",
+          "icono": "⚡",
+          "titulo": "Content Overview",
+          "puntos": [
+            "Event / Update: <b>2026 10 8 Matcherino</b> live across global servers."
+          ]
+        }
+      ],
+      "imagen": "assets/news/2026_10_8_matcherino_main.jpg"
+    },
+    {
+      "id": "starform_2026_9_29_desktop_ui",
+      "pinned_default": false,
+      "flair": "COMUNICADO OFICIAL",
+      "flair_en": "OFFICIAL UPDATE",
+      "category": "special",
+      "author": "u/StarformLiveOps",
+      "author_title": "Starform In-Game LiveOps",
+      "fecha": "2026-10-23",
+      "tiempo_relativo_es": "Reciente",
+      "tiempo_relativo_en": "Recent",
+      "upvotes": 410,
+      "comentarios": 22,
+      "titulo_es": "🚀 2026 9 29 Desktop Ui",
+      "titulo_en": "🚀 2026 9 29 Desktop Ui",
+      "resumen_es": "Novedad oficial transmitida directamente a través del cliente de juego de Metalstorm.",
+      "resumen_en": "Official in-game bulletin broadcasted directly through the Metalstorm game client.",
+      "secciones_es": [
+        {
+          "tipo": "buff",
+          "icono": "⚡",
+          "titulo": "Resumen de Contenido",
+          "puntos": [
+            "Evento / Actualización: <b>2026 9 29 Desktop Ui</b> disponible en servidores globales."
+          ]
+        }
+      ],
+      "secciones_en": [
+        {
+          "tipo": "buff",
+          "icono": "⚡",
+          "titulo": "Content Overview",
+          "puntos": [
+            "Event / Update: <b>2026 9 29 Desktop Ui</b> live across global servers."
+          ]
+        }
+      ],
+      "imagen": "assets/news/2026_9_29_desktop_ui_main.jpg"
+    },
+    {
+      "id": "starform_flight-pass-60",
+      "pinned_default": false,
+      "flair": "FLIGHT PASS",
+      "flair_en": "FLIGHT PASS",
+      "category": "pass",
+      "author": "u/StarformLiveOps",
+      "author_title": "Starform In-Game LiveOps",
+      "fecha": "2026-10-23",
+      "tiempo_relativo_es": "Reciente",
+      "tiempo_relativo_en": "Recent",
+      "upvotes": 410,
+      "comentarios": 22,
+      "titulo_es": "🚀 Flight Pass 60",
+      "titulo_en": "🚀 Flight Pass 60",
+      "resumen_es": "Novedad oficial transmitida directamente a través del cliente de juego de Metalstorm.",
+      "resumen_en": "Official in-game bulletin broadcasted directly through the Metalstorm game client.",
+      "secciones_es": [
+        {
+          "tipo": "buff",
+          "icono": "⚡",
+          "titulo": "Resumen de Contenido",
+          "puntos": [
+            "Evento / Actualización: <b>Flight Pass 60</b> disponible en servidores globales."
+          ]
+        }
+      ],
+      "secciones_en": [
+        {
+          "tipo": "buff",
+          "icono": "⚡",
+          "titulo": "Content Overview",
+          "puntos": [
+            "Event / Update: <b>Flight Pass 60</b> live across global servers."
+          ]
+        }
+      ],
+      "imagen": "assets/news/flight-pass-60_main.jpg"
+    },
+    {
+      "id": "starform_f20_tigershark_black_market",
+      "pinned_default": false,
+      "flair": "COMUNICADO OFICIAL",
+      "flair_en": "OFFICIAL UPDATE",
+      "category": "special",
+      "author": "u/StarformLiveOps",
+      "author_title": "Starform In-Game LiveOps",
+      "fecha": "2026-10-23",
+      "tiempo_relativo_es": "Reciente",
+      "tiempo_relativo_en": "Recent",
+      "upvotes": 410,
+      "comentarios": 22,
+      "titulo_es": "🚀 F20 Tigershark Black Market",
+      "titulo_en": "🚀 F20 Tigershark Black Market",
+      "resumen_es": "Novedad oficial transmitida directamente a través del cliente de juego de Metalstorm.",
+      "resumen_en": "Official in-game bulletin broadcasted directly through the Metalstorm game client.",
+      "secciones_es": [
+        {
+          "tipo": "buff",
+          "icono": "⚡",
+          "titulo": "Resumen de Contenido",
+          "puntos": [
+            "Evento / Actualización: <b>F20 Tigershark Black Market</b> disponible en servidores globales."
+          ]
+        }
+      ],
+      "secciones_en": [
+        {
+          "tipo": "buff",
+          "icono": "⚡",
+          "titulo": "Content Overview",
+          "puntos": [
+            "Event / Update: <b>F20 Tigershark Black Market</b> live across global servers."
+          ]
+        }
+      ],
+      "imagen": "assets/news/f20_tigershark_black_market_main.jpg"
+    },
+    {
+      "id": "starform_2026-9-8-mcs-reminder",
+      "pinned_default": false,
+      "flair": "TORNEO OFICIAL",
+      "flair_en": "OFFICIAL TOURNAMENT",
+      "category": "tournament",
+      "author": "u/StarformLiveOps",
+      "author_title": "Starform In-Game LiveOps",
+      "fecha": "2026-10-23",
+      "tiempo_relativo_es": "Reciente",
+      "tiempo_relativo_en": "Recent",
+      "upvotes": 410,
+      "comentarios": 22,
+      "titulo_es": "🚀 2026 9 8 Mcs Reminder",
+      "titulo_en": "🚀 2026 9 8 Mcs Reminder",
+      "resumen_es": "Novedad oficial transmitida directamente a través del cliente de juego de Metalstorm.",
+      "resumen_en": "Official in-game bulletin broadcasted directly through the Metalstorm game client.",
+      "secciones_es": [
+        {
+          "tipo": "buff",
+          "icono": "⚡",
+          "titulo": "Resumen de Contenido",
+          "puntos": [
+            "Evento / Actualización: <b>2026 9 8 Mcs Reminder</b> disponible en servidores globales."
+          ]
+        }
+      ],
+      "secciones_en": [
+        {
+          "tipo": "buff",
+          "icono": "⚡",
+          "titulo": "Content Overview",
+          "puntos": [
+            "Event / Update: <b>2026 9 8 Mcs Reminder</b> live across global servers."
+          ]
+        }
+      ],
+      "imagen": "assets/news/2026-9-8-mcs-reminder_main.jpg"
+    },
+    {
+      "id": "starform_2026_8_26_f18_lastcall",
+      "pinned_default": false,
+      "flair": "COMUNICADO OFICIAL",
+      "flair_en": "OFFICIAL UPDATE",
+      "category": "special",
+      "author": "u/StarformLiveOps",
+      "author_title": "Starform In-Game LiveOps",
+      "fecha": "2026-10-23",
+      "tiempo_relativo_es": "Reciente",
+      "tiempo_relativo_en": "Recent",
+      "upvotes": 410,
+      "comentarios": 22,
+      "titulo_es": "🚀 2026 8 26 F18 Lastcall",
+      "titulo_en": "🚀 2026 8 26 F18 Lastcall",
+      "resumen_es": "Novedad oficial transmitida directamente a través del cliente de juego de Metalstorm.",
+      "resumen_en": "Official in-game bulletin broadcasted directly through the Metalstorm game client.",
+      "secciones_es": [
+        {
+          "tipo": "buff",
+          "icono": "⚡",
+          "titulo": "Resumen de Contenido",
+          "puntos": [
+            "Evento / Actualización: <b>2026 8 26 F18 Lastcall</b> disponible en servidores globales."
+          ]
+        }
+      ],
+      "secciones_en": [
+        {
+          "tipo": "buff",
+          "icono": "⚡",
+          "titulo": "Content Overview",
+          "puntos": [
+            "Event / Update: <b>2026 8 26 F18 Lastcall</b> live across global servers."
+          ]
+        }
+      ],
+      "imagen": "assets/news/2026_8_26_f18_lastcall_main.jpg"
+    },
+    {
+      "id": "starform_2026_9_1_matcherino",
+      "pinned_default": false,
+      "flair": "TORNEO OFICIAL",
+      "flair_en": "OFFICIAL TOURNAMENT",
+      "category": "tournament",
+      "author": "u/StarformLiveOps",
+      "author_title": "Starform In-Game LiveOps",
+      "fecha": "2026-10-23",
+      "tiempo_relativo_es": "Reciente",
+      "tiempo_relativo_en": "Recent",
+      "upvotes": 410,
+      "comentarios": 22,
+      "titulo_es": "🚀 2026 9 1 Matcherino",
+      "titulo_en": "🚀 2026 9 1 Matcherino",
+      "resumen_es": "Novedad oficial transmitida directamente a través del cliente de juego de Metalstorm.",
+      "resumen_en": "Official in-game bulletin broadcasted directly through the Metalstorm game client.",
+      "secciones_es": [
+        {
+          "tipo": "buff",
+          "icono": "⚡",
+          "titulo": "Resumen de Contenido",
+          "puntos": [
+            "Evento / Actualización: <b>2026 9 1 Matcherino</b> disponible en servidores globales."
+          ]
+        }
+      ],
+      "secciones_en": [
+        {
+          "tipo": "buff",
+          "icono": "⚡",
+          "titulo": "Content Overview",
+          "puntos": [
+            "Event / Update: <b>2026 9 1 Matcherino</b> live across global servers."
+          ]
+        }
+      ],
+      "imagen": "assets/news/2026_9_1_matcherino_main.jpg"
+    },
+    {
+      "id": "starform_flight-pass-59",
+      "pinned_default": false,
+      "flair": "FLIGHT PASS",
+      "flair_en": "FLIGHT PASS",
+      "category": "pass",
+      "author": "u/StarformLiveOps",
+      "author_title": "Starform In-Game LiveOps",
+      "fecha": "2026-10-23",
+      "tiempo_relativo_es": "Reciente",
+      "tiempo_relativo_en": "Recent",
+      "upvotes": 410,
+      "comentarios": 22,
+      "titulo_es": "🚀 Flight Pass 59",
+      "titulo_en": "🚀 Flight Pass 59",
+      "resumen_es": "Novedad oficial transmitida directamente a través del cliente de juego de Metalstorm.",
+      "resumen_en": "Official in-game bulletin broadcasted directly through the Metalstorm game client.",
+      "secciones_es": [
+        {
+          "tipo": "buff",
+          "icono": "⚡",
+          "titulo": "Resumen de Contenido",
+          "puntos": [
+            "Evento / Actualización: <b>Flight Pass 59</b> disponible en servidores globales."
+          ]
+        }
+      ],
+      "secciones_en": [
+        {
+          "tipo": "buff",
+          "icono": "⚡",
+          "titulo": "Content Overview",
+          "puntos": [
+            "Event / Update: <b>Flight Pass 59</b> live across global servers."
+          ]
+        }
+      ],
+      "imagen": "assets/news/flight-pass-59_main.jpg"
+    },
+    {
+      "id": "starform_2026_8_11_fa18_ctf",
+      "pinned_default": false,
+      "flair": "COMUNICADO OFICIAL",
+      "flair_en": "OFFICIAL UPDATE",
+      "category": "special",
+      "author": "u/StarformLiveOps",
+      "author_title": "Starform In-Game LiveOps",
+      "fecha": "2026-10-23",
+      "tiempo_relativo_es": "Reciente",
+      "tiempo_relativo_en": "Recent",
+      "upvotes": 410,
+      "comentarios": 22,
+      "titulo_es": "🚀 2026 8 11 Fa18 Ctf",
+      "titulo_en": "🚀 2026 8 11 Fa18 Ctf",
+      "resumen_es": "Novedad oficial transmitida directamente a través del cliente de juego de Metalstorm.",
+      "resumen_en": "Official in-game bulletin broadcasted directly through the Metalstorm game client.",
+      "secciones_es": [
+        {
+          "tipo": "buff",
+          "icono": "⚡",
+          "titulo": "Resumen de Contenido",
+          "puntos": [
+            "Evento / Actualización: <b>2026 8 11 Fa18 Ctf</b> disponible en servidores globales."
+          ]
+        }
+      ],
+      "secciones_en": [
+        {
+          "tipo": "buff",
+          "icono": "⚡",
+          "titulo": "Content Overview",
+          "puntos": [
+            "Event / Update: <b>2026 8 11 Fa18 Ctf</b> live across global servers."
+          ]
+        }
+      ],
+      "imagen": "assets/news/2026_8_11_fa18_ctf_main.jpg"
+    },
+    {
+      "id": "starform_2026_8_1_matcherino",
+      "pinned_default": false,
+      "flair": "TORNEO OFICIAL",
+      "flair_en": "OFFICIAL TOURNAMENT",
+      "category": "tournament",
+      "author": "u/StarformLiveOps",
+      "author_title": "Starform In-Game LiveOps",
+      "fecha": "2026-10-23",
+      "tiempo_relativo_es": "Reciente",
+      "tiempo_relativo_en": "Recent",
+      "upvotes": 410,
+      "comentarios": 22,
+      "titulo_es": "🚀 2026 8 1 Matcherino",
+      "titulo_en": "🚀 2026 8 1 Matcherino",
+      "resumen_es": "Novedad oficial transmitida directamente a través del cliente de juego de Metalstorm.",
+      "resumen_en": "Official in-game bulletin broadcasted directly through the Metalstorm game client.",
+      "secciones_es": [
+        {
+          "tipo": "buff",
+          "icono": "⚡",
+          "titulo": "Resumen de Contenido",
+          "puntos": [
+            "Evento / Actualización: <b>2026 8 1 Matcherino</b> disponible en servidores globales."
+          ]
+        }
+      ],
+      "secciones_en": [
+        {
+          "tipo": "buff",
+          "icono": "⚡",
+          "titulo": "Content Overview",
+          "puntos": [
+            "Event / Update: <b>2026 8 1 Matcherino</b> live across global servers."
+          ]
+        }
+      ],
+      "imagen": "assets/news/2026_8_1_matcherino_main.jpg"
+    },
     {
       "id": "patch_f15_rework",
       "pinned_default": true,
